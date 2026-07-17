@@ -140,6 +140,9 @@ STORAGES = {
     },
 }
 
+# Allow Whitenoise to ignore missing file references in CSS (prevents collectstatic crashes on Render)
+WHITENOISE_MANIFEST_STRICT = False
+
 
 
 MEDIA_URL = '/media/'
