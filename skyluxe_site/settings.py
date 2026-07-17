@@ -136,7 +136,7 @@ STORAGES = {
     },
     "staticfiles": {
         # Use compressed storage in production only; plain staticfiles in local dev
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage" if not DEBUG else "django.contrib.staticfiles.storage.StaticFilesStorage",
+        "BACKEND": "skyluxe_site.storage.CustomWhiteNoiseStorage" if not DEBUG else "django.contrib.staticfiles.storage.StaticFilesStorage",
     },
 }
 
