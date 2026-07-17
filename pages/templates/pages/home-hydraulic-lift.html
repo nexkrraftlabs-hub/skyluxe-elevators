@@ -1,0 +1,389 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+{% block title %}Hydraulic Home Lifts in India | Skyluxe Elevators{% endblock %}
+
+{% block meta_description %}Skyluxe Elevators offers premium hydraulic home lifts in India. Smooth, silent, and safe residential elevators perfect for low-rise homes.{% endblock %}
+
+{% block meta_keywords %}hydraulic home lift, hydraulic elevator india, residential hydraulic lift, skyluxe hydraulic lift, home elevator{% endblock %}
+
+{% block canonical_url %}https://www.skyluxeelevators.com/home-hydraulic-lift.html{% endblock %}
+
+{% block og_title %}Hydraulic Home Lifts in India | Skyluxe Elevators{% endblock %}
+{% block og_description %}Premium hydraulic home lifts in India. Smooth, silent, and safe residential elevators perfect for low-rise homes.{% endblock %}
+{% block og_url %}https://www.skyluxeelevators.com/home-hydraulic-lift.html{% endblock %}
+{% block og_image %}{% static 'img/1st.webp' %}{% endblock %}
+{% block og_image_alt %}Hydraulic Home Lift by Skyluxe Elevators{% endblock %}
+
+{% block twitter_title %}Hydraulic Home Lifts | Skyluxe Elevators{% endblock %}
+{% block twitter_description %}Premium hydraulic home lifts in India. Smooth, silent, and safe.{% endblock %}
+{% block twitter_image %}{% static 'img/1st.webp' %}{% endblock %}
+
+{% block structured_data %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Hydraulic Home Lift",
+  "image": "{% static 'img/1st.webp' %}",
+  "description": "Premium hydraulic home lifts and residential elevators by Skyluxe Elevators. Smooth, silent, and safe solutions for modern homes.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Skyluxe Elevators"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "INR",
+    "availability": "https://schema.org/InStock",
+    "url": "https://www.skyluxeelevators.com/home-hydraulic-lift.html"
+  }
+}
+</script>
+{% endblock %}
+{% block active_lifts %}active{% endblock %}
+{% block dd_home_lift %}active{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/lifts.css' %}">
+<link rel="stylesheet" href="{% static 'css/home-hydraulic-lift.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="hero" style="background-image: url('static/img/homeskyluxe.png');">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">HOME LIFT VARIANT</div>
+    <h1>Hydraulic <span class="c-pri">Home Lift</span></h1>
+    <p>Jerk-free piston comfort for villas, duplex homes, bungalows, and luxury residences.</p>
+    <a href="{% url 'contact' %}?product=hydraulic-home-lift" class="btn-pri">Get Free Quote</a>
+  </div>
+</section>
+
+<section class="lift-details-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">SMOOTH PISTON TECHNOLOGY</span>
+      <h2 class="section-title">Quiet Comfort for <span class="c-pri">Premium Homes</span></h2>
+      <p class="section-desc">Hydraulic home lifts are ideal when the priority is soft movement, silent travel, flexible
+        pump placement, and dependable residential safety.</p>
+    </div>
+
+    <div class="row g-4 align-items-stretch">
+      <div class="col-lg-7">
+        <div class="main-lift-image">
+          <img src="{% static 'img/hy1.png' %}" alt="Hydraulic Home Lift">
+          <div class="image-overlay">
+            <h3>Luxury Residential Cabin</h3>
+            <p>Glass, stainless steel, wood finish, and designer cabin options can be matched with your interiors.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="lift-info-card">
+          <span class="section-tag">PRODUCT BIO DATA</span>
+          <h3>Hydraulic Home Lift</h3>
+          <p>A comfortable piston-driven lift for homes that need smooth movement without harsh starts or stops.</p>
+          <div class="info-list">
+            <div class="info-item"><span>Drive</span><strong>Hydraulic Piston</strong></div>
+            <div class="info-item"><span>Capacity</span><strong>300 - 1000 KG</strong></div>
+            <div class="info-item"><span>Stops</span><strong>2 - 4 Floors</strong></div>
+            <div class="info-item"><span>Speed</span><strong>0.15 - 0.40 m/s</strong></div>
+            <div class="info-item"><span>Machine Room</span><strong>Not Required</strong></div>
+            <div class="info-item"><span>Best For</span><strong>Villas & Duplex Homes</strong></div>
+          </div>
+          <a href="{% url 'contact' %}?product=hydraulic-home-lift"
+            class="btn-lift-details text-decoration-none d-inline-block text-center">Request Site Survey</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">WHY HYDRAULIC</span>
+      <h2 class="section-title">Comfort, Safety, <span class="c-pri">Flexibility</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fas fa-water"></i></div>
+          <h4>Smooth Ride</h4>
+          <ul>
+            <li>Soft piston movement</li>
+            <li>Low vibration</li>
+            <li>Gentle stopping</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fas fa-volume-low"></i></div>
+          <h4>Silent Use</h4>
+          <ul>
+            <li>Quiet travel</li>
+            <li>Remote pump option</li>
+            <li>Home-friendly sound</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fas fa-shield-heart"></i></div>
+          <h4>Safe Rescue</h4>
+          <ul>
+            <li>ARD support</li>
+            <li>Emergency lowering</li>
+            <li>Door interlock</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fas fa-couch"></i></div>
+          <h4>Interior Fit</h4>
+          <ul>
+            <li>Glass shaft</li>
+            <li>Designer cabin</li>
+            <li>Compact footprint</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="requirements-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">HOME PLANNING</span>
+      <h2 class="section-title">What We <span class="c-pri">Check On Site</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="req-card">
+          <div class="req-icon"><i class="fas fa-ruler-combined"></i></div>
+          <h5>SPACE</h5>
+          <h3>Shaft Footprint</h3>
+          <p>We measure available space, floor opening, landing access, and cabin size based on family usage.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="req-card">
+          <div class="req-icon"><i class="fas fa-plug"></i></div>
+          <h5>POWER</h5>
+          <h3>Electrical Setup</h3>
+          <p>Controller, power point, battery backup, and safety circuits are planned before installation.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="req-card">
+          <div class="req-icon"><i class="fas fa-house-chimney"></i></div>
+          <h5>FINISH</h5>
+          <h3>Interior Matching</h3>
+          <p>Cabin panels, glass, flooring, lights, handrails, and buttons are selected to suit the home style.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">POPULAR CONFIGURATIONS</span>
+      <h2 class="section-title">Hydraulic Home Lift <span class="c-pri">Options</span></h2>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-lg-4 col-md-6">
+        <div class="price-card">
+          <h4>Compact Home</h4>
+          <p class="plan-sub">2 Stop Lift</p>
+          <div class="price">2 Floors</div>
+          <ul>
+            <li><i class="fas fa-check"></i> Elder-friendly movement</li>
+            <li><i class="fas fa-check"></i> Compact cabin layout</li>
+            <li><i class="fas fa-check"></i> Hydraulic safety system</li>
+          </ul><a href="{% url 'contact' %}?product=compact-hydraulic-home-lift"
+            class="btn-lift-details text-decoration-none d-inline-block text-center">Get Quote</a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="price-card featured">
+          <h4>Villa Premium</h4>
+          <p class="plan-sub">3 Stop Lift</p>
+          <div class="price">3 Floors</div>
+          <ul>
+            <li><i class="fas fa-check"></i> Glass shaft option</li>
+            <li><i class="fas fa-check"></i> Designer cabin finishes</li>
+            <li><i class="fas fa-check"></i> Smooth piston comfort</li>
+          </ul><a href="{% url 'contact' %}?product=villa-hydraulic-home-lift"
+            class="btn-lift-details text-decoration-none d-inline-block text-center">Get Quote</a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="price-card">
+          <h4>Luxury Residence</h4>
+          <p class="plan-sub">4 Stop Lift</p>
+          <div class="price">4 Floors</div>
+          <ul>
+            <li><i class="fas fa-check"></i> Larger cabin planning</li>
+            <li><i class="fas fa-check"></i> Premium control panel</li>
+            <li><i class="fas fa-check"></i> Custom interior package</li>
+          </ul><a href="{% url 'contact' %}?product=luxury-hydraulic-home-lift"
+            class="btn-lift-details text-decoration-none d-inline-block text-center">Get Quote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% block extra_js %}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+
+    // Safety check
+    if (typeof gsap === 'undefined') { return; }
+    if (typeof ScrollTrigger !== 'undefined') { gsap.registerPlugin(ScrollTrigger); }
+
+    // ============================================================
+    // 1. 3D TILT EFFECT (touch device disabled)
+    // ============================================================
+    (function () {
+      if (window.innerWidth < 768 || ('ontouchstart' in window)) return;
+
+      function initTilt(selector, tiltX, tiltY, tz) {
+        document.querySelectorAll(selector).forEach(function (card) {
+          if (card.closest('.tilt-frame')) return;
+
+          var frame = document.createElement('div');
+          frame.className = 'tilt-frame';
+          frame.style.borderRadius = window.getComputedStyle(card).borderRadius || '24px';
+
+          var inner = document.createElement('div');
+          inner.className = 'tilt-inner';
+          inner.style.borderRadius = 'inherit';
+
+          var sheen = document.createElement('div');
+          sheen.className = 'tilt-sheen';
+
+          card.parentNode.replaceChild(frame, card);
+          inner.appendChild(card);
+          frame.appendChild(inner);
+          frame.appendChild(sheen);
+
+          frame.addEventListener('mousemove', function (e) {
+            var r = frame.getBoundingClientRect();
+            var px = (e.clientX - r.left) / r.width;
+            var py = (e.clientY - r.top) / r.height;
+            inner.style.transform = 'rotateX(' + ((py - 0.5) * tiltX) + 'deg) rotateY(' + ((px - 0.5) * -tiltY) + 'deg)';
+            sheen.style.background = 'radial-gradient(circle at ' + (px * 100) + '% ' + (py * 100) + '%, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 70%)';
+            sheen.style.opacity = '1';
+            card.querySelectorAll('h3,h4,h5,img,.price-val,.price,button,.btn-lift-details,.feature-icon,.req-icon').forEach(function (el) {
+              el.style.transform = 'translateZ(' + tz + 'px)';
+            });
+          });
+
+          frame.addEventListener('mouseleave', function () {
+            inner.style.transform = 'rotateX(0deg) rotateY(0deg)';
+            sheen.style.opacity = '0';
+            card.querySelectorAll('h3,h4,h5,img,.price-val,.price,button,.btn-lift-details,.feature-icon,.req-icon').forEach(function (el) {
+              el.style.transform = 'translateZ(0px)';
+            });
+          });
+        });
+      }
+
+      initTilt('.price-card', 12, 14, 25);
+      initTilt('.feature-box', 10, 12, 20);
+      initTilt('.req-card', 10, 12, 20);
+      initTilt('.lift-info-card', 6, 8, 15);
+      initTilt('.main-lift-image', 8, 10, 30);
+      initTilt('.bottom-details-banner', 5, 8, 20);
+    })();
+
+    // ============================================================
+    // 2. GSAP SCROLL ANIMATIONS - SAFE VERSION
+    // Elements are already visible; we only animate if ScrollTrigger loaded
+    // ============================================================
+    if (typeof ScrollTrigger === 'undefined') return;
+
+    // Helper: get the outer tilt-frame wrapper if tilt was applied
+    function getTarget(el) {
+      var f = el.closest('.tilt-frame');
+      return f || el;
+    }
+
+    // Hero entrance (no opacity - already visible)
+    gsap.from('.hero-content', { y: 40, duration: 1.0, ease: 'power3.out', delay: 0.2, clearProps: 'all' });
+
+    // Section headings - safe per-element trigger
+    document.querySelectorAll('.section-title').forEach(function (el) {
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 90%', once: true },
+        y: 30, opacity: 0, duration: 0.7, ease: 'power3.out', clearProps: 'all'
+      });
+    });
+
+    document.querySelectorAll('.section-desc, .section-tag').forEach(function (el) {
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 92%', once: true },
+        y: 20, opacity: 0, duration: 0.6, ease: 'power2.out', clearProps: 'all'
+      });
+    });
+
+    // Cards: animate each individually so missing sections never block
+    document.querySelectorAll('.feature-box').forEach(function (el, i) {
+      gsap.from(getTarget(el), {
+        scrollTrigger: { trigger: getTarget(el), start: 'top 92%', once: true },
+        y: 40, opacity: 0, duration: 0.7, delay: i * 0.08, ease: 'back.out(1.2)', clearProps: 'all'
+      });
+    });
+
+    document.querySelectorAll('.req-card').forEach(function (el, i) {
+      gsap.from(getTarget(el), {
+        scrollTrigger: { trigger: getTarget(el), start: 'top 92%', once: true },
+        y: 40, opacity: 0, duration: 0.7, delay: i * 0.08, ease: 'back.out(1.2)', clearProps: 'all'
+      });
+    });
+
+    document.querySelectorAll('.price-card').forEach(function (el, i) {
+      gsap.from(getTarget(el), {
+        scrollTrigger: { trigger: getTarget(el), start: 'top 92%', once: true },
+        y: 40, opacity: 0, duration: 0.7, delay: i * 0.1, ease: 'power3.out', clearProps: 'all'
+      });
+    });
+
+    document.querySelectorAll('.accordion-item').forEach(function (el, i) {
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 95%', once: true },
+        x: -20, opacity: 0, duration: 0.5, delay: i * 0.08, ease: 'power2.out', clearProps: 'all'
+      });
+    });
+
+    // Info card
+    var infoCard = document.querySelector('.lift-info-card');
+    if (infoCard) {
+      gsap.from(infoCard.querySelectorAll('h3, p, .info-item'), {
+        scrollTrigger: { trigger: getTarget(infoCard), start: 'top 90%', once: true },
+        y: 20, opacity: 0, duration: 0.5, stagger: 0.07, ease: 'power2.out', clearProps: 'all'
+      });
+    }
+
+    // Bottom banner
+    var banner = document.querySelector('.bottom-details-banner');
+    if (banner) {
+      gsap.from(getTarget(banner), {
+        scrollTrigger: { trigger: getTarget(banner), start: 'top 95%', once: true },
+        scale: 0.97, y: 30, opacity: 0, duration: 0.9, ease: 'power3.out', clearProps: 'all'
+      });
+    }
+
+    setTimeout(function () { ScrollTrigger.refresh(); }, 300);
+  });
+</script>
+{% endblock %}
+
+{% endblock %}

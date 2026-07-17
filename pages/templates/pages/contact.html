@@ -1,0 +1,521 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+{% block title %}Contact Skyluxe Elevators | Get a Free Elevator Quote in India{% endblock %}
+
+{% block meta_description %}Contact Skyluxe Elevators for a free elevator quote. We offer home lifts, passenger lifts, hospital lifts, car lifts & more across India. Call +91-7318202141 or email skyluxeelevators@gmail.com. Mon–Sat, 9AM–7PM.{% endblock %}
+
+{% block meta_keywords %}contact skyluxe elevators, elevator quote india, home lift price india, passenger lift enquiry, elevator installation enquiry{% endblock %}
+
+{% block canonical_url %}https://www.skyluxeelevators.com/contact.html{% endblock %}
+
+{% block og_title %}Contact Skyluxe Elevators | Get a Free Elevator Quote{% endblock %}
+{% block og_description %}Get a free quote for home lifts, passenger lifts, hospital lifts & more. Call +91-7318202141 or email us. We serve all across India.{% endblock %}
+{% block og_url %}https://www.skyluxeelevators.com/contact.html{% endblock %}
+{% block og_image %}{% static 'img/skyluxelogo.png' %}{% endblock %}
+{% block og_image_alt %}Contact Skyluxe Elevators – Get a Free Elevator Quote{% endblock %}
+
+{% block twitter_title %}Contact Skyluxe Elevators | Free Elevator Quote India{% endblock %}
+{% block twitter_description %}Get a free quote for home lifts, passenger lifts & hospital lifts. Call +91-7318202141. Serving all of India.{% endblock %}
+{% block twitter_image %}{% static 'img/skyluxelogo.png' %}{% endblock %}
+
+{% block structured_data %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "@id": "https://www.skyluxeelevators.com/contact.html#webpage",
+  "url": "https://www.skyluxeelevators.com/contact.html",
+  "name": "Contact Skyluxe Elevators | Get a Free Elevator Quote in India",
+  "description": "Contact Skyluxe Elevators for a free elevator quote. Home lifts, passenger lifts, hospital lifts & car lifts across India.",
+  "isPartOf": {"@id": "https://www.skyluxeelevators.com/#website"},
+  "mainEntity": {
+    "@type": "LocalBusiness",
+    "name": "Skyluxe Elevators Pvt. Ltd.",
+    "telephone": "+91-7318202141",
+    "email": "skyluxeelevators@gmail.com",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "09:00",
+        "closes": "19:00"
+      }
+    ],
+    "areaServed": "India"
+  }
+}
+</script>
+{% endblock %}
+
+{% block active_contact %}active{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+{% endblock %}
+
+
+{% block content %}
+  <!-- DJANGO MESSAGES -->
+  {% if messages %}
+  <div id="toast-container" style="position: fixed; top: 100px; right: 20px; z-index: 999999;">
+    {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show shadow-lg d-flex align-items-center mb-2"
+      role="alert" style="background-color: var(--gold, #b8892a); border: none; color: #fff; min-width: 300px;">
+      <i class="fas fa-check-circle me-2 fs-5"></i>
+      <div>{{ message }}</div>
+      <button type="button" class="btn-close ms-auto btn-close-white" data-bs-dismiss="alert"
+        aria-label="Close"></button>
+    </div>
+    {% endfor %}
+  </div>
+  <script>
+    setTimeout(() => {
+      const alerts = document.querySelectorAll('#toast-container .alert');
+      alerts.forEach(alert => {
+        alert.classList.remove('show');
+        setTimeout(() => alert.remove(), 300);
+      });
+    }, 5000);
+  </script>
+  {% endif %}
+
+
+  <!-- HERO -->
+
+  <section class="hero">
+    <div class="swiper hero-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url({% static 'img/VGO0749_HDR-scaled.jpg' %});">
+          <div class="hero-overlay"></div>
+        </div>
+
+        <div class="swiper-slide" style="background-image: url({% static 'img/VGO05128-copy-scaled.jpg' %});">
+          <div class="hero-overlay"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-tag">GET IN TOUCH</p>
+      <h1 class="hero-title">Contact <span class="hero-gold">Skyluxe</span></h1>
+      <p class="hero-sub">We're here to help you find your perfect luxury elevator.<br>Reach out to our experts today.</p>
+    </div>
+  </section>
+  <!-- SHOWROOMS SECTION -->
+
+  <section class="showroom-section">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <!-- LEFT MAP -->
+
+        <div class="col-lg-6">
+          <div class="showroom-map-wrapper">
+            <iframe src="https://www.google.com/maps?q=India&output=embed" allowfullscreen="" loading="lazy"></iframe>
+
+            <!-- FLOATING BADGE -->
+
+            <div class="map-badge">
+              <h3>12+</h3>
+              <p>Luxury Showrooms</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT CONTENT -->
+
+        <div class="col-lg-6">
+          <span class="showroom-tag">OUR SHOWROOMS</span>
+
+          <h2 class="showroom-title text-3d">
+            Experience Luxury
+            <span class="c-pri">Across India</span>
+          </h2>
+
+          <p class="showroom-text">Visit our premium elevator experience centers and discover world-class lift
+            solutions designed with European engineering, elegant interiors and advanced smart technology.</p>
+
+          <!-- SHOWROOM LIST -->
+
+          <div class="showroom-list">
+            <!-- ITEM -->
+
+            <div class="showroom-item">
+              <div class="showroom-icon">
+                <i class="fas fa-location-dot"></i>
+              </div>
+
+              <div class="showroom-content">
+                <h5>Lucknow Experience Center</h5>
+
+                <p>Hazratganj, Lucknow, Uttar Pradesh</p>
+              </div>
+            </div>
+
+            <!-- ITEM -->
+
+            <div class="showroom-item">
+              <div class="showroom-icon">
+                <i class="fas fa-location-dot"></i>
+              </div>
+
+              <div class="showroom-content">
+                <h5>Delhi Premium Studio</h5>
+
+                <p>Connaught Place, New Delhi</p>
+              </div>
+            </div>
+
+            <!-- ITEM -->
+
+            <div class="showroom-item">
+              <div class="showroom-icon">
+                <i class="fas fa-location-dot"></i>
+              </div>
+
+              <div class="showroom-content">
+                <h5>Mumbai Luxury Hub</h5>
+
+                <p>Andheri East, Mumbai</p>
+              </div>
+            </div>
+
+            <!-- ITEM -->
+
+            <div class="showroom-item">
+              <div class="showroom-icon">
+                <i class="fas fa-location-dot"></i>
+              </div>
+
+              <div class="showroom-content">
+                <h5>Bangalore Smart Gallery</h5>
+
+                <p>Koramangala, Bengaluru</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn-showroom mt-4">Explore All Locations</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 mb-5">
+          <h2 class="contact-title text-3d">
+            Let's Build Your
+            <span class="c-pri">Luxury Elevator</span>
+          </h2>
+
+          <p class="contact-text">Connect with our experts for premium elevator solutions.</p>
+
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+91 7275746520</span>
+          </div>
+
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>skyluxeelevators@gmail.com</span>
+          </div>
+
+          <div class="contact-item">
+            <i class="fas fa-location-dot"></i>
+            <span>Lucknow, India</span>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="contact-form-wrapper">
+            <form action="{% url 'save-lead' %}" method="POST">
+              {% csrf_token %}
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <input type="text" class="form-control luxury-input" name="name" placeholder="Your Name" required />
+                </div>
+
+                <div class="col-md-6 mb-4">
+                  <input type="email" class="form-control luxury-input" name="email" placeholder="Email Address"
+                    required />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <input type="tel" class="form-control luxury-input" name="phone" placeholder="Phone Number"
+                    required />
+                </div>
+
+                <div class="col-md-6 mb-4">
+                  <input type="text" class="form-control luxury-input" name="city" placeholder="City" />
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <textarea rows="5" class="form-control luxury-input" name="message"
+                  placeholder="Tell us about your project" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-pri luxury-btn">
+                Send Inquiry
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ and Contact -->
+
+  <!-- ========================= -->
+  <!-- FAQ SECTION -->
+  <!-- ========================= -->
+
+  <section class="section faq-section bg-dark text-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title text-white text-3d-white">
+          Frequently Asked
+          <span class="c-pri">Questions</span>
+        </h2>
+
+        <p class="text-light opacity-75">Everything you need to know about our luxury elevators.</p>
+      </div>
+
+      <div class="accordion faq-accordion" id="faqAccordion">
+        <!-- FAQ 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq1">How much space is required for a home lift?</button></h2>
+
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Our lifts require very minimal space and can even fit inside existing homes
+              without major civil work.</div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse" data-bs-target="#faq2">Do I need a pit or machine room?</button></h2>
+
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">No. Cibes lifts are designed with screw-drive technology requiring almost no
+              pit and no separate machine room.</div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse" data-bs-target="#faq3">Are these lifts safe for elderly people?</button></h2>
+
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Absolutely. Our elevators include emergency backup, safety sensors, battery
+              lowering, and smooth operation for seniors.</div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse" data-bs-target="#faq4">How long does installation take?</button></h2>
+
+          <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Installation is usually completed within 5–7 days depending on site conditions
+              and customization.</div>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse" data-bs-target="#faq5">Can the lift design match my interior?</button></h2>
+
+          <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Yes. We provide luxury glass finishes, custom colors, lighting, and premium
+              cabin designs tailored to your interiors.</div>
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse" data-bs-target="#faq6">What is the maintenance cost?</button></h2>
+
+          <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Our lifts are engineered for low maintenance with highly durable Swedish
+              technology and factory-trained technicians.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- MAP SECTION -->
+
+  <section class="luxury-map-section">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <!-- LEFT CONTENT -->
+
+        <div class="col-lg-5">
+          <span class="map-tag">OUR LOCATION</span>
+
+          <h2 class="map-title text-3d">
+            Visit Our
+            <span class="c-pri">Luxury Experience Center</span>
+          </h2>
+
+          <p class="map-text">Explore our premium elevator showroom and experience world-class luxury lift solutions
+            designed with European engineering, modern aesthetics and advanced safety technology.</p>
+
+          <div class="map-info">
+            <div class="map-item">
+              <i class="fas fa-location-dot"></i>
+
+              <div>
+                <h6>Showroom Address</h6>
+                <p>Hazratganj, Lucknow, Uttar Pradesh</p>
+              </div>
+            </div>
+
+            <div class="map-item">
+              <i class="fas fa-phone"></i>
+
+              <div>
+                <h6>Call Us</h6>
+                <p>+91 7275746520</p>
+              </div>
+            </div>
+
+            <div class="map-item">
+              <i class="fas fa-envelope"></i>
+
+              <div>
+                <h6>Email Address</h6>
+                <p>skyluxeelevators@gmail.com</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn-pri mt-4">Get Directions</button>
+        </div>
+
+        <!-- RIGHT MAP -->
+
+        <div class="col-lg-7">
+          <div class="map-wrapper">
+            <iframe src="https://www.google.com/maps?q=Lucknow&output=embed" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+
+{% block extra_js %}
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Swiper('.hero-swiper', {
+      loop: true,
+      autoplay: {
+        delay: 4000
+      }
+    })
+    });
+  </script>
+  <!-- GSAP -->
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.defaults({ ease: 'power3.out', duration: 1.2 });
+
+    const heroTl = gsap.timeline();
+    heroTl
+      .from('.navbar-brand', { y: -30, opacity: 0, clearProps: 'all' })
+      .from('.nav-item', { y: -20, opacity: 0, stagger: 0.1, duration: 0.7, clearProps: 'all' }, '-=0.6')
+      .from('.hero h1', { rotationX: 90, transformOrigin: "50% 50% -50px", opacity: 0, duration: 1.5, ease: 'back.out(1.2)' }, '-=0.4')
+      .from('.hero p', { y: 40, opacity: 0 }, '-=1')
+      .from('.hero .btn', { scale: 0.8, opacity: 0, rotationY: 45, duration: 1 }, '-=0.8');
+
+    gsap.to('.swiper-slide', {
+      scale: 1.1,
+      scrollTrigger: { trigger: '.hero', scrub: 1, start: 'top top', end: 'bottom top' }
+    });
+
+    // Showroom Map 3D
+    gsap.from('.showroom-map-wrapper', {
+      scrollTrigger: { trigger: '.showroom-map-wrapper', start: 'top 85%' },
+      rotationY: -15, rotationX: 10, x: -100, opacity: 0, duration: 1.5, clearProps: 'all'
+    });
+    gsap.from('.map-badge', {
+      scrollTrigger: { trigger: '.showroom-map-wrapper', start: 'top 80%' },
+      y: 50, scale: 0.8, opacity: 0, delay: 0.5, duration: 1, clearProps: 'all'
+    });
+
+    gsap.from('.showroom-title', {
+      scrollTrigger: { trigger: '.showroom-title', start: 'top 85%' },
+      y: 60, rotationX: 45, opacity: 0, duration: 1.2, clearProps: 'all'
+    });
+    gsap.from('.showroom-item', {
+      scrollTrigger: { trigger: '.showroom-list', start: 'top 85%' },
+      x: 80, rotationY: 15, opacity: 0, stagger: 0.15, duration: 1, clearProps: 'all'
+    });
+
+    // Contact Form 3D
+    gsap.from('.contact-title', {
+      scrollTrigger: { trigger: '.contact-title', start: 'top 85%' },
+      y: 60, rotationX: 45, opacity: 0, duration: 1.2, clearProps: 'all'
+    });
+    gsap.from('.contact-item', {
+      scrollTrigger: { trigger: '.contact-item', start: 'top 85%' },
+      x: -40, opacity: 0, stagger: 0.15, duration: 0.8, clearProps: 'all'
+    });
+    gsap.from('.contact-form-wrapper', {
+      scrollTrigger: { trigger: '.contact-form-wrapper', start: 'top 85%' },
+      y: 100, rotationX: -15, opacity: 0, duration: 1.4, clearProps: 'all'
+    });
+
+    // FAQ
+    gsap.from('.section-title', {
+      scrollTrigger: { trigger: '.section-title', start: 'top 85%' },
+      y: 60, rotationX: 45, opacity: 0, duration: 1.1, clearProps: 'all'
+    });
+    gsap.from('.accordion-item', {
+      scrollTrigger: { trigger: '.faq-accordion', start: 'top 85%' },
+      y: 50, scale: 0.95, opacity: 0, stagger: 0.1, duration: 0.9, clearProps: 'all'
+    });
+
+    // Final Map 3D
+    gsap.from('.map-title', {
+      scrollTrigger: { trigger: '.map-title', start: 'top 85%' },
+      y: 70, rotationX: 45, opacity: 0, duration: 1.2, clearProps: 'all'
+    });
+    gsap.from('.map-item', {
+      scrollTrigger: { trigger: '.map-info', start: 'top 85%' },
+      x: -50, opacity: 0, stagger: 0.15, duration: 0.9, clearProps: 'all'
+    });
+    gsap.from('.map-wrapper', {
+      scrollTrigger: { trigger: '.map-wrapper', start: 'top 85%' },
+      x: 100, rotationY: 15, rotationX: 10, opacity: 0, duration: 1.5, clearProps: 'all'
+    });
+
+    gsap.from('.footer-col', {
+      scrollTrigger: { trigger: 'footer', start: 'top 95%' },
+      y: 40, opacity: 0, stagger: 0.15, duration: 0.8, clearProps: 'all'
+    });
+  </script>
+{% endblock %}

@@ -1,0 +1,497 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+{% block title %}Our Clients | Skyluxe Elevators India{% endblock %}
+
+{% block meta_description %}Skyluxe Elevators is trusted by 500+ clients across India. View our prestigious clientele who rely on our premium home lifts, passenger lifts & hospital lifts.{% endblock %}
+
+{% block meta_keywords %}skyluxe clients, elevator clients india, premium lift installations, trusted elevator brand, skyluxe elevator reviews{% endblock %}
+
+{% block canonical_url %}https://www.skyluxeelevators.com/clients.html{% endblock %}
+
+{% block og_title %}Our Clients | Skyluxe Elevators India{% endblock %}
+{% block og_description %}Trusted by over 500 clients across India for premium elevator installations including home lifts, passenger lifts & more.{% endblock %}
+{% block og_url %}https://www.skyluxeelevators.com/clients.html{% endblock %}
+{% block og_image %}{% static 'img/skyluxelogo.png' %}{% endblock %}
+{% block og_image_alt %}Skyluxe Elevators – Our Prestigious Clients{% endblock %}
+
+{% block twitter_title %}Our Clients | Skyluxe Elevators{% endblock %}
+{% block twitter_description %}Trusted by over 500 clients across India for premium elevator installations.{% endblock %}
+{% block twitter_image %}{% static 'img/skyluxelogo.png' %}{% endblock %}
+
+{% block structured_data %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.skyluxeelevators.com/clients.html#webpage",
+  "url": "https://www.skyluxeelevators.com/clients.html",
+  "name": "Our Clients | Skyluxe Elevators India",
+  "description": "Trusted by over 500 clients across India for premium elevator installations.",
+  "isPartOf": {"@id": "https://www.skyluxeelevators.com/#website"}
+}
+</script>
+{% endblock %}
+
+{% block active_clients %}active{% endblock %}
+
+{% block extra_css %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@300;400;600;700;900&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/clients.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="clients-hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('{% static "img/clienthero.png" %}');">
+  <div class="container">
+    <h1 class="text-3d-white">Our Clients</h1>
+    <p>Trusted by Government, Hospitals, Hotels &amp; Premium Brands</p>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="clients-stats">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-6 col-md-3">
+        <div class="stat-box"><span class="stat-num" data-target="500" data-suffix="+">500+</span>
+          <p>HAPPY CLIENTS</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-box"><span class="stat-num" data-target="15" data-suffix="+">15+</span>
+          <p>YEARS EXPERIENCE</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-box"><span class="stat-num" data-target="99" data-suffix="%">99%</span>
+          <p>SATISFACTION</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-box"><span class="stat-num" data-target="7" data-suffix="">7</span>
+          <p>INDUSTRIES</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+<section class="clients-section">
+  <div class="container">
+
+    <!-- 01. GOVERNMENT / PSU -->
+    <div class="category-block">
+      <div class="category-header">
+        <div class="category-number">01</div>
+        <div class="category-title-wrap">
+          <span>PUBLIC SECTOR</span>
+          <h2 class="text-3d">Government &amp; PSU Clients</h2>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo1.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo2.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo3.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo4.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo5.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo6.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo7.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo8.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo9.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo10.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo11.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo12.jpg' %}"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 02. AUTOMOBILE -->
+    <div class="category-block">
+      <div class="category-header">
+        <div class="category-number">02</div>
+        <div class="category-title-wrap">
+          <span>AUTO INDUSTRY</span>
+          <h2 class="text-3d">Automobile Clients</h2>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo13.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo14.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo15.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo16.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo17.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo18.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo19.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo20.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo21.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo22.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo23.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo24.jpg' %}"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 03. EDUCATION -->
+    <div class="category-block">
+      <div class="category-header">
+        <div class="category-number">03</div>
+        <div class="category-title-wrap">
+          <span>ACADEMIA</span>
+          <h2 class="text-3d">Education Institute Clients</h2>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo25.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo26.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo27.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo28.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo29.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo30.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo31.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo32.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo33.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo34.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo35.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo36.jpg' %}"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 04. HOSPITAL -->
+    <div class="category-block">
+      <div class="category-header">
+        <div class="category-number">04</div>
+        <div class="category-title-wrap">
+          <span>HEALTHCARE</span>
+          <h2 class="text-3d">Hospital Clients</h2>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo37.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo38.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo39.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo40.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo41.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo42.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo43.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo44.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo45.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo46.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo47.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo48.jpg' %}"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 05. HOTEL -->
+    <div class="category-block">
+      <div class="category-header">
+        <div class="category-number">05</div>
+        <div class="category-title-wrap">
+          <span>HOSPITALITY</span>
+          <h2 class="text-3d">Hotel Clients</h2>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo49.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo50.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo51.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo52.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo53.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo54.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo55.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo56.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo57.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo58.bmp' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo59.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo60.jpg' %}"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 06. JEWELLERS -->
+    <div class="category-block">
+      <div class="category-header">
+        <div class="category-number">06</div>
+        <div class="category-title-wrap">
+          <span>LUXURY RETAIL</span>
+          <h2 class="text-3d">Prestigious Jeweller Clients</h2>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo61.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo62.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo63.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo64.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo65.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo66.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo67.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo68.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo69.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo70.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo71.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo72.jpg' %}"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 07. PRIVATE -->
+    <div class="category-block">
+      <div class="category-header">
+        <div class="category-number">07</div>
+        <div class="category-title-wrap">
+          <span>PRIVATE SECTOR</span>
+          <h2 class="text-3d">Prestigious Private Clients</h2>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo73.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo74.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo75.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo76.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo77.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo78.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo79.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo80.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo81.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo82.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo83.jpg' %}"></div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="client-card"><img src="{% static 'logo/logo84.jpg' %}"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="clients-cta">
+  <div class="container">
+    <h2 class="text-3d-white">Become Our Next <span style="color:#c8a45d;">Success Story</span></h2>
+    <p>From single-floor homes to multi-storey complexes — premium lift solutions for every need.</p>
+    <a href="{% url 'contact' %}" class="btn-pri">Get a Free Consultation</a>
+  </div>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+  gsap.registerPlugin(ScrollTrigger)
+
+  // Hero Animation
+  gsap.from('.clients-hero h1', { opacity: 0, y: 50, rotationX: 45, duration: 1.2, ease: 'power3.out' });
+  gsap.from('.clients-hero p', { opacity: 0, y: 30, duration: 1, delay: 0.4, ease: 'power3.out' });
+
+  // Category headers — 3D slide in
+  gsap.utils.toArray('.category-header').forEach(el => {
+    gsap.from(el, {
+      scrollTrigger: { trigger: el, start: 'top 88%' },
+      x: -60, rotationY: 20, opacity: 0, duration: 1, ease: 'power3.out', clearProps: 'all'
+    })
+  })
+
+  // Client cards — 3D staggered fade up per row
+  gsap.utils.toArray('.category-block').forEach(block => {
+    const cards = block.querySelectorAll('.client-card')
+    gsap.from(cards, {
+      scrollTrigger: { trigger: block, start: 'top 85%' },
+      y: 60, rotationX: 25, opacity: 0, duration: 0.8, ease: 'power2.out',
+      stagger: 0.1, clearProps: 'all'
+    })
+  })
+
+  // Stats counter 3D pop
+  gsap.utils.toArray('.stat-box').forEach((el) => {
+    gsap.from(el, {
+      scrollTrigger: { trigger: el, start: 'top 90%' },
+      scale: 0.8, rotationX: -15, opacity: 0, duration: 1, ease: 'back.out(1.5)', clearProps: 'all'
+    });
+  });
+
+  gsap.utils.toArray('.stat-num').forEach((el) => {
+    let target = parseInt(el.dataset.target);
+    let suffix = el.dataset.suffix || '';
+    let counter = { value: 0 };
+    gsap.to(counter, {
+      value: target,
+      duration: 2,
+      ease: 'power2.out',
+      scrollTrigger: { trigger: el, start: 'top 85%' },
+      onUpdate: () => { el.textContent = Math.floor(counter.value) + suffix; }
+    });
+  });
+
+  // CTA section fade up
+  gsap.from('.clients-cta', {
+    scrollTrigger: { trigger: '.clients-cta', start: 'top 88%' },
+    y: 80, rotationX: -20, opacity: 0, duration: 1.2, ease: 'power3.out', clearProps: 'all'
+  })
+</script>
+{% endblock %}

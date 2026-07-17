@@ -1,0 +1,391 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+{% block title %}Belt Drive Home Lifts & Elevators India | Skyluxe Elevators{% endblock %}
+
+{% block meta_description %}Experience ultra-smooth and silent rides with Skyluxe Elevators' belt drive home lifts in India. Energy-efficient, gearless residential elevator solutions.{% endblock %}
+
+{% block meta_keywords %}belt drive home lift, gearless home elevator, silent home lift india, energy efficient elevator, skyluxe belt drive lift{% endblock %}
+
+{% block canonical_url %}https://www.skyluxeelevators.com/home-belt-drive-lift.html{% endblock %}
+
+{% block og_title %}Belt Drive Home Lifts & Elevators India | Skyluxe Elevators{% endblock %}
+{% block og_description %}Ultra-smooth and silent belt drive home lifts in India. Energy-efficient, gearless residential elevator solutions.{% endblock %}
+{% block og_url %}https://www.skyluxeelevators.com/home-belt-drive-lift.html{% endblock %}
+{% block og_image %}{% static 'img/1st.webp' %}{% endblock %}
+{% block og_image_alt %}Belt Drive Home Lift by Skyluxe Elevators{% endblock %}
+
+{% block twitter_title %}Belt Drive Home Lifts | Skyluxe Elevators{% endblock %}
+{% block twitter_description %}Ultra-smooth and silent belt drive home lifts in India. Energy-efficient, gearless residential elevator solutions.{% endblock %}
+{% block twitter_image %}{% static 'img/1st.webp' %}{% endblock %}
+
+{% block structured_data %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Belt Drive Home Lift",
+  "image": "{% static 'img/1st.webp' %}",
+  "description": "Ultra-smooth, silent, and energy-efficient belt drive home lifts by Skyluxe Elevators.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Skyluxe Elevators"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "INR",
+    "availability": "https://schema.org/InStock",
+    "url": "https://www.skyluxeelevators.com/home-belt-drive-lift.html"
+  }
+}
+</script>
+{% endblock %}
+{% block active_lifts %}active{% endblock %}
+{% block dd_home_lift %}active{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/lifts.css' %}">
+<link rel="stylesheet" href="{% static 'css/home-belt-drive-lift.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="hero" style="background-image: url('static/img/homeskyluxe.png');">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">HOME LIFT VARIANT</div>
+    <h1>Belt Drive <span class="c-pri">Home Lift</span></h1>
+    <p>Compact, quiet, and energy-efficient residential lift for modern homes and villas.</p>
+    <a href="{% url 'contact' %}?product=belt-drive-home-lift" class="btn-pri">Get Free Quote</a>
+  </div>
+</section>
+
+<section class="lift-details-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">QUIET BELT DRIVE SYSTEM</span>
+      <h2 class="section-title">Modern Lift for <span class="c-pri">Compact Homes</span></h2>
+      <p class="section-desc">Belt drive home lifts are designed for smooth, silent movement with a compact layout and
+        low running cost.</p>
+    </div>
+
+    <div class="row g-4 align-items-stretch">
+      <div class="col-lg-7">
+        <div class="main-lift-image">
+          <img src="{% static 'img/bd1.png' %}" alt="Belt Drive Home Lift">
+          <div class="image-overlay">
+            <h3>Space Saving Home Elevator</h3>
+            <p>Ideal for duplex, triplex, and bungalow projects where a neat shaft and quiet operation matter.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="lift-info-card">
+          <span class="section-tag">PRODUCT BIO DATA</span>
+          <h3>Belt Drive Home Lift</h3>
+          <p>A modern residential lift system that uses reinforced belt movement for quiet travel and clean
+            installation.</p>
+          <div class="info-list">
+            <div class="info-item"><span>Drive</span><strong>Belt Drive</strong></div>
+            <div class="info-item"><span>Capacity</span><strong>300 - 630 KG</strong></div>
+            <div class="info-item"><span>Stops</span><strong>2 - 5 Floors</strong></div>
+            <div class="info-item"><span>Speed</span><strong>Up to 1.0 m/s</strong></div>
+            <div class="info-item"><span>Machine Room</span><strong>MRL Option</strong></div>
+            <div class="info-item"><span>Best For</span><strong>Modern Homes</strong></div>
+          </div>
+          <a href="{% url 'contact' %}?product=belt-drive-home-lift"
+            class="btn-lift-details text-decoration-none d-inline-block text-center">Request Site Survey</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">WHY BELT DRIVE</span>
+      <h2 class="section-title">Quiet, Clean, <span class="c-pri">Efficient</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fas fa-volume-low"></i></div>
+          <h4>Low Noise</h4>
+          <ul>
+            <li>Quiet belt movement</li>
+            <li>Soft starts</li>
+            <li>Stable ride</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+          <h4>Efficient</h4>
+          <ul>
+            <li>Low power use</li>
+            <li>Modern drive</li>
+            <li>Less friction</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fas fa-maximize"></i></div>
+          <h4>Compact</h4>
+          <ul>
+            <li>MRL layout</li>
+            <li>Small footprint</li>
+            <li>Clean shaft design</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fas fa-gem"></i></div>
+          <h4>Premium Look</h4>
+          <ul>
+            <li>Glass cabin</li>
+            <li>LED lighting</li>
+            <li>Designer panels</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="requirements-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">SITE PLANNING</span>
+      <h2 class="section-title">Before <span class="c-pri">Installation</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="req-card">
+          <div class="req-icon"><i class="fas fa-up-down"></i></div>
+          <h5>TRAVEL</h5>
+          <h3>Floor Height</h3>
+          <p>We verify travel height, headroom, pit requirement, and stopping positions for smooth belt drive
+            performance.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="req-card">
+          <div class="req-icon"><i class="fas fa-drafting-compass"></i></div>
+          <h5>LAYOUT</h5>
+          <h3>Shaft Design</h3>
+          <p>Self-supporting steel and glass shaft options are planned for new and existing homes.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="req-card">
+          <div class="req-icon"><i class="fas fa-bolt"></i></div>
+          <h5>POWER</h5>
+          <h3>Control System</h3>
+          <p>Controller location, backup system, lighting, and safety interlocks are finalized during site survey.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">POPULAR CONFIGURATIONS</span>
+      <h2 class="section-title">Belt Drive Home Lift <span class="c-pri">Options</span></h2>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-lg-4 col-md-6">
+        <div class="price-card">
+          <h4>Compact Duplex</h4>
+          <p class="plan-sub">2 Stop Belt Drive</p>
+          <div class="price">2 Floors</div>
+          <ul>
+            <li><i class="fas fa-check"></i> Compact shaft planning</li>
+            <li><i class="fas fa-check"></i> Quiet movement</li>
+            <li><i class="fas fa-check"></i> Modern cabin design</li>
+          </ul><a href="{% url 'contact' %}?product=compact-belt-drive-home-lift"
+            class="btn-lift-details text-decoration-none d-inline-block text-center">Get Quote</a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="price-card featured">
+          <h4>Villa MRL</h4>
+          <p class="plan-sub">3 Stop Belt Drive</p>
+          <div class="price">3 Floors</div>
+          <ul>
+            <li><i class="fas fa-check"></i> Machine room-less option</li>
+            <li><i class="fas fa-check"></i> Glass shaft compatible</li>
+            <li><i class="fas fa-check"></i> Premium controls</li>
+          </ul><a href="{% url 'contact' %}?product=villa-belt-drive-home-lift"
+            class="btn-lift-details text-decoration-none d-inline-block text-center">Get Quote</a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="price-card">
+          <h4>Luxury Triplex</h4>
+          <p class="plan-sub">4-5 Stop Belt Drive</p>
+          <div class="price">4+ Floors</div>
+          <ul>
+            <li><i class="fas fa-check"></i> Faster travel option</li>
+            <li><i class="fas fa-check"></i> Designer cabin package</li>
+            <li><i class="fas fa-check"></i> Smart safety controls</li>
+          </ul><a href="{% url 'contact' %}?product=luxury-belt-drive-home-lift"
+            class="btn-lift-details text-decoration-none d-inline-block text-center">Get Quote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% block extra_js %}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+
+    // Safety check
+    if (typeof gsap === 'undefined') { return; }
+    if (typeof ScrollTrigger !== 'undefined') { gsap.registerPlugin(ScrollTrigger); }
+
+    // ============================================================
+    // 1. 3D TILT EFFECT (touch device disabled)
+    // ============================================================
+    (function () {
+      if (window.innerWidth < 768 || ('ontouchstart' in window)) return;
+
+      function initTilt(selector, tiltX, tiltY, tz) {
+        document.querySelectorAll(selector).forEach(function (card) {
+          if (card.closest('.tilt-frame')) return;
+
+          var frame = document.createElement('div');
+          frame.className = 'tilt-frame';
+          frame.style.borderRadius = window.getComputedStyle(card).borderRadius || '24px';
+
+          var inner = document.createElement('div');
+          inner.className = 'tilt-inner';
+          inner.style.borderRadius = 'inherit';
+
+          var sheen = document.createElement('div');
+          sheen.className = 'tilt-sheen';
+
+          card.parentNode.replaceChild(frame, card);
+          inner.appendChild(card);
+          frame.appendChild(inner);
+          frame.appendChild(sheen);
+
+          frame.addEventListener('mousemove', function (e) {
+            var r = frame.getBoundingClientRect();
+            var px = (e.clientX - r.left) / r.width;
+            var py = (e.clientY - r.top) / r.height;
+            inner.style.transform = 'rotateX(' + ((py - 0.5) * tiltX) + 'deg) rotateY(' + ((px - 0.5) * -tiltY) + 'deg)';
+            sheen.style.background = 'radial-gradient(circle at ' + (px * 100) + '% ' + (py * 100) + '%, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 70%)';
+            sheen.style.opacity = '1';
+            card.querySelectorAll('h3,h4,h5,img,.price-val,.price,button,.btn-lift-details,.feature-icon,.req-icon').forEach(function (el) {
+              el.style.transform = 'translateZ(' + tz + 'px)';
+            });
+          });
+
+          frame.addEventListener('mouseleave', function () {
+            inner.style.transform = 'rotateX(0deg) rotateY(0deg)';
+            sheen.style.opacity = '0';
+            card.querySelectorAll('h3,h4,h5,img,.price-val,.price,button,.btn-lift-details,.feature-icon,.req-icon').forEach(function (el) {
+              el.style.transform = 'translateZ(0px)';
+            });
+          });
+        });
+      }
+
+      initTilt('.price-card', 12, 14, 25);
+      initTilt('.feature-box', 10, 12, 20);
+      initTilt('.req-card', 10, 12, 20);
+      initTilt('.lift-info-card', 6, 8, 15);
+      initTilt('.main-lift-image', 8, 10, 30);
+      initTilt('.bottom-details-banner', 5, 8, 20);
+    })();
+
+    // ============================================================
+    // 2. GSAP SCROLL ANIMATIONS - SAFE VERSION
+    // Elements are already visible; we only animate if ScrollTrigger loaded
+    // ============================================================
+    if (typeof ScrollTrigger === 'undefined') return;
+
+    // Helper: get the outer tilt-frame wrapper if tilt was applied
+    function getTarget(el) {
+      var f = el.closest('.tilt-frame');
+      return f || el;
+    }
+
+    // Hero entrance (no opacity - already visible)
+    gsap.from('.hero-content', { y: 40, duration: 1.0, ease: 'power3.out', delay: 0.2, clearProps: 'all' });
+
+    // Section headings - safe per-element trigger
+    document.querySelectorAll('.section-title').forEach(function (el) {
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 90%', once: true },
+        y: 30, opacity: 0, duration: 0.7, ease: 'power3.out', clearProps: 'all'
+      });
+    });
+
+    document.querySelectorAll('.section-desc, .section-tag').forEach(function (el) {
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 92%', once: true },
+        y: 20, opacity: 0, duration: 0.6, ease: 'power2.out', clearProps: 'all'
+      });
+    });
+
+    // Cards: animate each individually so missing sections never block
+    document.querySelectorAll('.feature-box').forEach(function (el, i) {
+      gsap.from(getTarget(el), {
+        scrollTrigger: { trigger: getTarget(el), start: 'top 92%', once: true },
+        y: 40, opacity: 0, duration: 0.7, delay: i * 0.08, ease: 'back.out(1.2)', clearProps: 'all'
+      });
+    });
+
+    document.querySelectorAll('.req-card').forEach(function (el, i) {
+      gsap.from(getTarget(el), {
+        scrollTrigger: { trigger: getTarget(el), start: 'top 92%', once: true },
+        y: 40, opacity: 0, duration: 0.7, delay: i * 0.08, ease: 'back.out(1.2)', clearProps: 'all'
+      });
+    });
+
+    document.querySelectorAll('.price-card').forEach(function (el, i) {
+      gsap.from(getTarget(el), {
+        scrollTrigger: { trigger: getTarget(el), start: 'top 92%', once: true },
+        y: 40, opacity: 0, duration: 0.7, delay: i * 0.1, ease: 'power3.out', clearProps: 'all'
+      });
+    });
+
+    document.querySelectorAll('.accordion-item').forEach(function (el, i) {
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 95%', once: true },
+        x: -20, opacity: 0, duration: 0.5, delay: i * 0.08, ease: 'power2.out', clearProps: 'all'
+      });
+    });
+
+    // Info card
+    var infoCard = document.querySelector('.lift-info-card');
+    if (infoCard) {
+      gsap.from(infoCard.querySelectorAll('h3, p, .info-item'), {
+        scrollTrigger: { trigger: getTarget(infoCard), start: 'top 90%', once: true },
+        y: 20, opacity: 0, duration: 0.5, stagger: 0.07, ease: 'power2.out', clearProps: 'all'
+      });
+    }
+
+    // Bottom banner
+    var banner = document.querySelector('.bottom-details-banner');
+    if (banner) {
+      gsap.from(getTarget(banner), {
+        scrollTrigger: { trigger: getTarget(banner), start: 'top 95%', once: true },
+        scale: 0.97, y: 30, opacity: 0, duration: 0.9, ease: 'power3.out', clearProps: 'all'
+      });
+    }
+
+    setTimeout(function () { ScrollTrigger.refresh(); }, 300);
+  });
+</script>
+{% endblock %}
+
+{% endblock %}

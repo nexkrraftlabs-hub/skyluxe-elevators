@@ -1,0 +1,173 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+{% block title %}Elevator Blog & Insights | Skyluxe Elevators India{% endblock %}
+
+{% block meta_description %}Read the latest articles, guides, and insights on home lifts, passenger lifts, elevator safety, maintenance, and luxury lift designs by Skyluxe Elevators.{% endblock %}
+
+{% block meta_keywords %}elevator blog, home lift guide, passenger lift maintenance, lift safety tips, elevator design trends india{% endblock %}
+
+{% block canonical_url %}https://www.skyluxeelevators.com/blog.html{% endblock %}
+
+{% block og_title %}Elevator Blog & Insights | Skyluxe Elevators India{% endblock %}
+{% block og_description %}Read the latest articles, guides, and insights on home lifts, passenger lifts, elevator safety, maintenance, and luxury lift designs.{% endblock %}
+{% block og_url %}https://www.skyluxeelevators.com/blog.html{% endblock %}
+{% block og_image %}{% static 'img/blogslider.png' %}{% endblock %}
+{% block og_image_alt %}Skyluxe Elevators Blog{% endblock %}
+
+{% block twitter_title %}Elevator Blog & Insights | Skyluxe Elevators{% endblock %}
+{% block twitter_description %}Latest articles and guides on home lifts, passenger lifts, elevator safety, and design trends.{% endblock %}
+{% block twitter_image %}{% static 'img/blogslider.png' %}{% endblock %}
+
+{% block structured_data %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "@id": "https://www.skyluxeelevators.com/blog.html#webpage",
+  "url": "https://www.skyluxeelevators.com/blog.html",
+  "name": "Elevator Blog & Insights | Skyluxe Elevators India",
+  "description": "Read the latest articles, guides, and insights on home lifts, passenger lifts, elevator safety, and luxury lift designs by Skyluxe Elevators.",
+  "isPartOf": {"@id": "https://www.skyluxeelevators.com/#website"}
+}
+</script>
+{% endblock %}
+
+{% block active_blog %}active{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('{% static "img/blogslider.png" %}');">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-badge">INSIGHTS & UPDATES</span>
+    <h1>Blog & News</h1>
+    <p>Latest articles about home lifts, technology, and luxury living</p>
+  </div>
+</section>
+
+<!-- Blog Section -->
+<section class="blog-section" style="padding: 100px 0; background: #ffffff;">
+  <div class="container">
+    <!-- Featured Post -->
+    <div class="row mb-5 pb-5 border-bottom border-secondary">
+      <div class="col-lg-12">
+        <div style="padding: 32px;">
+          <span style="color: #c8a45d; letter-spacing: 2px; font-size: 12px; margin-bottom: 12px;">NEWS - MAY 11,
+            2026</span>
+          <h2 style="color: #222; font-size: 42px; font-weight: 700; margin-bottom: 22px; line-height: 1.2;">Types of
+            Lift Technologies for Homes in India</h2>
+          <p style="color: #666; font-size: 16px; line-height: 1.8; margin-bottom: 28px;">Choosing
+            the right home lift starts with understanding the technology behind it. Our latest guide compares
+            screw-driven vs hydraulic technologies to help you decide which one fits your home's architecture and your
+            family's needs perfectly. Learn about the advantages of each system, installation requirements, and
+            maintenance costs.</p>
+          <div style="display: flex; gap: 16px;">
+            <a href="#" class="btn-pri" style="text-decoration: none;">Read Full Article</a>
+            <button
+              style="background: transparent; border: 2px solid #c8a45d; color: #c8a45d; padding: 12px 28px; border-radius: 50px; cursor: pointer; font-weight: 600;">Share
+              Article</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog Grid -->
+    <div class="row g-4">
+      <!-- Post 1 -->
+      <div class="col-lg-6">
+        <div
+          style="background: #f8f8f8; border: 1px solid #e0e0e0; border-radius: 25px; padding: 32px; transition: 0.4s; cursor: pointer;"
+          onmouseover="this.style.backgroundColor='#fff'; this.style.borderColor='#c8a45d';"
+          onmouseout="this.style.backgroundColor='#f8f8f8'; this.style.borderColor='#e0e0e0';">
+          <span style="color: #c8a45d; letter-spacing: 2px; font-size: 11px; text-transform: uppercase;">NEWS - APRIL
+            21, 2026</span>
+          <h3 style="color: #222; font-size: 24px; font-weight: 700; margin: 14px 0;">How does a Skyluxe Lift
+            Screw-Drive
+            Technology Work?</h3>
+          <p style="color: #666; font-size: 15px; line-height: 1.7; margin-bottom: 20px;">
+            Understanding the mechanical principle of screw-driven elevators and why they are superior in energy
+            efficiency and safety.</p>
+          <a href="#" style="color: #c8a45d; text-decoration: none; font-weight: 600;">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Post 2 -->
+      <div class="col-lg-6">
+        <div
+          style="background: #f8f8f8; border: 1px solid #e0e0e0; border-radius: 25px; padding: 32px; transition: 0.4s; cursor: pointer;"
+          onmouseover="this.style.backgroundColor='#fff'; this.style.borderColor='#c8a45d';"
+          onmouseout="this.style.backgroundColor='#f8f8f8'; this.style.borderColor='#e0e0e0';">
+          <span style="color: #c8a45d; letter-spacing: 2px; font-size: 11px; text-transform: uppercase;">NEWS - MARCH
+            09, 2026</span>
+          <h3 style="color: #222; font-size: 24px; font-weight: 700; margin: 14px 0;">Ultimate Guide to Skyluxe Lift
+            Group
+            AB</h3>
+          <p style="color: #666; font-size: 15px; line-height: 1.7; margin-bottom: 20px;">From
+            Swedish roots to a global leader in home elevators - explore the journey of Skyluxe Lift and its
+            innovations.
+          </p>
+          <a href="#" style="color: #c8a45d; text-decoration: none; font-weight: 600;">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Post 3 -->
+      <div class="col-lg-6">
+        <div
+          style="background: #f8f8f8; border: 1px solid #e0e0e0; border-radius: 25px; padding: 32px; transition: 0.4s; cursor: pointer;"
+          onmouseover="this.style.backgroundColor='#fff'; this.style.borderColor='#c8a45d';"
+          onmouseout="this.style.backgroundColor='#f8f8f8'; this.style.borderColor='#e0e0e0';">
+          <span style="color: #c8a45d; letter-spacing: 2px; font-size: 11px; text-transform: uppercase;">NEWS - FEB 15,
+            2026</span>
+          <h3 style="color: #222; font-size: 24px; font-weight: 700; margin: 14px 0;">Modern Home Elevators in Luxury
+            Architecture</h3>
+          <p style="color: #666; font-size: 15px; line-height: 1.7; margin-bottom: 20px;">How
+            elevators are redefining modern home design and adding both functional and aesthetic value to luxury
+            properties.</p>
+          <a href="#" style="color: #c8a45d; text-decoration: none; font-weight: 600;">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Post 4 -->
+      <div class="col-lg-6">
+        <div
+          style="background: #f8f8f8; border: 1px solid #e0e0e0; border-radius: 25px; padding: 32px; transition: 0.4s; cursor: pointer;"
+          onmouseover="this.style.backgroundColor='#fff'; this.style.borderColor='#c8a45d';"
+          onmouseout="this.style.backgroundColor='#f8f8f8'; this.style.borderColor='#e0e0e0';">
+          <span style="color: #c8a45d; letter-spacing: 2px; font-size: 11px; text-transform: uppercase;">NEWS - JAN 28,
+            2026</span>
+          <h3 style="color: #222; font-size: 24px; font-weight: 700; margin: 14px 0;">Home Lifts: Safety Standards &
+            Certifications</h3>
+          <p style="color: #666; font-size: 15px; line-height: 1.7; margin-bottom: 20px;">
+            Understanding European safety standards EN81-41 and why they matter for your family's security and peace of
+            mind.</p>
+          <a href="#" style="color: #c8a45d; text-decoration: none; font-weight: 600;">Read More →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- Newsletter Section -->
+<section style="padding: 100px 0; background: linear-gradient(135deg, #f8f8f8, #ffffff); margin: 80px 0;">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <span style="color: #c8a45d; letter-spacing: 3px; font-size: 12px; display: block; margin-bottom: 18px;">STAY
+          UPDATED</span>
+        <h2 style="color: #222; font-size: 48px; line-height: 1.2; margin-bottom: 22px; font-weight: 700;">Subscribe to
+          Our Blog</h2>
+        <p style="color: #666; line-height: 1.9; margin-bottom: 30px;">Get the latest insights
+          about home elevators, design trends, and exclusive offers delivered directly to your inbox.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

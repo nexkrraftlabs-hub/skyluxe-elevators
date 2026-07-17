@@ -1,0 +1,376 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Skyluxe Elevators Admin Panel</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+
+      theme: {
+        extend: {
+          colors: {
+            primary: '#c8a45d',
+            secondary: '#b38d45',
+            tertiary: '#0f1115',
+
+            background: '#f4efe3',
+            surface: '#ffffff',
+
+            'surface-container': '#efe7d6',
+            'surface-container-low': '#f8f4ea',
+            'surface-container-high': '#e7dcc4',
+
+            'outline-variant': '#d8ccb2',
+
+            'primary-container': '#e0c07a',
+
+            'secondary-container': '#eadfca',
+
+            'tertiary-fixed-dim': '#1a1d24',
+
+            'on-primary': '#ffffff',
+            'on-surface': '#191510',
+            'on-surface-variant': '#5f5648',
+
+            error: '#ba1a1a'
+          },
+
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html,
+    body {
+      font-family: 'Inter', sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(200, 164, 93, 0.1), transparent 28%),
+        linear-gradient(180deg, #f8f3e8 0%, #f3ecdd 100%);
+      overflow-x: hidden;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .sidebar-scroll::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    .sidebar-scroll::-webkit-scrollbar-thumb {
+      background: #444;
+      border-radius: 20px;
+    }
+
+    .dashboard-card {
+      transition: 0.3s ease;
+    }
+
+    .dashboard-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 34px rgba(119, 90, 38, 0.12);
+    }
+
+    .active-menu {
+      background: linear-gradient(90deg, rgba(200, 164, 93, 0.28), rgba(200, 164, 93, 0.08));
+      border-left: 4px solid #c8a45d;
+      color: white !important;
+    }
+
+    .admin-sidebar {
+      background:
+        radial-gradient(circle at top left, rgba(200, 164, 93, 0.18), transparent 34%),
+        linear-gradient(180deg, #111318 0%, #0f1115 58%, #0a0b0e 100%);
+      box-shadow: 14px 0 34px rgba(0, 0, 0, 0.18);
+    }
+
+    .admin-topbar {
+      background: rgba(255, 251, 244, 0.92);
+      backdrop-filter: blur(14px);
+    }
+
+    .notification-group:hover .notification-panel {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body class="bg-background text-on-surface">
+  <!-- MOBILE OVERLAY -->
+  <div id="sidebarOverlay"
+    class="fixed inset-0 bg-black/50 z-[55] hidden lg:hidden backdrop-blur-sm transition-opacity duration-300 opacity-0">
+  </div>
+
+  <!-- SIDEBAR -->
+
+  <aside
+    class="admin-sidebar fixed top-0 left-0 w-[270px] h-screen overflow-hidden z-[60] flex flex-col transition-transform duration-300 ease-in-out -translate-x-full lg:translate-x-0">
+    <!-- LOGO -->
+
+    <div class="px-6 py-7 border-b border-white/10">
+      <h1 class="text-3xl font-black text-white">Skyluxe</h1>
+
+      <p class="text-sm text-white/60 mt-1">Elevators Admin Panel</p>
+    </div>
+
+    <!-- MENU -->
+
+    <nav class="flex-1 overflow-y-auto sidebar-scroll p-4 space-y-2 pb-40">
+      <a href="{% url 'adminpanel:dashboard' %}"
+        class="flex items-center gap-3 px-4 py-3 rounded-xl text-white active-menu">
+        <span class="material-symbols-outlined">dashboard</span>
+
+        <span class="font-medium">Dashboard</span>
+      </a>
+
+      <a href="{% url 'adminpanel:leads' %}"
+        class="relative flex items-center gap-3 px-4 py-3 rounded-xl text-white/70 hover:bg-white/10 hover:text-white transition">
+        <span class="material-symbols-outlined">support_agent</span>
+
+        <span class="font-medium">Leads</span>
+
+        {% if new_leads > 0 %}
+        <span
+          class="ml-auto min-w-[20px] h-[20px] px-1 rounded-full bg-red-500 text-white text-[10px] flex items-center justify-center font-bold">{{
+          new_leads }}</span>
+        {% endif %}
+      </a>
+
+      <a href="{% url 'adminpanel:profile' %}"
+        class="flex items-center gap-3 px-4 py-3 rounded-xl text-white/70 hover:bg-white/10 hover:text-white transition">
+        <span class="material-symbols-outlined">person</span>
+
+        <span class="font-medium">Profile Settings</span>
+      </a>
+    </nav>
+
+    <!-- USER -->
+
+    <div class="border-t border-white/10 p-4 bg-[#0a0b0e]">
+      <div class="flex items-center gap-3">
+        <img src="{{ profile.avatar_url }}" class="w-11 h-11 rounded-full object-cover border border-white/20" />
+        <div>
+          <h4 class="text-sm font-semibold text-white">{{ request.user.username }}</h4>
+
+          <p class="text-xs text-white/50">Administrator</p>
+        </div>
+      </div>
+
+      <a href="{% url 'adminpanel:logout' %}"
+        class="mt-4 flex items-center justify-center gap-2 bg-red-500 hover:bg-red-600 transition text-white py-3 rounded-xl font-semibold">
+        <span class="material-symbols-outlined">logout</span>
+
+        Logout
+      </a>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+
+  <div class="admin-main lg:ml-[270px] ml-0 min-h-screen min-w-0 transition-all duration-300">
+    <!-- TOPBAR -->
+
+    <header
+      class="admin-topbar sticky top-0 z-40 border-b border-[rgba(200,164,93,0.18)] px-4 lg:px-8 py-3 lg:py-0 lg:h-[80px] flex items-center justify-between gap-3 overflow-hidden">
+      <!-- LEFT -->
+
+      <div class="flex items-center gap-3 min-w-0 flex-1">
+        <!-- HAMBURGER -->
+        <button id="sidebarToggle"
+          class="lg:hidden w-10 h-10 flex items-center justify-center bg-primary/10 rounded-xl text-primary hover:bg-primary/20 transition shrink-0">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+
+        <div class="min-w-0">
+          <h2 class="text-xl lg:text-2xl font-black text-primary truncate">
+            {% block page_title %}
+            Admin Dashboard
+            {% endblock %}
+          </h2>
+
+          <p class="text-sm text-gray-500 mt-1 hidden sm:block">Welcome back to Skyluxe Elevators</p>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+
+      <div class="flex items-center gap-2 shrink-0">
+
+        <!-- VIEW LIVE SITE BUTTON -->
+        <a href="/" target="_blank"
+          class="flex items-center gap-2 p-2 sm:px-4 sm:py-2.5 rounded-xl sm:rounded-2xl border-2 border-primary text-primary text-sm font-bold hover:bg-primary hover:text-white transition shadow-sm whitespace-nowrap" title="View Live Site">
+          <span class="material-symbols-outlined text-[20px] sm:text-[20px]">language</span>
+          <span class="hidden md:inline">View Live Site</span>
+        </a>
+
+        <!-- DJANGO ADMIN BUTTON -->
+        <a href="/django-admin/"
+          class="flex items-center gap-2 p-2 sm:px-4 sm:py-2.5 rounded-xl sm:rounded-2xl bg-primary text-white text-sm font-bold hover:opacity-90 transition shadow-sm whitespace-nowrap" title="Django Admin">
+          <span class="material-symbols-outlined text-[20px]">admin_panel_settings</span>
+          <span class="hidden 2xl:inline">Django Admin</span>
+        </a>
+
+        <!-- NOTIFICATION -->
+        <div class="notification-group relative shrink-0">
+          <a href="{% url 'adminpanel:leads' %}"
+            class="relative w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition"
+            title="View leads">
+            <span class="material-symbols-outlined text-gray-600 text-[22px]">notifications</span>
+
+            {% if new_leads > 0 %}
+            <span
+              class="absolute top-0 right-0 min-w-[18px] h-[18px] px-1 rounded-full bg-red-500 text-white text-[10px] leading-[18px] text-center font-bold">{{
+              new_leads }}</span>
+            {% endif %}
+          </a>
+
+          <div
+            class="notification-panel absolute right-0 top-full mt-3 w-[320px] rounded-3xl border border-[rgba(200,164,93,0.18)] bg-white shadow-xl p-4 opacity-0 invisible translate-y-2 transition duration-200">
+            <div class="flex items-center justify-between gap-3 mb-3">
+              <div>
+                <h4 class="text-sm font-black text-primary">New Lead Notifications</h4>
+                <p class="text-xs text-gray-500">Website contact form updates</p>
+              </div>
+              {% if new_leads > 0 %}
+              <span
+                class="min-w-[24px] h-[24px] px-2 rounded-full bg-red-500 text-white text-[11px] flex items-center justify-center font-bold">{{
+                new_leads }}</span>
+              {% endif %}
+            </div>
+
+            {% if latest_unread_leads %}
+            <div class="space-y-3">
+              {% for lead in latest_unread_leads %}
+              <a href="{% url 'adminpanel:leads' %}"
+                class="block rounded-2xl border border-gray-100 bg-gray-50 px-3 py-3 hover:bg-primary/5 transition">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="min-w-0">
+                    <p class="text-sm font-bold text-gray-800 truncate">{{ lead.name }}</p>
+                    <p class="text-xs text-gray-500 truncate">{{ lead.phone }}{% if lead.city %} | {{ lead.city }}{% endif %}</p>
+                    <p class="text-xs text-gray-600 mt-1 line-clamp-2">{{ lead.message }}</p>
+                  </div>
+                  <span class="mt-1 inline-flex w-2.5 h-2.5 rounded-full bg-red-500 flex-shrink-0"></span>
+                </div>
+              </a>
+              {% endfor %}
+            </div>
+            {% else %}
+            <div class="rounded-2xl bg-gray-50 px-4 py-5 text-center">
+              <p class="text-sm font-semibold text-gray-700">No new contact notifications</p>
+              <p class="text-xs text-gray-500 mt-1">Naya lead aayega to yahan show ho jayega.</p>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+        <!-- PROFILE -->
+
+        <div class="hidden md:flex items-center gap-2 max-w-[140px]">
+          <img src="{{ profile.avatar_url }}"
+            class="w-10 h-10 rounded-full object-cover border border-gray-200 shrink-0" />
+          <div class="min-w-0 hidden lg:block">
+            <h4 class="text-sm font-bold text-primary truncate">{{ request.user.username }}</h4>
+
+            <p class="text-xs text-gray-500 truncate">Super Admin</p>
+          </div>
+        </div>
+
+        <!-- LOGOUT -->
+
+        <a href="{% url 'adminpanel:logout' %}"
+          class="flex items-center justify-center gap-1.5 px-3 lg:px-4 py-2.5 rounded-2xl bg-red-500 text-white text-sm font-bold hover:bg-red-600 transition shadow-sm whitespace-nowrap">
+          <span class="material-symbols-outlined text-[20px]">logout</span>
+
+          <span class="hidden lg:inline">Logout</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- PAGE CONTENT -->
+
+    <main class="p-4 lg:p-8 min-w-0 overflow-x-auto">
+      {% block content %}
+
+      {% endblock %}
+    </main>
+  </div>
+
+  <!-- FLOATING BACKGROUND -->
+
+  <div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
+    <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-[rgba(200,164,93,0.18)] blur-3xl rounded-full"></div>
+
+    <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[rgba(179,141,69,0.12)] blur-3xl rounded-full"></div>
+  </div>
+
+  <!-- JS -->
+
+  <script>
+    // Active Menu Logic
+    const currentLocation = window.location.pathname;
+    const menuItems = document.querySelectorAll('nav a');
+    menuItems.forEach((item) => {
+      if (item.href.includes(currentLocation)) {
+        item.classList.add('active-menu');
+      }
+    });
+
+    // Mobile Sidebar Logic
+    const sidebarToggle = document.getElementById('sidebarToggle');
+    const sidebarOverlay = document.getElementById('sidebarOverlay');
+    const sidebar = document.querySelector('.admin-sidebar');
+    let sidebarOpen = false;
+
+    function toggleSidebar() {
+      sidebarOpen = !sidebarOpen;
+      if (sidebarOpen) {
+        sidebar.classList.remove('-translate-x-full');
+        sidebarOverlay.classList.remove('hidden');
+        // Small delay for CSS transition to trigger
+        setTimeout(() => {
+          sidebarOverlay.classList.remove('opacity-0');
+          sidebarOverlay.classList.add('opacity-100');
+        }, 10);
+      } else {
+        sidebar.classList.add('-translate-x-full');
+        sidebarOverlay.classList.remove('opacity-100');
+        sidebarOverlay.classList.add('opacity-0');
+        setTimeout(() => {
+          sidebarOverlay.classList.add('hidden');
+        }, 300);
+      }
+    }
+
+    if (sidebarToggle) {
+      sidebarToggle.addEventListener('click', toggleSidebar);
+    }
+    if (sidebarOverlay) {
+      sidebarOverlay.addEventListener('click', toggleSidebar);
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,1290 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+{% block title %}Luxury Home Lifts & Elevators in India | Skyluxe Elevators{% endblock %}
+
+{% block meta_description %}Skyluxe Elevators is India's premium elevator manufacturer offering luxury home lifts,
+passenger lifts, hospital lifts, car lifts & capsule elevators. Swedish-designed, European quality. Trusted by 500+
+clients. Get a free quote today!{% endblock %}
+
+{% block meta_keywords %}home lift india, luxury elevator india, passenger lift, hospital lift, car lift, capsule lift,
+goods lift, residential elevator, skyluxe elevators, elevator manufacturer india{% endblock %}
+
+{% block canonical_url %}https://www.skyluxeelevators.com/{% endblock %}
+
+{% block og_title %}Luxury Home Lifts & Elevators in India | Skyluxe Elevators{% endblock %}
+{% block og_description %}India's premium elevator manufacturer. Luxury home lifts, passenger lifts, hospital lifts &
+car lifts with Swedish design & European quality. 500+ happy clients.{% endblock %}
+{% block og_url %}https://www.skyluxeelevators.com/{% endblock %}
+{% block og_image %}{% static 'img/homeslider.png' %}{% endblock %}
+{% block og_image_alt %}Skyluxe Elevators – Luxury Home Lifts India{% endblock %}
+
+{% block twitter_title %}Luxury Home Lifts & Elevators in India | Skyluxe Elevators{% endblock %}
+{% block twitter_description %}India's premium elevator manufacturer – luxury home lifts, passenger lifts, hospital
+lifts & car lifts. Swedish design, European quality. 500+ clients.{% endblock %}
+{% block twitter_image %}{% static 'img/homeslider.png' %}{% endblock %}
+
+{% block structured_data %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://www.skyluxeelevators.com/#localbusiness",
+      "name": "Skyluxe Elevators Pvt. Ltd.",
+      "description": "Premium home lifts, passenger lifts, hospital lifts, car lifts & capsule elevators in India. Swedish-designed, European quality.",
+      "url": "https://www.skyluxeelevators.com",
+      "logo": "{% static 'img/skyluxelogo.png' %}",
+      "image": "{% static 'img/homeslider.png' %}",
+      "telephone": "+91-7318202141",
+      "email": "skyluxeelevators@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IN"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "09:00",
+          "closes": "19:00"
+        }
+      ],
+      "priceRange": "₹₹₹",
+      "areaServed": "India",
+      "sameAs": [
+        "https://www.facebook.com/skyluxeelevators",
+        "https://www.instagram.com/skyluxeelevators",
+        "https://www.youtube.com/@skyluxeelevators",
+        "https://www.linkedin.com/company/skyluxeelevators"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Elevator Products",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Home Lift"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Passenger Lift"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Hospital Lift"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Capsule Lift"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Goods Lift"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Car Lift"}}
+        ]
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.skyluxeelevators.com/#webpage",
+      "url": "https://www.skyluxeelevators.com/",
+      "name": "Luxury Home Lifts & Elevators in India | Skyluxe Elevators",
+      "isPartOf": {"@id": "https://www.skyluxeelevators.com/#website"},
+      "about": {"@id": "https://www.skyluxeelevators.com/#localbusiness"},
+      "description": "Skyluxe Elevators is India's premium elevator manufacturer offering luxury home lifts, passenger lifts, hospital lifts, car lifts & capsule elevators."
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+{% block active_home %}active{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+  <!-- LEFT VIDEO -->
+  <div class="hero-video left-video">
+    <video autoplay muted loop playsinline>
+      <source src="{% static 'img/lift10.mp4' %}" type="video/mp4" />
+    </video>
+  </div>
+
+  <!-- RIGHT VIDEO -->
+  <div class="hero-video right-video">
+    <video autoplay muted loop playsinline>
+      <source src="{% static 'img/lift7.mp4' %}" type="video/mp4" />
+    </video>
+  </div>
+
+  <!-- GOLD CENTER LINE -->
+  <div class="hero-divider"></div>
+
+  <!-- OVERLAY -->
+  <div class="hero-overlay"></div>
+
+  <!-- CONTENT -->
+  <div class="hero-content">
+    <h1 class="animate-text shimmer">Luxury Home Elevators</h1>
+    <p class="animate-text" style="animation-delay: .15s">Designed in Sweden with European Quality</p>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="section why-us" id="about">
+  <div class="container">
+    <h2 class="section-title">Why Do 100,000+ Customers Choose <span class="c-pri">SKYLUXE ELEVATOS?</span></h2>
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <div class="tab-content" id="whyTabContent">
+          <div class="tab-pane fade show active" id="why1" role="tabpanel">
+            <img src="{% static 'img/outlift.png' %}" class="img-fluid rounded shadow w-100"
+              style="height: 500px; object-fit: cover;" alt="Minimal Civil Works" loading="lazy" decoding="async" />
+          </div>
+          <div class="tab-pane fade" id="why2" role="tabpanel">
+            <img src="{% static 'img/home3.jpg' %}" class="img-fluid rounded shadow w-100"
+              style="height: 500px; object-fit: cover;" alt="Space Saving" loading="lazy" decoding="async" />
+          </div>
+          <div class="tab-pane fade" id="why3" role="tabpanel">
+            <img src="{% static 'img/office.jpg' %}" class="img-fluid rounded shadow w-100"
+              style="height: 500px; object-fit: cover;" alt="European Quality" loading="lazy" decoding="async" />
+          </div>
+          <div class="tab-pane fade" id="why4" role="tabpanel">
+            <img src="{% static 'img/skyluxe0.jpg' %}" class="img-fluid rounded shadow w-100"
+              style="height: 500px; object-fit: cover;" alt="Customized Design" loading="lazy" decoding="async" />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="nav flex-column nav-pills why-nav" id="whyTab" role="tablist" aria-orientation="vertical">
+          <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#why1" type="button" role="tab">
+            <h4>MINIMAL CIVIL WORKS</h4>
+            <p>Our lift requires no pit and can be installed straight on the floor. With no machine room and low
+              overhead required, our lift will have zero impact on your roof structure as well.</p>
+          </button>
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#why2" type="button" role="tab">
+            <h4>SPACE SAVING</h4>
+            <p>Thanks to its innovative design, a Cibes Lift needs no counterweight and maximizes standing area,
+              delivering up to 70% standing space where most lift companies only achieve 30-40%.</p>
+          </button>
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#why3" type="button" role="tab">
+            <h4>EUROPEAN QUALITY & SAFETY</h4>
+            <p>Our lifts are certified to the European Safety Standard Machinery Directive 2006/42/EC and the
+              EN81-41 regulations, making them amongst the safest lifts on the market.</p>
+          </button>
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#why4" type="button" role="tab">
+            <h4>FULLY CUSTOMIZED DESIGN</h4>
+            <p>Our full 360° panoramic glass shaft, combined with our wide range of premium powdercoats, design
+              walls and tiering, means every lift we make is unique and perfectly suited to your home's interior
+              decoration.</p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS SECTION -->
+<section class="section products bg-light" id="products">
+  <div class="container">
+    <h2 class="section-title">SKYLUXE<span class="c-pri">Lifts</span></h2>
+
+    <p class="text-center mb-5 fw-bold text-muted">A wide range of models to meet your every need.</p>
+
+    <div class="swiper lifts-swiper">
+      <div class="swiper-wrapper">
+        <!-- CARD -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="{% static 'img/h1.png' %}" alt="Home Lift" loading="lazy" decoding="async" />
+            </div>
+
+            <div class="product-content">
+              <div class="product-name">Home Lift</div>
+
+              <p class="product-desc">Luxury platform lift with premium metallic finish.</p>
+
+              <a href="home-lift.html" class="product-link">
+                Discover More
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="{% static 'img/hs1.png' %}" alt="Hospital Lift" loading="lazy" decoding="async" />
+            </div>
+
+            <div class="product-content">
+              <div class="product-name">Hospital Lift</div>
+
+              <p class="product-desc">Premium home lift with elegant lighting patterns.</p>
+
+              <a href="hospital-lift.html" class="product-link">
+                Discover More
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="{% static 'img/g1.png' %}" alt="Goods Lift" loading="lazy" decoding="async" />
+            </div>
+
+            <div class="product-content">
+              <div class="product-name">Goods Lift</div>
+
+              <p class="product-desc">Generation 4 smart platform lift with EcoSilent tech.</p>
+
+              <a href="goods-lift.html" class="product-link">
+                Discover More
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="{% static 'img/car4.jpg' %}" alt="Car Lift" loading="lazy" decoding="async" />
+            </div>
+
+            <div class="product-content">
+              <div class="product-name">Car Lift</div>
+
+              <p class="product-desc">Panoramic infinity glass lift with luxury controls.</p>
+
+              <a href="car-lift.html" class="product-link">
+                Discover More
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- CARD -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="{% static 'img/p1.png' %}" alt="Passenger Lift" loading="lazy" decoding="async" />
+            </div>
+
+            <div class="product-content">
+              <div class="product-name">Passenger Lift</div>
+
+              <p class="product-desc">Generation 4 smart platform lift with EcoSilent tech.</p>
+
+              <a href="passenger-lift.html" class="product-link">
+                Discover More
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="{% static 'img/c1.png' %}" alt="Capsule Lift" loading="lazy" decoding="async" />
+            </div>
+
+            <div class="product-content">
+              <div class="product-name">Capsule Lift</div>
+
+              <p class="product-desc">Panoramic infinity glass lift with luxury controls.</p>
+
+              <a href="capsule-lift.html" class="product-link">
+                Discover More
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="{% static 'img/ch1.png' %}" alt="Capsule Lift" loading="lazy" decoding="async" />
+            </div>
+
+            <div class="product-content">
+              <div class="product-name">Chair Lift</div>
+
+              <p class="product-desc">Premium chair lift with ergonomic design.</p>
+
+              <a href="chair.html" class="product-link">
+                Discover More
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SWIPER -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Video Section -->
+<section class="section video-section bg-light py-5">
+  <div class="container section-anim text-center">
+    <h2 class="fw-bold text-dark mb-3 text-uppercase" style="letter-spacing:2px;">
+      Learn About <span class="c-pri">Screw-Drive Technology</span>
+    </h2>
+    <p class="text-muted mb-4 mx-auto" style="max-width:600px;font-size:.95rem;line-height:1.7;">
+      See how our precision-engineered lifts deliver a whisper-quiet, butter-smooth ride — every single time.
+    </p>
+    <a href="contact.html">
+      <button class="btn btn-pri fw-bold rounded-pill px-5 py-3 text-uppercase mb-5">
+        Get Free Consultation
+      </button>
+    </a>
+    <div class="overflow-hidden mx-auto" style="max-width:900px;aspect-ratio:16/9;">
+      <video class="w-100 h-100" style="object-fit:cover;display:block;" controls autoplay muted loop playsinline>
+        <source src="{% static 'img/lift12.mp4' %}" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Latest Projects Section -->
+<section class="section projects py-5 bg-white" id="projects">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-end mb-5 section-anim">
+      <div>
+        <h2 class="fw-bold text-dark mb-0">OUR LATEST <span class="c-pri">PROJECTS</span></h2>
+        <p class="text-muted mb-0">Real installations from across the country</p>
+      </div>
+      <a href="#" class="c-pri text-decoration-none fw-bold small text-uppercase">See All Case Studies <i
+          class="fas fa-arrow-right ms-1"></i></a>
+    </div>
+
+    <div class="swiper projects-swiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="project-card-premium rounded-4 overflow-hidden position-relative" style="height: 400px;">
+            <img src="{% static 'img/homeskyluxe2.png' %}" alt="Skyluxe Uno - Lucknow"
+              class="w-100 h-100 object-fit-cover" />
+            <div class="position-absolute bottom-0 start-0 w-100 p-4 text-white"
+              style="background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);">
+              <h5 class="fw-bold mb-1">Skyluxe Uno - Lucknow</h5>
+              <p class="mb-0">Lucknow, Uttar Pradesh</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="project-card-premium rounded-4 overflow-hidden position-relative" style="height: 400px;">
+            <img src="{% static 'img/home.jpg' %}" alt="Skyluxe Uno - Delhi" class="w-100 h-100 object-fit-cover" />
+            <div class="position-absolute bottom-0 start-0 w-100 p-4 text-white"
+              style="background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);">
+              <h5 class="fw-bold mb-1">Skyluxe Uno - Delhi</h5>
+              <p class="mb-0">Delhi, India</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="project-card-premium rounded-4 overflow-hidden position-relative" style="height: 400px;">
+            <img src="{% static 'img/home4.jpg' %}" alt="Skyluxe Elegance - Ahmedabad"
+              class="w-100 h-100 object-fit-cover" />
+            <div class="position-absolute bottom-0 start-0 w-100 p-4 text-white"
+              style="background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);">
+              <h5 class="fw-bold mb-1">Skyluxe Elegance - Ahmedabad</h5>
+              <p class="mb-0">Ahmedabad, India</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="project-card-premium rounded-4 overflow-hidden position-relative" style="height: 400px;">
+            <img src="{% static 'img/home3.jpg' %}" alt="Urban Glide - Pune" class="w-100 h-100 object-fit-cover" />
+            <div class="position-absolute bottom-0 start-0 w-100 p-4 text-white"
+              style="background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);">
+              <h5 class="fw-bold mb-1">Urban Glide - Pune</h5>
+              <p class="mb-0">Pune, India</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="project-card-premium rounded-4 overflow-hidden position-relative" style="height: 400px;">
+            <img src="{% static 'img/office.jpg' %}" alt="Prestige Lift - Delhi" class="w-100 h-100 object-fit-cover" />
+            <div class="position-absolute bottom-0 start-0 w-100 p-4 text-white"
+              style="background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);">
+              <h5 class="fw-bold mb-1">Prestige Lift - Delhi</h5>
+              <p class="mb-0">Delhi, India</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="project-card-premium rounded-4 overflow-hidden position-relative" style="height: 400px;">
+            <img src="{% static 'img/skyluxe0.jpg' %}" alt="Elite Glass - Chennai"
+              class="w-100 h-100 object-fit-cover" />
+            <div class="position-absolute bottom-0 start-0 w-100 p-4 text-white"
+              style="background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);">
+              <h5 class="fw-bold mb-1">Elite Glass - Chennai</h5>
+              <p class="mb-0">Chennai, India</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination mt-4 position-relative"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Trusted By Section -->
+<section class="section trusted-by bg-light py-5 overflow-hidden">
+  <div class="container text-center">
+    <div class="mb-5 section-anim">
+      <h2 class="fw-bold text-dark mb-2 text-uppercase" style="letter-spacing: 1px;">WE ARE <span class="c-pri">TRUSTED
+          BY</span></h2>
+      <p class="text-muted">Hundreds of customers across The India</p>
+    </div>
+
+    <div class="india-map-wrapper position-relative mx-auto section-anim" style="max-width: 800px;">
+      <!-- Map Image -->
+      <img src="{% static 'img/235986b3-39c1-4be4-8ba2-b5f75eff359b.png' %}" class="w-100 opacity-25" alt="India Map" />
+
+      <!-- Overlay Text -->
+      <div class="position-absolute top-50 start-50 translate-middle text-end w-100">
+        <h3 class="fw-bold text-dark mb-0 display-4 counter">0+</h3>
+        <p class="fw-bold text-uppercase c-pri mb-0" style="letter-spacing: 2px;">Installations in India</p>
+      </div>
+
+      <!-- Map Pins (Simplified for Bootstrap) -->
+      <div class="position-absolute text-warning" style="top: 30%; left: 40%;">
+        <i class="fas fa-map-marker-alt fs-4"></i>
+      </div>
+      <div class="position-absolute text-warning" style="top: 45%; left: 70%;">
+        <i class="fas fa-map-marker-alt fs-4"></i>
+      </div>
+      <div class="position-absolute text-warning" style="top: 60%; left: 50%;">
+        <i class="fas fa-map-marker-alt fs-4"></i>
+      </div>
+      <div class="position-absolute text-warning" style="top: 75%; left: 40%;">
+        <i class="fas fa-map-marker-alt fs-4"></i>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Our Showrooms Section -->
+<section class="section showrooms bg-white py-5">
+  <div class="container">
+    <div class="text-center mb-5 section-anim">
+      <h2 class="fw-bold text-dark mb-2 text-uppercase text-start" style="letter-spacing: 1px;">OUR <span
+          class="c-pri">SHOWROOMS</span> IN INDIA</h2>
+      <p class="text-muted text-start">Wherever you are in the country, we are not so far away</p>
+    </div>
+
+    <div class="row g-4 section-anim">
+      <!-- Gujarat -->
+      <div class="col-lg-4 col-md-6">
+        <div class="showroom-card card position-relative h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+          style="height: 340px; transition: all 0.25s;" onmouseover="this.style.transform='translateY(-8px)'"
+          onmouseout="this.style.transform='translateY(0)'">
+          <img src="{% static 'img/show1.png' %}" class="card-img-top w-100 h-100 object-fit-cover"
+            alt="Gurgaon showroom" loading="lazy" decoding="async" />
+          <div class="card-body position-absolute bottom-0 start-0 w-100 p-4 text-white"
+            style="background: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.82) 70%, rgba(0,0,0,0.95) 100%);">
+            <h5 class="fw-bold text-uppercase mb-3" style="color: #f2cf86;">Gujarat</h5>
+            <p class="small mb-2 text-white-50">
+              <i class="fas fa-map-marker-alt me-2"></i> Gujarat
+            </p>
+            <p class="small mb-0 text-white-50">
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Mumbai -->
+      <div class="col-lg-4 col-md-6">
+        <div class="showroom-card card position-relative h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+          style="height: 420px; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-10px)'"
+          onmouseout="this.style.transform='translateY(0)'">
+          <img src="{% static 'img/show2.png' %}" class="card-img-top w-100 h-100 object-fit-cover"
+            alt="Mumbai showroom" loading="lazy" decoding="async" />
+          <div class="card-body position-absolute bottom-0 start-0 w-100 p-4 text-white"
+            style="background: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.82) 70%, rgba(0,0,0,0.95) 100%);">
+            <h5 class="fw-bold text-uppercase mb-3" style="color: #f2cf86;">MUMBAI</h5>
+            <p class="small mb-2 text-white-50">
+              <i class="fas fa-map-marker-alt me-2"></i>Mumbai
+            </p>
+            <p class="small mb-0 text-white-50">
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Lucknow-->
+      <div class="col-lg-4 col-md-6">
+        <div class="showroom-card card position-relative h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+          style="height: 420px; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-10px)'"
+          onmouseout="this.style.transform='translateY(0)'">
+          <img src="{% static 'img/show3.png' %}" class="card-img-top w-100 h-100 object-fit-cover"
+            alt="Bangalore showroom" loading="lazy" decoding="async" />
+          <div class="card-body position-absolute bottom-0 start-0 w-100 p-4 text-white"
+            style="background: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.82) 70%, rgba(0,0,0,0.95) 100%);">
+            <h5 class="fw-bold text-uppercase mb-3" style="color: #f2cf86;">LUCKNOW</h5>
+            <p class="small mb-2 text-white-50">
+              <i class="fas fa-map-marker-alt me-2"></i> Lucknow
+            </p>
+            <p class="small mb-0 text-white-50">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Factory Direct Section -->
+<section class="section factory-direct py-4 bg-white" id="factory-direct">
+  <div class="container">
+    <div class="row gy-4 align-items-center">
+      <div class="col-lg-7 order-lg-1 section-anim">
+        <div class="factory-image rounded-4 shadow-lg" style="height: 70vh;">
+          <img src="{% static 'img/direct.png' %}" alt="Factory Direct" class="rounded-4 w-100 h-100 object-fit-cover"
+            loading="lazy" decoding="async" />
+        </div>
+      </div>
+
+      <div class="col-lg-5 order-lg-2 section-anim">
+        <div class="factory-copy p-3 p-lg-4 d-flex flex-column justify-content-center">
+          <div class="factory-copy-inner">
+            <span class="badge bg-pri text-white rounded-pill mb-3 px-3 py-2" style="font-size: 0.75rem;">Factory
+              Direct After Sales</span>
+            <h2 class="fw-bold h2 mb-3 animate-text delay-1 factory-title">Our Difference: <span class="c-pri">Factory
+                Direct</span></h2>
+            <p class="text-muted mb-3 animate-text delay-2" style="font-size: 0.95rem;">SKYLUXE Elevators knows that
+              the secret to our phenomenal success has been best-in-class after-sales care, delivered directly from
+              our factory to your home.</p>
+
+            <div class="feature-card p-3 rounded-4 mb-3">
+              <h5 class="fw-bold mb-1" style="font-size: 1rem;">After-Sales Promise</h5>
+              <p class="mb-0" style="font-size: 0.85rem;">We provide direct manufacturer support without any
+                third-party intervention, ensuring European quality standards for life.</p>
+            </div>
+
+            <div class="row gx-2 gy-2">
+              <div class="col-md-6">
+                <div class="feature-card p-2 rounded-4 h-100">
+                  <h6 class="fw-bold text-uppercase mb-1" style="font-size: 0.75rem;"><i
+                      class="fas fa-check-circle text-warning me-1"></i>No Outsourcing</h6>
+                  <p class="mb-0" style="font-size: 0.8rem;">Direct handling for premium quality.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="feature-card p-2 rounded-4 h-100">
+                  <h6 class="fw-bold text-uppercase mb-1" style="font-size: 0.75rem;"><i
+                      class="fas fa-check-circle text-warning me-1"></i>Trained In Europe</h6>
+                  <p class="mb-0" style="font-size: 0.8rem;">Experts trained at the source.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="feature-card p-2 rounded-4 h-100">
+                  <h6 class="fw-bold text-uppercase mb-1" style="font-size: 0.75rem;"><i
+                      class="fas fa-check-circle text-warning me-1"></i>Spare Parts</h6>
+                  <p class="mb-0" style="font-size: 0.8rem;">Genuine parts for quick maintenance.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="feature-card p-2 rounded-4 h-100">
+                  <h6 class="fw-bold text-uppercase mb-1" style="font-size: 0.75rem;"><i
+                      class="fas fa-rocket text-warning me-1"></i>Fast Response</h6>
+                  <p class="mb-0" style="font-size: 0.8rem;">Rapid support for peace of mind.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <a href="contact.html" class="btn btn-pri rounded-pill px-4 py-2 shadow-sm fw-bold">Book
+                Consultation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="section testimonials bg-white py-5">
+  <div class="container">
+    <div class="text-center mb-5 section-anim">
+      <h2 class="section-title">What Our <span class="c-pri">Customers Say</span></h2>
+      <p class="text-muted">Hear it from those using our lifts every single day!</p>
+    </div>
+
+    <div class="swiper testimonials-swiper section-anim">
+      <div class="swiper-wrapper">
+        <!-- Card 1 -->
+        <div class="swiper-slide">
+          <div class="testimonial-card-premium position-relative rounded-4 overflow-hidden shadow"
+            style="height: 360px;">
+            <img src="{% static 'img/r1.jpg' %}" class="w-100 h-100 object-fit-cover" alt="Customer 1" loading="lazy"
+              decoding="async" />
+            <div class="position-absolute bottom-0 start-0 w-100 p-4"
+              style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+              <div class="stars c-pri mb-2 small">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="text-white fst-italic mb-2 small">"Cibes delivered exactly what we wanted. A lift that
+                enhances our home's aesthetics."</p>
+              <h5 class="text-white fw-bold mb-0">Mr. Prabhuswamy</h5>
+              <small class="text-warning text-uppercase" style="font-size: 0.7rem;">Bangalore, India</small>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="swiper-slide">
+          <div class="testimonial-card-premium position-relative rounded-4 overflow-hidden shadow"
+            style="height: 450px;">
+            <img src="{% static 'img/r2.jpg' %}" class="w-100 h-100 object-fit-cover" alt="Customer 2" loading="lazy"
+              decoding="async" />
+            <div class="position-absolute bottom-0 start-0 w-100 p-4"
+              style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+              <div class="stars c-pri mb-2 small">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="text-white fst-italic mb-2 small">"The sleek design complements our interior perfectly. The
+                ride is unparalleled."</p>
+              <h5 class="text-white fw-bold mb-0">Mr. Sridhara Swamy</h5>
+              <small class="text-warning text-uppercase" style="font-size: 0.7rem;">Bangalore, India</small>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="swiper-slide">
+          <div class="testimonial-card-premium position-relative rounded-4 overflow-hidden shadow"
+            style="height: 450px;">
+            <img src="{% static 'img/r3.jpg' %}" class="w-100 h-100 object-fit-cover" alt="Customer 3" loading="lazy"
+              decoding="async" />
+            <div class="position-absolute bottom-0 start-0 w-100 p-4"
+              style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+              <div class="stars c-pri mb-2 small">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+
+              <p class="text-white fst-italic mb-2 small">"Outstanding craftsmanship. Added immense value to our
+                property while being reliable."</p>
+              <h5 class="text-white fw-bold mb-0">Sanjiv Chaudhry</h5>
+              <small class="text-warning text-uppercase" style="font-size: 0.7rem;">Delhi, India</small>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="swiper-slide">
+          <div class="testimonial-card-premium position-relative rounded-4 overflow-hidden shadow"
+            style="height: 450px;">
+            <img src="{% static 'img/r4.jpg' %}" class="w-100 h-100 object-fit-cover" alt="Customer 2" />
+            <div class="position-absolute bottom-0 start-0 w-100 p-4"
+              style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+              <div class="stars c-pri mb-2 small">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="text-white fst-italic mb-2 small">"The sleek design complements our interior perfectly. The
+                ride is unparalleled."</p>
+              <h5 class="text-white fw-bold mb-0">Mr. Madhuri Kumari</h5>
+              <small class="text-warning text-uppercase" style="font-size: 0.7rem;">Bangalore, India</small>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="swiper-slide">
+          <div class="testimonial-card-premium position-relative rounded-4 overflow-hidden shadow"
+            style="height: 450px;">
+            <img src="{% static 'img/r5.jpg' %}" class="w-100 h-100 object-fit-cover" alt="Customer 2" />
+            <div class="position-absolute bottom-0 start-0 w-100 p-4"
+              style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+              <div class="stars c-pri mb-2 small">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="text-white fst-italic mb-2 small">"The sleek design complements our interior perfectly. The
+                ride is unparalleled."</p>
+              <h5 class="text-white fw-bold mb-0">Mr. Madhav Verma</h5>
+              <small class="text-warning text-uppercase" style="font-size: 0.7rem;">Bangalore, India</small>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="swiper-slide">
+          <div class="testimonial-card-premium position-relative rounded-4 overflow-hidden shadow"
+            style="height: 450px;">
+            <img src="{% static 'img/r6.jpg' %}" class="w-100 h-100 object-fit-cover" alt="Customer 2" />
+            <div class="position-absolute bottom-0 start-0 w-100 p-4"
+              style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+              <div class="stars c-pri mb-2 small">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="text-white fst-italic mb-2 small">"The sleek design complements our interior perfectly. The
+                ride is unparalleled."</p>
+              <h5 class="text-white fw-bold mb-0">Mis. Anshika Verma</h5>
+              <small class="text-warning text-uppercase" style="font-size: 0.7rem;">Bangalore, India</small>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="swiper-slide">
+          <div class="testimonial-card-premium position-relative rounded-4 overflow-hidden shadow"
+            style="height: 450px;">
+            <img src="{% static 'img/r7.jpg' %}" class="w-100 h-100 object-fit-cover" alt="Customer 2" />
+            <div class="position-absolute bottom-0 start-0 w-100 p-4"
+              style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+              <div class="stars c-pri mb-2 small">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="text-white fst-italic mb-2 small">"The sleek design complements our interior perfectly. The
+                ride is unparalleled."</p>
+              <h5 class="text-white fw-bold mb-0">Mis. Pallavi Yadav</h5>
+              <small class="text-warning text-uppercase" style="font-size: 0.7rem;">Bangalore, India</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination mt-4 position-relative"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Blog and News -->
+<section class="section blog bg-light py-5">
+  <div class="container">
+    <div class="row mb-5 section-anim">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Blog and <span class="c-pri">News</span></h2>
+        <p class="text-muted">Update the latest information about home lifts with us.</p>
+      </div>
+    </div>
+
+    <div class="row g-4 section-anim">
+      <!-- Featured Post (Left Side - Large) -->
+      <div class="col-lg-7">
+        <div class="featured-post-card h-100 bg-white rounded-4 shadow-sm overflow-hidden border-0"
+          style="transition: all 0.3s;"
+          onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 1rem 3rem rgba(0,0,0,0.1)'"
+          onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 .125rem .25rem rgba(0,0,0,.075)'">
+          <div class="position-relative overflow-hidden">
+            <img src="{% static 'img/blogg1.png' %}" class="w-100 object-fit-cover"
+              style="height: 380px; transition: transform 0.5s;" onmouseover="this.style.transform='scale(1.05)'"
+              onmouseout="this.style.transform='scale(1)'" alt="Featured Post" />
+            <div class="position-absolute top-0 start-0 m-3">
+              <span class="badge bg-pri px-3 py-2 rounded-pill">Featured News</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="mb-2 text-warning fw-bold small text-uppercase" style="letter-spacing: 1px;">News - May 11,
+              2026</div>
+            <h3 class="fw-bold mb-3">Types of Lift Technologies for Homes in India</h3>
+            <p class="text-muted mb-4">Choosing the right home lift starts with understanding the technology behind
+              it. Our latest guide compares screw-driven vs hydraulic technologies to help you decide which one fits
+              your home's architecture and your family's needs perfectly...</p>
+            <a href="{% url 'blog' %}"
+              class="c-pri text-decoration-none fw-bold text-uppercase small border-bottom border-warning pb-1"
+              style="transition: all 0.3s;" onmouseover="this.style.color='#000'"
+              onmouseout="this.style.color='var(--color-primary)'">Read Full Article <i
+                class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Side Posts (Right Side - List) -->
+      <div class="col-lg-5">
+        <div class="d-flex flex-column h-100">
+          <!-- Item 1 -->
+          <div class="side-post-item d-flex gap-3 mb-4 bg-white p-3 rounded-4 shadow-sm border-0"
+            style="transition: all 0.3s;"
+            onmouseover="this.style.transform='translateX(10px)'; this.style.boxShadow='0 .5rem 1rem rgba(0,0,0,0.05)'"
+            onmouseout="this.style.transform='translateX(0)'; this.style.boxShadow='0 .125rem .25rem rgba(0,0,0,.075)'">
+            <div class="flex-shrink-0 overflow-hidden rounded-3" style="width: 120px; height: 120px;">
+              <img src="{% static 'img/blogg6.png' %}" class="w-100 h-100 object-fit-cover" alt="Post 1" loading="lazy"
+                decoding="async" />
+            </div>
+            <div class="py-1">
+              <div class="text-warning fw-bold small text-uppercase mb-1"
+                style="font-size: 0.7rem; letter-spacing: 0.5px;">News - April 21, 2026</div>
+              <h5 class="fw-bold mb-1 h6" style="line-height: 1.4;">How does a skyluxe Lift, screw-driven technology
+                work?</h5>
+              <p class="text-muted small mb-0 d-none d-sm-block">Understanding the mechanical principle of
+                screw-drive...</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="side-post-item d-flex gap-3 mb-4 bg-white p-3 rounded-4 shadow-sm border-0"
+            style="transition: all 0.3s;"
+            onmouseover="this.style.transform='translateX(10px)'; this.style.boxShadow='0 .5rem 1rem rgba(0,0,0,0.05)'"
+            onmouseout="this.style.transform='translateX(0)'; this.style.boxShadow='0 .125rem .25rem rgba(0,0,0,.075)'">
+            <div class="flex-shrink-0 overflow-hidden rounded-3" style="width: 120px; height: 120px;">
+              <img src="{% static 'img/blogg4.png' %}" class="w-100 h-100 object-fit-cover" alt="Post 2" loading="lazy"
+                decoding="async" />
+            </div>
+            <div class="py-1">
+              <div class="text-warning fw-bold small text-uppercase mb-1"
+                style="font-size: 0.7rem; letter-spacing: 0.5px;">News - March 09, 2026</div>
+              <h5 class="fw-bold mb-1 h6" style="line-height: 1.4;">Ultimate Guide to Skyluxe Lift Group AB</h5>
+              <p class="text-muted small mb-0 d-none d-sm-block">From Swedish roots to a global leader in home
+                lifts...</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="side-post-item d-flex gap-3 bg-white p-3 rounded-4 shadow-sm border-0"
+            style="transition: all 0.3s;"
+            onmouseover="this.style.transform='translateX(10px)'; this.style.boxShadow='0 .5rem 1rem rgba(0,0,0,0.05)'"
+            onmouseout="this.style.transform='translateX(0)'; this.style.boxShadow='0 .125rem .25rem rgba(0,0,0,.075)'">
+            <div class="flex-shrink-0 overflow-hidden rounded-3" style="width: 120px; height: 120px;">
+              <img src="{% static 'img/blogg5.png' %}" class="w-100 h-100 object-fit-cover" alt="Post 3" loading="lazy"
+                decoding="async" />
+            </div>
+            <div class="py-1">
+              <div class="text-warning fw-bold small text-uppercase mb-1"
+                style="font-size: 0.7rem; letter-spacing: 0.5px;">News - Feb 15, 2026</div>
+              <h5 class="fw-bold mb-1 h6" style="line-height: 1.4;">Modern Home Elevators in Luxury Architecture
+              </h5>
+              <p class="text-muted small mb-0 d-none d-sm-block">How elevators are redefining modern home
+                interiors...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ and Contact -->
+
+<!-- ========================= -->
+<!-- FAQ SECTION -->
+<!-- ========================= -->
+
+<section class="section faq-section bg-dark text-white">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title text-white">
+        Frequently Asked
+        <span class="c-pri">Questions</span>
+      </h2>
+
+      <p class="text-light opacity-75">Everything you need to know about our luxury elevators.</p>
+    </div>
+
+    <div class="accordion faq-accordion" id="faqAccordion">
+      <!-- FAQ 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#faq1">How much space is required for a home lift?</button></h2>
+
+        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Our lifts require very minimal space and can even fit inside existing homes
+            without major civil work.</div>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#faq2">Do I need a pit or machine room?</button></h2>
+
+        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">No. Cibes lifts are designed with screw-drive technology requiring almost no
+            pit and no separate machine room.</div>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#faq3">Are these lifts safe for elderly people?</button></h2>
+
+        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Absolutely. Our elevators include emergency backup, safety sensors, battery
+            lowering, and smooth operation for seniors.</div>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#faq4">How long does installation take?</button></h2>
+
+        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Installation is usually completed within 5–7 days depending on site conditions
+            and customization.</div>
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#faq5">Can the lift design match my interior?</button></h2>
+
+        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Yes. We provide luxury glass finishes, custom colors, lighting, and premium
+            cabin designs tailored to your interiors.</div>
+        </div>
+      </div>
+
+      <!-- FAQ 6 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#faq6">What is the maintenance cost?</button></h2>
+
+        <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Our lifts are engineered for low maintenance with highly durable Swedish
+            technology and factory-trained technicians.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= -->
+<!-- CONTACT SECTION -->
+<!-- ========================= -->
+
+<section class="section contact-section" id="contact">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- LEFT -->
+      <div class="col-lg-5 mb-5 mb-lg-0">
+        <div class="contact-info">
+          <span class="contact-tag">CONTACT US</span>
+
+          <h2 class="contact-title">
+            Let's Build Your
+            <span class="c-pri">Luxury Elevator</span>
+          </h2>
+
+          <p class="contact-text">Connect with our experts and discover premium home lift solutions designed for
+            elegance, comfort and safety.</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+91 7897996446</span>
+            </div>
+
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>skyluxeelevators@gmail.com</span>
+            </div>
+
+            <div class="contact-item">
+              <i class="fas fa-location-dot"></i>
+              <span>Lucknow, India</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="col-lg-7">
+        <div class="contact-form-wrapper">
+          <form action="{% url 'save-lead' %}" method="POST">
+            {% csrf_token %}
+
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <input type="text" class="form-control luxury-input" name="name" placeholder="Your Name" required />
+              </div>
+
+              <div class="col-md-6 mb-4">
+                <input type="email" class="form-control luxury-input" name="email" placeholder="Email Address"
+                  required />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <input type="tel" class="form-control luxury-input" name="phone" placeholder="Phone Number" required />
+              </div>
+
+              <div class="col-md-6 mb-4">
+                <input type="text" class="form-control luxury-input" name="city" placeholder="City" />
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <textarea rows="5" class="form-control luxury-input" name="message"
+                placeholder="Tell us about your project" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-pri luxury-btn">
+              Send Inquiry
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+{% endblock %}
+
+{% block extra_js %}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Initialize Swipers
+    const liftsSwiper = new Swiper('.lifts-swiper', {
+      loop: true,
+      speed: 1200,
+      preloadImages: false,
+      lazy: { loadPrevNext: true },
+      autoplay: {
+        delay: 2200,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+      },
+      watchOverflow: true,
+      slidesPerView: 3,
+      spaceBetween: 30,
+      grabCursor: true,
+      pagination: {
+        el: '.lifts-swiper .swiper-pagination',
+        clickable: true
+      },
+      breakpoints: {
+        0: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
+      }
+    });
+
+    const testimonialSwiper = new Swiper('.testimonials-swiper', {
+      loop: true,
+      speed: 1200,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      spaceBetween: 25,
+      grabCursor: true,
+      pagination: {
+        el: '.testimonials-swiper .swiper-pagination',
+        clickable: true
+      },
+      breakpoints: {
+        0: { slidesPerView: 1 },
+        576: { slidesPerView: 2 },
+        992: { slidesPerView: 3 },
+        1200: { slidesPerView: 4 }
+      }
+    });
+
+    const projectsSwiper = new Swiper('.projects-swiper', {
+      loop: true,
+      speed: 1200,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      },
+      spaceBetween: 25,
+      grabCursor: true,
+      observer: true,
+      observeParents: true,
+      pagination: {
+        el: '.projects-swiper .swiper-pagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.projects-swiper .swiper-button-next',
+        prevEl: '.projects-swiper .swiper-button-prev',
+      },
+      breakpoints: {
+        0: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
+      },
+      on: {
+        init: function () {
+          // fade in once initialized
+          const el = document.querySelector('.projects-swiper');
+          if (el) setTimeout(() => { el.style.opacity = '1'; }, 100);
+        }
+      }
+    });
+
+    // Pause/resume swipers on page visibility to save CPU
+    function setSwipersPaused(paused) {
+      [liftsSwiper, testimonialSwiper, projectsSwiper].forEach(sw => {
+        if (!sw) return;
+        if (paused) sw.autoplay && sw.autoplay.stop && sw.autoplay.stop();
+        else sw.autoplay && sw.autoplay.start && sw.autoplay.start();
+      });
+    }
+
+    document.addEventListener('visibilitychange', function () {
+      setSwipersPaused(document.hidden);
+    });
+
+    // Intersection Observer for GSAP Animations
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            gsap.fromTo(entry.target, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.8, ease: 'power2.out' });
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    document.querySelectorAll('.section-anim').forEach((el) => {
+      el.style.opacity = '0';
+      io.observe(el);
+    });
+
+    // Re-update swipers after reveal so they render slides correctly
+    const swiperUpdateObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const sw = entry.target.querySelector('.swiper');
+          if (sw && sw.swiper) sw.swiper.update();
+          swiperUpdateObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.section-anim').forEach(el => swiperUpdateObserver.observe(el));
+
+  });
+</script>
+<script>
+  // --- COUNTER ANIMATION using IntersectionObserver (no ScrollTrigger dependency) ---
+  (function () {
+    var counterEl = document.querySelector('.counter');
+    if (!counterEl) return;
+
+    var targetValue = 2000;
+    var duration = 2500; // ms
+    var started = false;
+
+    function animateCounter() {
+      if (started) return;
+      started = true;
+      var startTime = null;
+
+      function step(timestamp) {
+        if (!startTime) startTime = timestamp;
+        var progress = Math.min((timestamp - startTime) / duration, 1);
+        // Ease out cubic
+        var ease = 1 - Math.pow(1 - progress, 3);
+        var current = Math.floor(ease * targetValue);
+        counterEl.innerHTML = current.toLocaleString() + '+';
+        if (progress < 1) {
+          requestAnimationFrame(step);
+        } else {
+          counterEl.innerHTML = targetValue.toLocaleString() + '+';
+        }
+      }
+      requestAnimationFrame(step);
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          animateCounter();
+          observer.disconnect();
+        }
+      });
+    }, { threshold: 0.3 });
+
+    observer.observe(counterEl);
+  })();
+</script>
+<script>
+  window.onload = function () {
+    const isMobile = window.matchMedia('(max-width: 767px)').matches;
+    // Premium timings for all devices - slow, majestic, and ensuring tagline finishes
+    const gateOpenDelay = 1200;
+    const heroRevealDelay = 5200;
+    const headerDuration = 1.2;
+    const heroTitleDuration = 1.5;
+    const heroTextDuration = 1.2;
+    const heroTextDelay = 0.5;
+    const floatingDuration = 0.8;
+
+    const elevator = document.getElementById('elevator');
+    const leftDoor = document.querySelector('.left-door');
+    const rightDoor = document.querySelector('.right-door');
+
+    if (isMobile && elevator && leftDoor && rightDoor) {
+      // Use a majestic smooth opening transition on mobile too
+      leftDoor.style.transition = 'transform 1.8s cubic-bezier(.2,.85,.2,1), opacity 0.5s ease';
+      rightDoor.style.transition = 'transform 1.8s cubic-bezier(.2,.85,.2,1), opacity 0.5s ease';
+    }
+
+    // 1. Open the elevator doors
+    setTimeout(function () {
+      if (elevator) elevator.classList.add('open');
+
+      // Trigger the cursive tagline animation
+      if (typeof window.startLogoAnimation === 'function') {
+        window.startLogoAnimation();
+      }
+    }, gateOpenDelay);
+
+    // 2. Hide the tagline screen and subtly animate the hero content into place
+    setTimeout(function () {
+      var tagline = document.getElementById('tagline-screen');
+      if (tagline) {
+        tagline.classList.add('hide');
+      }
+
+      if (typeof gsap !== 'undefined') {
+        gsap.fromTo('.header', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: headerDuration, ease: 'power3.out' });
+        gsap.fromTo('.hero-content h1', { opacity: 0 }, { opacity: 1, duration: heroTitleDuration });
+        gsap.fromTo('.hero-content p', { opacity: 0 }, { opacity: 1, duration: heroTextDuration, delay: heroTextDelay });
+        gsap.fromTo('.floating-actions', { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: floatingDuration, ease: 'power2.out', delay: heroTextDelay });
+      }
+    }, heroRevealDelay);
+  };
+</script>
+
+<script>
+  // Projects Swiper with Autoplay
+  var projectsSwiper = new Swiper('.projects-swiper', {
+    slidesPerView: 1.2,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      576: { slidesPerView: 1.5, spaceBetween: 20 },
+      768: { slidesPerView: 2, spaceBetween: 24 },
+      1024: { slidesPerView: 3, spaceBetween: 28 },
+    }
+  });
+</script>
+
+{% endblock %}

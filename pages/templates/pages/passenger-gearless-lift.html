@@ -1,0 +1,450 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+{% block title %}Gearless Traction Passenger Lifts India | Skyluxe Elevators{% endblock %}
+
+{% block meta_description %}High-speed, energy-efficient gearless traction passenger lifts by Skyluxe Elevators. Ideal for high-rise buildings offering smooth and silent rides.{% endblock %}
+
+{% block meta_keywords %}gearless passenger lift, gearless traction elevator india, high speed elevator, energy efficient lift, skyluxe gearless lift, high rise building elevator{% endblock %}
+
+{% block canonical_url %}https://www.skyluxeelevators.com/passenger-gearless-lift.html{% endblock %}
+
+{% block og_title %}Gearless Traction Passenger Lifts India | Skyluxe Elevators{% endblock %}
+{% block og_description %}High-speed, energy-efficient gearless traction passenger lifts by Skyluxe Elevators. Ideal for high-rise buildings offering smooth and silent rides.{% endblock %}
+{% block og_url %}https://www.skyluxeelevators.com/passenger-gearless-lift.html{% endblock %}
+{% block og_image %}{% static 'img/2nd.webp' %}{% endblock %}
+{% block og_image_alt %}Gearless Passenger Lift by Skyluxe Elevators{% endblock %}
+
+{% block twitter_title %}Gearless Passenger Lifts | Skyluxe Elevators{% endblock %}
+{% block twitter_description %}High-speed, energy-efficient gearless traction passenger lifts for high-rise buildings.{% endblock %}
+{% block twitter_image %}{% static 'img/2nd.webp' %}{% endblock %}
+
+{% block structured_data %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Gearless Traction Passenger Lift",
+  "image": "{% static 'img/2nd.webp' %}",
+  "description": "High-speed, energy-efficient gearless traction passenger lifts for high-rise buildings by Skyluxe Elevators.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Skyluxe Elevators"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "INR",
+    "availability": "https://schema.org/InStock",
+    "url": "https://www.skyluxeelevators.com/passenger-gearless-lift.html"
+  }
+}
+</script>
+{% endblock %}
+
+{% block active_lifts %}active{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/lifts.css' %}">
+<link rel="stylesheet" href="{% static 'css/passenger-gearless-lift.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="hero" style="background-image: url('static/img/passengerskyluxe.png');">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">GEARLESS TRACTION TECHNOLOGY</div>
+    <h1>Gearless <span class="c-pri">Passenger Lift</span></h1>
+    <p>High-speed, energy-efficient elevators for modern high-rise commercial and residential towers.</p>
+    <a href="{% url 'contact' %}" class="btn-pri">Get Free Quote</a>
+  </div>
+</section>
+
+<!-- DETAILS + SPECS -->
+<section class="lift-details-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">ADVANCED SYNCHRONOUS MOTOR TECHNOLOGY</span>
+      <h2 class="section-title">Gearless Traction <span class="c-pri">Passenger Lifts</span></h2>
+      <p class="section-desc">Next-generation permanent magnet synchronous motor (PMSM) technology for high-rise
+        buildings. Ultra-high speed, exceptional energy efficiency, and minimal maintenance requirements.</p>
+    </div>
+    <div class="row g-4 align-items-stretch">
+      <div class="col-lg-7">
+        <div class="main-lift-image">
+          <img src="{% static 'img/pg1.png' %}" alt="Gearless Traction Passenger Lift" />
+          <div class="image-overlay">
+            <h3>Gearless Traction System</h3>
+            <p>PMSM motor technology for ultra-high speed and maximum energy efficiency across high-rise buildings.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="lift-info-card">
+          <span class="section-tag">KEY SPECIFICATIONS</span>
+          <h3>Gearless Traction Passenger Lift</h3>
+          <p>Ultra-high speed PMSM motor system for premium passenger transport. Perfect for corporate towers and luxury
+            residences.</p>
+          <div class="info-list">
+            <div class="info-item"><span>Lift Type</span><strong>Gearless MRL Traction</strong></div>
+            <div class="info-item"><span>Motor</span><strong>PMSM Synchronous</strong></div>
+            <div class="info-item"><span>Capacity</span><strong>1000 – 2000 KG</strong></div>
+            <div class="info-item"><span>Speed</span><strong>Up to 4.0 m/s</strong></div>
+            <div class="info-item"><span>Floors</span><strong>Up to 32 Stops</strong></div>
+            <div class="info-item"><span>Cabin Size</span><strong>1500 × 1200 mm</strong></div>
+            <div class="info-item"><span>Energy Saving</span><strong>60–75% vs Geared</strong></div>
+            <div class="info-item"><span>Machine Room</span><strong>MRL (Not Required)</strong></div>
+            <div class="info-item"><span>Installation</span><strong>20 – 30 Days</strong></div>
+            <div class="info-item"><span>Starting Price</span><strong class="price-val">₹18 Lakhs+</strong></div>
+          </div>
+          <a href="{% url 'contact' %}" class="btn-lift-details">Get Full Brochure</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">WHY CHOOSE GEARLESS TRACTION</span>
+      <h2 class="section-title">Premium <span class="c-pri">Technology</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fas fa-rocket"></i></div>
+          <h4>Speed & Efficiency</h4>
+          <ul>
+            <li>Ultra-high speed up to 4.0 m/s</li>
+            <li>60–75% energy savings vs geared</li>
+            <li>PMSM motor technology</li>
+            <li>Rapid passenger throughput</li>
+            <li>Regenerative drive system</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fas fa-building"></i></div>
+          <h4>High-Rise Capability</h4>
+          <ul>
+            <li>Supports up to 32 stops</li>
+            <li>Machine room-less (MRL)</li>
+            <li>Minimal maintenance needed</li>
+            <li>Smart IoT integration ready</li>
+            <li>Destination control option</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+          <h4>Safety Systems</h4>
+          <ul>
+            <li>ARD (Auto Rescue Device)</li>
+            <li>Door Safety Ray / Curtain</li>
+            <li>Seismic Sensor</li>
+            <li>Overload & Speed Governor</li>
+            <li>CCTV & Intercom</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fas fa-layer-group"></i></div>
+          <h4>Cabin Finishes</h4>
+          <ul>
+            <li>Mirror / Hairline SS Walls</li>
+            <li>Granite / Marble Flooring</li>
+            <li>False Ceiling with LED</li>
+            <li>Handrail (SS / Glass)</li>
+            <li>Custom Branding Possible</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REQUIREMENTS -->
+<section class="requirements-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">BEFORE INSTALLATION</span>
+      <h2 class="section-title">Site <span class="c-pri">Requirements</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="req-card">
+          <div class="req-icon"><i class="fas fa-ruler-combined"></i></div>
+          <h5>SPACE</h5>
+          <h3>Shaft Dimensions</h3>
+          <p>Minimum shaft size of 1600×1800 mm for standard 8-person cabin. MRL models save additional machine room
+            space — no separate room required.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="req-card">
+          <div class="req-icon"><i class="fas fa-bolt"></i></div>
+          <h5>POWER</h5>
+          <h3>Three-Phase Supply</h3>
+          <p>Three-phase 415V, 50Hz supply required. Regenerative drive feeds surplus power back to building grid —
+            reducing energy bills significantly.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="req-card">
+          <div class="req-icon"><i class="fas fa-hard-hat"></i></div>
+          <h5>CIVIL</h5>
+          <h3>Pit & Overhead</h3>
+          <p>Pit depth of 1200–1500 mm and overhead clearance of 4200–4500 mm required. RCC shaft construction
+            recommended for high-rise installations.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="req-card">
+          <div class="req-icon"><i class="fas fa-users"></i></div>
+          <h5>CAPACITY</h5>
+          <h3>Persons per Trip</h3>
+          <p>Models carry 13 to 20 persons per trip (1000 KG to 2000 KG). We calculate capacity based on your building's
+            peak-hour footfall requirements.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="req-card">
+          <div class="req-icon"><i class="fas fa-building"></i></div>
+          <h5>FLOORS</h5>
+          <h3>Floor Coverage</h3>
+          <p>Serves up to 32 floors with speed options from 1.5 m/s to 4.0 m/s. Destination control system available for
+            15+ floor high-rise buildings.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="req-card">
+          <div class="req-icon"><i class="fas fa-certificate"></i></div>
+          <h5>COMPLIANCE</h5>
+          <h3>Standards Met</h3>
+          <p>Fully compliant with IS 14665, NBC 2016, EN 81-20/50 and BIS standards. We handle all statutory approvals
+            and inspection certifications.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">INVESTMENT OPTIONS</span>
+      <h2 class="section-title">Gearless Traction <span class="c-pri">Packages</span></h2>
+      <p class="section-desc">Premium configurations with installation, testing and 1-year comprehensive AMC included.
+        GST extra.</p>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-lg-4 col-md-6">
+        <div class="price-card">
+          <h4>Mid-Rise Building</h4>
+          <p class="plan-sub">8 Stops, 1250 KG</p>
+          <div class="price">₹18L – 22L</div>
+          <ul>
+            <li><i class="fas fa-check"></i> Installation & testing</li>
+            <li><i class="fas fa-check"></i> 1-year AMC included</li>
+            <li><i class="fas fa-check"></i> Premium cabin finishes</li>
+            <li><i class="fas fa-check"></i> Safety certification</li>
+          </ul>
+          <a href="{% url 'contact' %}" class="btn-lift-details">Get Quote</a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="price-card featured">
+          <h4>Corporate Tower</h4>
+          <p class="plan-sub">16 Stops, 1600 KG</p>
+          <div class="price">₹24L – 30L</div>
+          <ul>
+            <li><i class="fas fa-check"></i> Installation & testing</li>
+            <li><i class="fas fa-check"></i> 1-year AMC included</li>
+            <li><i class="fas fa-check"></i> IoT-ready system</li>
+            <li><i class="fas fa-check"></i> ARD & remote monitoring</li>
+          </ul>
+          <a href="{% url 'contact' %}" class="btn-lift-details">Get Quote</a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="price-card">
+          <h4>Premium High-Rise</h4>
+          <p class="plan-sub">24+ Stops, 2000 KG</p>
+          <div class="price">₹32L – 40L+</div>
+          <ul>
+            <li><i class="fas fa-check"></i> Installation & testing</li>
+            <li><i class="fas fa-check"></i> 1-year AMC included</li>
+            <li><i class="fas fa-check"></i> Custom MRL design</li>
+            <li><i class="fas fa-check"></i> Destination control system</li>
+          </ul>
+          <a href="{% url 'contact' %}" class="btn-lift-details">Get Quote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">HAVE QUESTIONS?</span>
+      <h2 class="section-title">Frequently Asked <span class="c-pri">Questions</span></h2>
+    </div>
+    <div class="accordion faq-accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#faq1">What makes gearless traction lifts better than geared?</button></h2>
+        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Gearless traction lifts use PMSM motors without a gearbox — resulting in 60–75%
+            lower energy consumption, quieter operation, higher speeds (up to 4 m/s), and significantly less
+            maintenance. They're ideal for high-rise buildings with heavy passenger traffic.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#faq2">What does MRL (Machine Room Less) mean?</button></h2>
+        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">MRL lifts house the drive motor inside the shaft itself — eliminating the need for
+            a separate machine room. This saves 8–12 sq m of building space and is now the preferred option for all new
+            high-rise commercial construction.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#faq3">How many floors can a gearless traction lift serve?</button></h2>
+        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Our gearless traction lifts serve up to 32 floors at speeds up to 4.0 m/s. For
+            buildings above 15 floors, we recommend adding destination control systems for maximum efficiency and
+            reduced waiting times.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#faq4">What happens during a power failure?</button></h2>
+        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Our lifts are equipped with ARD (Automatic Rescue Device) which automatically
+            moves the cabin to the nearest floor and opens doors during a power cut — ensuring passengers are never
+            trapped inside the elevator.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#faq5">Are gearless traction lifts eligible for green building ratings?</button></h2>
+        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Yes. The energy regeneration drive and PMSM motor technology qualify these lifts
+            for IGBC and LEED green building rating points. We provide all required energy consumption certificates for
+            your green building submission.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOTTOM BANNER -->
+<section style="padding: 60px 0 120px; background: #ffffff;">
+  <div class="container">
+    <div class="bottom-details-banner">
+      <div class="banner-content">
+        <span>WHY CHOOSE SKYLUXE</span>
+        <h2>Next-Gen Gearless Excellence</h2>
+        <p>Ultra-high speed, energy-efficient systems trusted across India's premium corporate towers, luxury
+          residences, and shopping malls. Smart technology for smart buildings.</p>
+        <a href="{% url 'contact' %}" class="btn-pri mt-3">Schedule Consultation</a>
+      </div>
+      <div class="banner-image">
+        <img src="{% static 'img/side.png' %}" alt="Gearless Lift" />
+      </div>
+    </div>
+  </div>
+</section>
+
+{% block extra_js %}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    if (typeof gsap === 'undefined') { return; }
+    if (typeof ScrollTrigger !== 'undefined') { gsap.registerPlugin(ScrollTrigger); }
+
+    (function () {
+      if (window.innerWidth < 768 || ('ontouchstart' in window)) return;
+      function initTilt(selector, tiltX, tiltY, tz) {
+        document.querySelectorAll(selector).forEach(function (card) {
+          if (card.closest('.tilt-frame')) return;
+          var frame = document.createElement('div');
+          frame.className = 'tilt-frame';
+          frame.style.borderRadius = window.getComputedStyle(card).borderRadius || '24px';
+          var inner = document.createElement('div');
+          inner.className = 'tilt-inner';
+          inner.style.borderRadius = 'inherit';
+          var sheen = document.createElement('div');
+          sheen.className = 'tilt-sheen';
+          card.parentNode.replaceChild(frame, card);
+          inner.appendChild(card);
+          frame.appendChild(inner);
+          frame.appendChild(sheen);
+          frame.addEventListener('mousemove', function (e) {
+            var r = frame.getBoundingClientRect();
+            var px = (e.clientX - r.left) / r.width;
+            var py = (e.clientY - r.top) / r.height;
+            inner.style.transform = 'rotateX(' + ((py - 0.5) * tiltX) + 'deg) rotateY(' + ((px - 0.5) * -tiltY) + 'deg)';
+            sheen.style.background = 'radial-gradient(circle at ' + (px * 100) + '% ' + (py * 100) + '%, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 70%)';
+            sheen.style.opacity = '1';
+            card.querySelectorAll('h3,h4,h5,img,.price-val,.price,button,.btn-lift-details,.feature-icon,.req-icon').forEach(function (el) { el.style.transform = 'translateZ(' + tz + 'px)'; });
+          });
+          frame.addEventListener('mouseleave', function () {
+            inner.style.transform = 'rotateX(0deg) rotateY(0deg)';
+            sheen.style.opacity = '0';
+            card.querySelectorAll('h3,h4,h5,img,.price-val,.price,button,.btn-lift-details,.feature-icon,.req-icon').forEach(function (el) { el.style.transform = 'translateZ(0px)'; });
+          });
+        });
+      }
+      initTilt('.price-card', 12, 14, 25);
+      initTilt('.feature-box', 10, 12, 20);
+      initTilt('.req-card', 10, 12, 20);
+      initTilt('.lift-info-card', 6, 8, 15);
+      initTilt('.main-lift-image', 8, 10, 30);
+      initTilt('.bottom-details-banner', 5, 8, 20);
+    })();
+
+    if (typeof ScrollTrigger === 'undefined') return;
+    function getTarget(el) { var f = el.closest('.tilt-frame'); return f || el; }
+    gsap.from('.hero-content', { y: 40, duration: 1.0, ease: 'power3.out', delay: 0.2, clearProps: 'all' });
+    document.querySelectorAll('.section-title').forEach(function (el) {
+      gsap.from(el, { scrollTrigger: { trigger: el, start: 'top 90%', once: true }, y: 30, opacity: 0, duration: 0.7, ease: 'power3.out', clearProps: 'all' });
+    });
+    document.querySelectorAll('.section-desc, .section-tag').forEach(function (el) {
+      gsap.from(el, { scrollTrigger: { trigger: el, start: 'top 92%', once: true }, y: 20, opacity: 0, duration: 0.6, ease: 'power2.out', clearProps: 'all' });
+    });
+    document.querySelectorAll('.feature-box').forEach(function (el, i) {
+      gsap.from(getTarget(el), { scrollTrigger: { trigger: getTarget(el), start: 'top 92%', once: true }, y: 40, opacity: 0, duration: 0.7, delay: i * 0.08, ease: 'back.out(1.2)', clearProps: 'all' });
+    });
+    document.querySelectorAll('.req-card').forEach(function (el, i) {
+      gsap.from(getTarget(el), { scrollTrigger: { trigger: getTarget(el), start: 'top 92%', once: true }, y: 40, opacity: 0, duration: 0.7, delay: i * 0.08, ease: 'back.out(1.2)', clearProps: 'all' });
+    });
+    document.querySelectorAll('.price-card').forEach(function (el, i) {
+      gsap.from(getTarget(el), { scrollTrigger: { trigger: getTarget(el), start: 'top 92%', once: true }, y: 40, opacity: 0, duration: 0.7, delay: i * 0.1, ease: 'power3.out', clearProps: 'all' });
+    });
+    document.querySelectorAll('.accordion-item').forEach(function (el, i) {
+      gsap.from(el, { scrollTrigger: { trigger: el, start: 'top 95%', once: true }, x: -20, opacity: 0, duration: 0.5, delay: i * 0.08, ease: 'power2.out', clearProps: 'all' });
+    });
+    var infoCard = document.querySelector('.lift-info-card');
+    if (infoCard) {
+      gsap.from(infoCard.querySelectorAll('h3, p, .info-item'), { scrollTrigger: { trigger: getTarget(infoCard), start: 'top 90%', once: true }, y: 20, opacity: 0, duration: 0.5, stagger: 0.07, ease: 'power2.out', clearProps: 'all' });
+    }
+    var banner = document.querySelector('.bottom-details-banner');
+    if (banner) {
+      gsap.from(getTarget(banner), { scrollTrigger: { trigger: getTarget(banner), start: 'top 95%', once: true }, scale: 0.97, y: 30, opacity: 0, duration: 0.9, ease: 'power3.out', clearProps: 'all' });
+    }
+    setTimeout(function () { ScrollTrigger.refresh(); }, 300);
+  });
+</script>
+{% endblock %}
+
+{% endblock %}

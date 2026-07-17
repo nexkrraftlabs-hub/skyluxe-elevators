@@ -1,0 +1,79 @@
+{% extends 'adminpanel/base.html' %}
+
+{% block page_title %}
+  Profile Settings
+{% endblock %}
+
+{% block content %}
+  <div class="max-w-4xl mx-auto">
+    <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
+      <!-- TOP -->
+
+      <div class="bg-primary p-10 text-center">
+        <img src="{{ profile.avatar_url_large }}"
+          class="w-32 h-32 rounded-full mx-auto border-4 border-white shadow-lg object-cover" />
+        <h2 class="text-3xl font-black text-white mt-5">{{ request.user.username }}</h2>
+
+        <p class="text-white/70 mt-2">Skyluxe Administrator</p>
+      </div>
+
+      <!-- FORM -->
+
+      <div class="p-10">
+        <form method="POST" enctype="multipart/form-data">
+          {% csrf_token %}
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- USERNAME -->
+
+            <div>
+              <label class="block text-sm font-bold text-primary mb-3">Username</label>
+
+              <input type="text" name="username" value="{{ request.user.username }}" class="w-full h-14 rounded-2xl border border-gray-200 px-5" />
+            </div>
+
+            <!-- EMAIL -->
+
+            <div>
+              <label class="block text-sm font-bold text-primary mb-3">Email Address</label>
+
+              <input type="email" name="email" value="{{ request.user.email }}" class="w-full h-14 rounded-2xl border border-gray-200 px-5" />
+            </div>
+
+            <!-- PASSWORD -->
+
+            <div>
+              <label class="block text-sm font-bold text-primary mb-3">New Password</label>
+
+              <input type="password" name="password" placeholder="Enter new password" class="w-full h-14 rounded-2xl border border-gray-200 px-5" />
+            </div>
+
+            <!-- CONFIRM PASSWORD -->
+
+            <div>
+              <label class="block text-sm font-bold text-primary mb-3">Confirm Password</label>
+
+              <input type="password" name="confirm_password" placeholder="Confirm password" class="w-full h-14 rounded-2xl border border-gray-200 px-5" />
+            </div>
+
+            <!-- IMAGE -->
+
+            <div class="md:col-span-2">
+              <label class="block text-sm font-bold text-primary mb-3">Change Profile Photo</label>
+
+              <input type="file" name="profile_image" accept="image/*" class="w-full h-14 rounded-2xl border border-gray-200 px-5 py-3" />
+
+              <p class="text-sm text-gray-500 mt-2">
+                No photo selected? Your name initial avatar will show automatically.
+              </p>
+            </div>
+          </div>
+
+          <!-- BUTTON -->
+
+          <button type="submit" class="mt-8 px-8 py-4 rounded-2xl bg-primary text-white font-bold hover:opacity-90 transition">Update Profile</button>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}

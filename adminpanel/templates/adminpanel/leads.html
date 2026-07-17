@@ -1,0 +1,114 @@
+
+{% extends 'adminpanel/base.html' %}
+
+{% block page_title %}
+Leads Management
+{% endblock %}
+
+{% block content %}
+
+
+<div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
+
+    <div class="p-6 border-b border-gray-100 flex justify-between items-center">
+
+        <div>
+
+            <h2 class="text-3xl font-black text-primary">
+                Leads
+            </h2>
+
+            <p class="text-gray-500 mt-1">
+                Website contact enquiries
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="overflow-x-auto">
+
+        <table class="w-full">
+
+            <thead class="bg-gray-50">
+
+            <tr>
+
+                <th class="px-6 py-4 text-left text-sm font-bold text-gray-600">
+                    Name
+                </th>
+
+                <th class="px-6 py-4 text-left text-sm font-bold text-gray-600">
+                    Email
+                </th>
+
+                <th class="px-6 py-4 text-left text-sm font-bold text-gray-600">
+                    Phone
+                </th>
+
+                <th class="px-6 py-4 text-left text-sm font-bold text-gray-600">
+                    Message
+                </th>
+
+                <th class="px-6 py-4 text-left text-sm font-bold text-gray-600">
+                    Status
+                </th>
+
+            </tr>
+
+            </thead>
+
+            <tbody>
+
+            {% for lead in leads %}
+
+            <tr class="border-b border-gray-100 hover:bg-gray-50 transition">
+
+                <td class="px-6 py-5 font-semibold text-primary">
+                    {{ lead.name }}
+                </td>
+
+                <td class="px-6 py-5 text-gray-600">
+                    {{ lead.email }}
+                </td>
+
+                <td class="px-6 py-5 text-gray-600">
+                    {{ lead.phone }}
+                </td>
+
+                <td class="px-6 py-5 text-gray-600">
+                    {{ lead.message }}
+                </td>
+
+                <td class="px-6 py-5">
+
+                    <span class="px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-xs font-bold">
+                        {{ lead.status }}
+                    </span>
+
+                </td>
+
+            </tr>
+
+            {% empty %}
+
+            <tr>
+
+                <td colspan="5" class="text-center py-10 text-gray-500">
+                    No Leads Found
+                </td>
+
+            </tr>
+
+            {% endfor %}
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+{% endblock %}
+

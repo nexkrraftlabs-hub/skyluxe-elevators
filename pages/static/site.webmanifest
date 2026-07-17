@@ -1,0 +1,25 @@
+{
+  "name": "Skyluxe Elevators",
+  "short_name": "Skyluxe",
+  "description": "Premium home lifts, passenger lifts, hospital lifts, car lifts & capsule elevators in India.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111111",
+  "theme_color": "#c8a45d",
+  "orientation": "portrait-primary",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/static/img/skyluxelogo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/static/img/skyluxelogo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

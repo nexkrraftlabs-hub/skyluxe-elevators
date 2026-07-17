@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# Block admin and private paths
+Disallow: /admin/
+Disallow: /django-admin/
+Disallow: /dashboard/
+Disallow: /save-lead/
+Disallow: /media/private/
+
+# Allow static files
+Allow: /static/
+Allow: /media/
+
+# Sitemap location
+Sitemap: {{ site_url }}/sitemap.xml

@@ -1,0 +1,632 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+{% block title %}About Skyluxe Elevators | Premium Elevator Manufacturer India{% endblock %}
+
+{% block meta_description %}Learn about Skyluxe Elevators Pvt. Ltd. – India's trusted elevator manufacturer. Swedish-designed luxury home lifts, passenger lifts, hospital lifts & more. Over 500 projects delivered with European quality standards.{% endblock %}
+
+{% block meta_keywords %}about skyluxe elevators, elevator manufacturer india, luxury lift company, home elevator company india, swedish design elevator{% endblock %}
+
+{% block canonical_url %}https://www.skyluxeelevators.com/about.html{% endblock %}
+
+{% block og_title %}About Skyluxe Elevators | Premium Elevator Manufacturer India{% endblock %}
+{% block og_description %}India's trusted elevator manufacturer. Swedish-designed luxury home lifts, passenger lifts, hospital lifts & more. 500+ projects delivered.{% endblock %}
+{% block og_url %}https://www.skyluxeelevators.com/about.html{% endblock %}
+{% block og_image %}{% static 'img/VGO0749_HDR-scaled.jpg' %}{% endblock %}
+{% block og_image_alt %}Skyluxe Elevators – About Our Elevator Manufacturing Company{% endblock %}
+
+{% block twitter_title %}About Skyluxe Elevators | Premium Elevator Manufacturer India{% endblock %}
+{% block twitter_description %}India's trusted elevator manufacturer – Swedish-designed luxury home lifts, passenger lifts & hospital lifts. 500+ projects delivered.{% endblock %}
+{% block twitter_image %}{% static 'img/VGO0749_HDR-scaled.jpg' %}{% endblock %}
+
+{% block structured_data %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "@id": "https://www.skyluxeelevators.com/about.html#webpage",
+  "url": "https://www.skyluxeelevators.com/about.html",
+  "name": "About Skyluxe Elevators | Premium Elevator Manufacturer India",
+  "description": "Skyluxe Elevators Pvt. Ltd. is India's trusted premium elevator manufacturer offering Swedish-designed luxury home lifts, passenger lifts, hospital lifts and car lifts.",
+  "isPartOf": {"@id": "https://www.skyluxeelevators.com/#website"},
+  "about": {
+    "@type": "Organization",
+    "name": "Skyluxe Elevators Pvt. Ltd.",
+    "url": "https://www.skyluxeelevators.com",
+    "foundingDate": "2015",
+    "areaServed": "India",
+    "description": "Premium elevator manufacturer with Swedish-design philosophy. Products include home lifts, passenger lifts, hospital lifts, capsule lifts, goods lifts and car lifts.",
+    "email": "skyluxeelevators@gmail.com",
+    "telephone": "+91-7318202141"
+  }
+}
+</script>
+{% endblock %}
+
+{% block active_about %}active{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+
+{% block content %}
+  <!-- DJANGO MESSAGES -->
+  {% if messages %}
+  <div id="toast-container" style="position: fixed; top: 100px; right: 20px; z-index: 999999;">
+    {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show shadow-lg d-flex align-items-center mb-2"
+      role="alert" style="background-color: var(--gold, #b8892a); border: none; color: #fff; min-width: 300px;">
+      <i class="fas fa-check-circle me-2 fs-5"></i>
+      <div>{{ message }}</div>
+      <button type="button" class="btn-close ms-auto btn-close-white" data-bs-dismiss="alert"
+        aria-label="Close"></button>
+    </div>
+    {% endfor %}
+  </div>
+  <script>
+    setTimeout(() => {
+      const alerts = document.querySelectorAll('#toast-container .alert');
+      alerts.forEach(alert => {
+        alert.classList.remove('show');
+        setTimeout(() => alert.remove(), 300);
+      });
+    }, 5000);
+  </script>
+  {% endif %}  <!-- HERO -->
+  <section class="hero">
+    <div class="swiper hero-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url('{% static 'img/VGO0749_HDR-scaled.jpg' %}')">
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="swiper-slide" style="background-image:url('{% static 'img/VGO05128-copy-scaled.jpg' %}')">
+          <div class="hero-overlay"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <h1>About Skyluxe Elevators</h1>
+      <p>India's Trusted Luxury Elevator Manufacturer – Swedish Design, European Quality.</p>
+      <a href="{% url 'contact' %}"><button class="btn btn-pri">Get a Free Quote</button></a>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTIONS -->
+  <section class="luxury-sections py-5">
+    <div class="container">
+      <!-- 1 -->
+      <div class="row align-items-center mb-5 gy-5">
+        <div class="col-lg-6">
+          <div class="content-box pe-lg-5 fade-left">
+            <span class="tag">SWEDISH ENGINEERING</span>
+            <h2 class="section-heading">
+              Luxury Elevators Crafted With
+              <span class="c-pri">European Precision</span>
+            </h2>
+            <p class="section-text">Our premium home elevators combine Swedish innovation with elegant modern
+              aesthetics. Every detail is engineered to deliver silent performance, advanced safety and timeless
+              luxury for modern homes.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="{% static 'img/home1.jpg' %}" class="img-fluid luxury-img zoom-img fade-up" alt="Skyluxe luxury elevator – Swedish engineering" loading="lazy" decoding="async" />
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="row align-items-center mb-5 gy-5 flex-lg-row-reverse">
+        <div class="col-lg-6">
+          <div class="content-box ps-lg-5 fade-right">
+            <span class="tag">MINIMAL DESIGN</span>
+            <h2 class="section-heading">
+              Elegant Glass Structures
+              <span class="c-pri">For Modern Interiors</span>
+            </h2>
+            <p class="section-text">Designed with panoramic glass cabins and luxurious metallic finishes, our lifts
+              enhance your home's architecture while maintaining maximum space efficiency.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="{% static 'img/home3.jpg' %}" class="img-fluid luxury-img zoom-img fade-up" alt="Skyluxe glass elevator – minimal design for modern interiors" loading="lazy" decoding="async" />
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="row align-items-center mb-5 gy-5">
+        <div class="col-lg-6">
+          <div class="content-box pe-lg-5 fade-left">
+            <span class="tag">ADVANCED TECHNOLOGY</span>
+            <h2 class="section-heading">
+              Smooth &amp; Silent
+              <span class="c-pri">Screw Drive System</span>
+            </h2>
+            <p class="section-text">Our innovative screw-drive technology provides smooth travel, low maintenance and
+              unmatched reliability without requiring deep pits or bulky machine rooms.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="{% static 'img/homeskyluxe.png' %}" class="img-fluid luxury-img zoom-img fade-up" alt="Skyluxe screw-drive lift technology" loading="lazy" decoding="async" />
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="row align-items-center mb-5 gy-5 flex-lg-row-reverse">
+        <div class="col-lg-6">
+          <div class="content-box ps-lg-5 fade-right">
+            <span class="tag">PREMIUM EXPERIENCE</span>
+            <h2 class="section-heading">
+              Smart Features With
+              <span class="c-pri">Luxury Comfort</span>
+            </h2>
+            <p class="section-text">Experience intelligent controls, elegant ambient lighting, energy-efficient
+              operation and premium finishes crafted to elevate every journey inside your home.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="{% static 'img/slider5.png' %}" class="img-fluid luxury-img zoom-img fade-up" alt="Skyluxe smart lift with luxury comfort features" loading="lazy" decoding="async" />
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="row align-items-center mb-5 gy-5">
+        <div class="col-lg-6">
+          <div class="content-box pe-lg-5 fade-left">
+            <span class="tag">SAFETY FIRST</span>
+            <h2 class="section-heading">
+              Designed For
+              <span class="c-pri">Complete Family Safety</span>
+            </h2>
+            <p class="section-text">Equipped with emergency backup systems, safety sensors and smooth stopping
+              technology, our elevators ensure complete peace of mind for every family member.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="{% static 'img/homeskyluxe2.png' %}" class="img-fluid luxury-img zoom-img fade-up" alt="Safe home elevator for family – Skyluxe" loading="lazy" decoding="async" />
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="row align-items-center gy-5 flex-lg-row-reverse">
+        <div class="col-lg-6">
+          <div class="content-box ps-lg-5 fade-right">
+            <span class="tag">CUSTOM LUXURY</span>
+            <h2 class="section-heading">
+              Tailored Elevators For
+              <span class="c-pri">Luxury Living</span>
+            </h2>
+            <p class="section-text">Every elevator is customized to match your interior theme, architecture and
+              personal taste, delivering a one-of-a-kind luxury experience with world-class craftsmanship.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="{% static 'img/skyluxepre.png' %}" class="img-fluid luxury-img zoom-img fade-up" alt="Custom luxury elevator – Skyluxe Elevators" loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section trusted-by bg-light py-5 overflow-hidden">
+    <div class="container text-center">
+      <div class="mb-5 section-anim">
+        <h2 class="fw-bold text-dark mb-2 text-uppercase" style="letter-spacing: 1px;">WE ARE <span
+            class="c-pri">TRUSTED BY</span></h2>
+        <p class="text-muted">Hundreds of customers across The India</p>
+      </div>
+
+      <div class="india-map-wrapper position-relative mx-auto section-anim" style="max-width: 800px;">
+        <!-- Map Image -->
+        <img src="{% static 'img/235986b3-39c1-4be4-8ba2-b5f75eff359b.png' %}" class="w-100 opacity-25"
+          alt="India Map" />
+
+        <!-- Overlay Text -->
+        <div class="position-absolute top-50 start-50 translate-middle text-end w-100">
+          <h3 class="fw-bold text-dark mb-0 display-4 counter" style="opacity: 0.8;">0</h3>
+          <p class="fw-bold text-uppercase c-pri mb-0" style="letter-spacing: 2px;">Installations in India</p>
+        </div>
+
+        <!-- Map Pins (Simplified for Bootstrap) -->
+        <div class="position-absolute text-warning" style="top: 30%; left: 40%;">
+          <i class="fas fa-map-marker-alt fs-4"></i>
+        </div>
+        <div class="position-absolute text-warning" style="top: 45%; left: 70%;">
+          <i class="fas fa-map-marker-alt fs-4"></i>
+        </div>
+        <div class="position-absolute text-warning" style="top: 60%; left: 50%;">
+          <i class="fas fa-map-marker-alt fs-4"></i>
+        </div>
+        <div class="position-absolute text-warning" style="top: 75%; left: 40%;">
+          <i class="fas fa-map-marker-alt fs-4"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 mb-5">
+          <h2 class="contact-title">
+            Let's Build Your
+            <span class="c-pri">Luxury Elevator</span>
+          </h2>
+
+          <p class="contact-text">Connect with our experts for premium elevator solutions.</p>
+
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+91 7275746520</span>
+          </div>
+
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>skyluxeelevators@gmail.com</span>
+          </div>
+
+          <div class="contact-item">
+            <i class="fas fa-location-dot"></i>
+            <span>Lucknow, India</span>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="contact-form-wrapper">
+            <form action="{% url 'save-lead' %}" method="POST">
+              {% csrf_token %}
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <input type="text" class="form-control luxury-input" name="name" placeholder="Your Name" required />
+                </div>
+
+                <div class="col-md-6 mb-4">
+                  <input type="email" class="form-control luxury-input" name="email" placeholder="Email Address"
+                    required />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <input type="tel" class="form-control luxury-input" name="phone" placeholder="Phone Number"
+                    required />
+                </div>
+
+                <div class="col-md-6 mb-4">
+                  <input type="text" class="form-control luxury-input" name="city" placeholder="City" />
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <textarea rows="5" class="form-control luxury-input" name="message"
+                  placeholder="Tell us about your project" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-pri luxury-btn">
+                Send Inquiry
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ and Contact -->
+
+  <!-- ========================= -->
+  <!-- FAQ SECTION -->
+  <!-- ========================= -->
+
+  <section class="section faq-section bg-dark text-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title text-white">
+          Frequently Asked
+          <span class="c-pri">Questions</span>
+        </h2>
+
+        <p class="text-light opacity-75">Everything you need to know about our luxury elevators.</p>
+      </div>
+
+      <div class="accordion faq-accordion" id="faqAccordion">
+        <!-- FAQ 1 -->
+        <div class="accordion-item faq-card">
+          <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq1">How much space is required for a home lift?</button></h2>
+
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Our lifts require very minimal space and can even fit inside existing homes
+              without major civil work.</div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="accordion-item faq-card">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse" data-bs-target="#faq2">Do I need a pit or machine room?</button></h2>
+
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">No. Cibes lifts are designed with screw-drive technology requiring almost no
+              pit and no separate machine room.</div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="accordion-item faq-card">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse" data-bs-target="#faq3">Are these lifts safe for elderly people?</button></h2>
+
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Absolutely. Our elevators include emergency backup, safety sensors, battery
+              lowering, and smooth operation for seniors.</div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="accordion-item faq-card">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse" data-bs-target="#faq4">How long does installation take?</button></h2>
+
+          <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Installation is usually completed within 5–7 days depending on site conditions
+              and customization.</div>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="accordion-item faq-card">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse" data-bs-target="#faq5">Can the lift design match my interior?</button></h2>
+
+          <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Yes. We provide luxury glass finishes, custom colors, lighting, and premium
+              cabin designs tailored to your interiors.</div>
+          </div>
+        </div>
+        <!-- FAQ 6 -->
+        <div class="accordion-item faq-card">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse" data-bs-target="#faq6">What is the maintenance cost?</button></h2>
+
+          <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Our lifts are engineered for low maintenance with highly durable Swedish technology and factory-trained technicians.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+
+{% block extra_js %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // 3D TILT FOR IMAGES
+      (function () {
+        function initTilt(selector) {
+          const nodes = document.querySelectorAll(selector);
+          nodes.forEach(img => {
+            if (img.closest('.tilt-frame')) return;
+
+            const frame = document.createElement('div');
+            frame.className = 'tilt-frame';
+            const inner = document.createElement('div');
+            inner.className = 'tilt-inner';
+            const sheen = document.createElement('div');
+            sheen.className = 'tilt-sheen';
+
+            const parent = img.parentNode;
+            parent.replaceChild(frame, img);
+            inner.appendChild(img);
+            frame.appendChild(inner);
+            frame.appendChild(sheen);
+
+            // Hover interactions: 3D rotational tilt + floating image layer + dynamic sheen
+            frame.addEventListener('mousemove', function (e) {
+              const r = frame.getBoundingClientRect();
+              const px = (e.clientX - r.left) / r.width;
+              const py = (e.clientY - r.top) / r.height;
+
+              const rotY = (px - 0.5) * -12; // increased tilt range for stronger 3D depth
+              const rotX = (py - 0.5) * 10;
+
+              inner.style.transform = `rotateX(${rotX}deg) rotateY(${rotY}deg)`;
+              // translateZ creates a depth offset (parallax) without scaling the image outward
+              img.style.transform = 'translateZ(25px)';
+
+              // Dynamic reflection light sheen following the cursor
+              const sheenX = px * 100;
+              const sheenY = py * 100;
+              sheen.style.background = `radial-gradient(circle at ${sheenX}% ${sheenY}%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 70%)`;
+              sheen.style.opacity = '1';
+            });
+
+            frame.addEventListener('mouseleave', function () {
+              inner.style.transform = 'rotateX(0deg) rotateY(0deg)';
+              img.style.transform = 'translateZ(0px)';
+              sheen.style.opacity = '0';
+            });
+          });
+        }
+        initTilt('.luxury-img');
+      })();
+
+      // HERO SWIPER
+
+      new Swiper('.hero-swiper', {
+        loop: true,
+        effect: 'fade',
+        speed: 1500,
+
+        autoplay: {
+          delay: 4000
+        }
+      })
+
+
+      // GSAP
+
+      gsap.registerPlugin(ScrollTrigger)
+
+      // PAGE LOAD
+
+      gsap.from('.hero-content', {
+        opacity: 0,
+        y: 50,
+        duration: 0.6,
+        ease: 'power3.out'
+      })
+
+      // HERO CONTENT
+
+      gsap.from('.hero-content h1', {
+        y: 120,
+        opacity: 0,
+        duration: 0.7,
+        ease: 'power4.out'
+      })
+
+      gsap.from('.hero-content p', {
+        y: 80,
+        opacity: 0,
+        duration: 0.6,
+        delay: 0.1,
+        ease: 'power3.out'
+      })
+
+      gsap.from('.hero-content .btn', {
+        scale: 0,
+        opacity: 0,
+        duration: 0.5,
+        delay: 0.2,
+        ease: 'back.out(1.7)'
+      })
+
+      // SECTION HEADINGS
+
+      gsap.utils.toArray('.section-heading').forEach((el) => {
+        gsap.from(el, {
+          scrollTrigger: {
+            trigger: el,
+            start: 'top 85%'
+          },
+
+          y: 80,
+          opacity: 0,
+          duration: 0.6,
+          ease: 'power4.out'
+        })
+      })
+
+      // SECTION TEXT
+
+      gsap.utils.toArray('.section-text').forEach((el) => {
+        gsap.from(el, {
+          scrollTrigger: {
+            trigger: el,
+            start: 'top 90%'
+          },
+
+          y: 50,
+          opacity: 0,
+          duration: 0.5
+        })
+      })
+
+      // IMAGES
+
+      gsap.utils.toArray('.luxury-img').forEach((img) => {
+        gsap.from(img, {
+          scrollTrigger: {
+            trigger: img,
+            start: 'top 85%'
+          },
+
+          scale: 1.08,
+          opacity: 0,
+          duration: 0.7,
+          ease: 'power3.out'
+        })
+      })
+
+      // FAQ CARDS
+
+      gsap.utils.toArray('.faq-card').forEach((card, i) => {
+        gsap.from(card, {
+          scrollTrigger: {
+            trigger: card,
+            start: 'top 90%'
+          },
+
+          y: 80,
+          opacity: 0,
+          duration: 0.5,
+          delay: i * 0.05
+        })
+      })
+
+      // FOOTER
+
+      gsap.from('.footer-col', {
+        scrollTrigger: {
+          trigger: 'footer',
+          start: 'top 85%'
+        },
+
+        y: 100,
+        opacity: 0,
+        stagger: 0.1,
+        duration: 0.6
+      })
+
+      // MAP PINS
+
+      gsap.utils.toArray('.fa-map-marker-alt').forEach((pin, i) => {
+        gsap.from(pin, {
+          scrollTrigger: {
+            trigger: pin,
+            start: 'top 95%'
+          },
+
+          scale: 0,
+          opacity: 0,
+          duration: 0.5,
+          delay: i * 0.1,
+          ease: 'back.out(2)'
+        })
+
+        gsap.to(pin, {
+          y: -12,
+          duration: 1.5,
+          repeat: -1,
+          yoyo: true,
+          ease: 'sine.inOut',
+          delay: i * 0.1
+        })
+      })
+
+      // COUNTER ANIMATION
+
+      let counter = { value: 0 }
+
+      gsap.to(counter, {
+        value: 150,
+
+        duration: 1.5,
+
+        ease: 'power2.out',
+
+        scrollTrigger: {
+          trigger: '.counter',
+          start: 'top 85%'
+        },
+
+        onUpdate: function () {
+          document.querySelector('.counter').innerHTML = Math.floor(counter.value) + '+'
+        }
+      })
+    })
+  </script>
+{% endblock %}

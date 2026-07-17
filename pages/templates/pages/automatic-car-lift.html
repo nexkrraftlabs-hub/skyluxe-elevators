@@ -1,0 +1,304 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+{% block title %}Automatic Car Lifts & Parking Elevators | Skyluxe Elevators{% endblock %}
+
+{% block meta_description %}Experience seamless vehicle parking with Skyluxe Elevators' automatic car lifts. High-speed, secure, and fully automated vehicle elevators for modern buildings.{% endblock %}
+
+{% block meta_keywords %}automatic car lift, auto door vehicle elevator, smart parking lift, automatic car elevator india, skyluxe automatic car lift{% endblock %}
+
+{% block canonical_url %}https://www.skyluxeelevators.com/automatic-car-lift.html{% endblock %}
+
+{% block og_title %}Automatic Car Lifts & Parking Elevators | Skyluxe Elevators{% endblock %}
+{% block og_description %}High-speed, secure, and fully automated vehicle elevators for modern buildings and luxury homes.{% endblock %}
+{% block og_url %}https://www.skyluxeelevators.com/automatic-car-lift.html{% endblock %}
+{% block og_image %}{% static 'img/6th.webp' %}{% endblock %}
+{% block og_image_alt %}Automatic Car Lift by Skyluxe Elevators{% endblock %}
+
+{% block twitter_title %}Automatic Car Lifts | Skyluxe Elevators{% endblock %}
+{% block twitter_description %}High-speed, secure, and fully automated vehicle elevators for modern buildings.{% endblock %}
+{% block twitter_image %}{% static 'img/6th.webp' %}{% endblock %}
+
+{% block structured_data %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Automatic Car Lift",
+  "image": "{% static 'img/6th.webp' %}",
+  "description": "High-speed, secure, and fully automated vehicle elevators and car lifts by Skyluxe Elevators.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Skyluxe Elevators"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "INR",
+    "availability": "https://schema.org/InStock",
+    "url": "https://www.skyluxeelevators.com/automatic-car-lift.html"
+  }
+}
+</script>
+{% endblock %}
+
+{% block active_lifts %}active{% endblock %}
+{% block dd_car %}active{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/lifts.css' %}">
+<link rel="stylesheet" href="{% static 'css/automatic-car-lift.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="hero" style="background-image: url('static/img/carlift.png');">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">PREMIUM CAR LIFT</div>
+    <h1>Automatic <span class="c-pri">Car Lift</span></h1>
+    <p>Push-button vehicle elevator with powered controls for showrooms, villas, and basement parking.</p>
+    <a href="{% url 'contact' %}?product=automatic-car-lift" class="btn-pri">Get Free Quote</a>
+  </div>
+</section>
+
+<section class="lift-details-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">AUTOMATED VEHICLE ACCESS</span>
+      <h2 class="section-title">Premium Movement for <span class="c-pri">Modern Parking</span></h2>
+      <p class="section-desc">Automatic car lifts provide better convenience, cleaner operation, and a more premium
+        experience for frequent vehicle movement.</p>
+    </div>
+    <div class="row g-4 align-items-stretch">
+      <div class="col-lg-7">
+        <div class="main-lift-image">
+          <img src="{% static 'img/autocar.png' %}" alt="Automatic Car Lift">
+          <div class="image-overlay">
+            <h3>Push-button Parking Access</h3>
+            <p>Built for premium homes, commercial parking, showrooms, and multi-level vehicle access.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="lift-info-card">
+          <span class="section-tag">PRODUCT BIO DATA</span>
+          <h3>Automatic Car Lift</h3>
+          <p>A refined vehicle lift with automation options for smooth daily parking operations.</p>
+          <div class="info-list">
+            <div class="info-item"><span>Operation</span><strong>Automatic</strong></div>
+            <div class="info-item"><span>Capacity</span><strong>2500 - 5000 KG</strong></div>
+            <div class="info-item"><span>Door</span><strong>Power / Auto</strong></div>
+            <div class="info-item"><span>Control</span><strong>Push Button</strong></div>
+            <div class="info-item"><span>Use Case</span><strong>Premium Parking</strong></div>
+            <div class="info-item"><span>Finish</span><strong>Custom Platform</strong></div>
+          </div>
+          <a href="{% url 'contact' %}?product=automatic-car-lift"
+            class="btn-lift-details text-decoration-none d-inline-block text-center">Request Quote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">AUTOMATIC ADVANTAGES</span>
+      <h2 class="section-title">Convenience with <span class="c-pri">Safety</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fas fa-toggle-on"></i></div>
+          <h4>Easy Control</h4>
+          <ul>
+            <li>Push button panel</li>
+            <li>Landing controls</li>
+            <li>Auto door option</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fas fa-gauge-high"></i></div>
+          <h4>Smooth Travel</h4>
+          <ul>
+            <li>Soft start</li>
+            <li>Stable platform</li>
+            <li>VFD options</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fas fa-building"></i></div>
+          <h4>Best For</h4>
+          <ul>
+            <li>Showrooms</li>
+            <li>Luxury villas</li>
+            <li>Basements</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fas fa-lock"></i></div>
+          <h4>Protection</h4>
+          <ul>
+            <li>Safety locks</li>
+            <li>Door interlock</li>
+            <li>Overload safety</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% block extra_js %}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+
+    // Safety check
+    if (typeof gsap === 'undefined') { return; }
+    if (typeof ScrollTrigger !== 'undefined') { gsap.registerPlugin(ScrollTrigger); }
+
+    // ============================================================
+    // 1. 3D TILT EFFECT (touch device disabled)
+    // ============================================================
+    (function () {
+      if (window.innerWidth < 768 || ('ontouchstart' in window)) return;
+
+      function initTilt(selector, tiltX, tiltY, tz) {
+        document.querySelectorAll(selector).forEach(function (card) {
+          if (card.closest('.tilt-frame')) return;
+
+          var frame = document.createElement('div');
+          frame.className = 'tilt-frame';
+          frame.style.borderRadius = window.getComputedStyle(card).borderRadius || '24px';
+
+          var inner = document.createElement('div');
+          inner.className = 'tilt-inner';
+          inner.style.borderRadius = 'inherit';
+
+          var sheen = document.createElement('div');
+          sheen.className = 'tilt-sheen';
+
+          card.parentNode.replaceChild(frame, card);
+          inner.appendChild(card);
+          frame.appendChild(inner);
+          frame.appendChild(sheen);
+
+          frame.addEventListener('mousemove', function (e) {
+            var r = frame.getBoundingClientRect();
+            var px = (e.clientX - r.left) / r.width;
+            var py = (e.clientY - r.top) / r.height;
+            inner.style.transform = 'rotateX(' + ((py - 0.5) * tiltX) + 'deg) rotateY(' + ((px - 0.5) * -tiltY) + 'deg)';
+            sheen.style.background = 'radial-gradient(circle at ' + (px * 100) + '% ' + (py * 100) + '%, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 70%)';
+            sheen.style.opacity = '1';
+            card.querySelectorAll('h3,h4,h5,img,.price-val,.price,button,.btn-lift-details,.feature-icon,.req-icon').forEach(function (el) {
+              el.style.transform = 'translateZ(' + tz + 'px)';
+            });
+          });
+
+          frame.addEventListener('mouseleave', function () {
+            inner.style.transform = 'rotateX(0deg) rotateY(0deg)';
+            sheen.style.opacity = '0';
+            card.querySelectorAll('h3,h4,h5,img,.price-val,.price,button,.btn-lift-details,.feature-icon,.req-icon').forEach(function (el) {
+              el.style.transform = 'translateZ(0px)';
+            });
+          });
+        });
+      }
+
+      initTilt('.price-card', 12, 14, 25);
+      initTilt('.feature-box', 10, 12, 20);
+      initTilt('.req-card', 10, 12, 20);
+      initTilt('.lift-info-card', 6, 8, 15);
+      initTilt('.main-lift-image', 8, 10, 30);
+      initTilt('.bottom-details-banner', 5, 8, 20);
+    })();
+
+    // ============================================================
+    // 2. GSAP SCROLL ANIMATIONS - SAFE VERSION
+    // Elements are already visible; we only animate if ScrollTrigger loaded
+    // ============================================================
+    if (typeof ScrollTrigger === 'undefined') return;
+
+    // Helper: get the outer tilt-frame wrapper if tilt was applied
+    function getTarget(el) {
+      var f = el.closest('.tilt-frame');
+      return f || el;
+    }
+
+    // Hero entrance (no opacity - already visible)
+    gsap.from('.hero-content', { y: 40, duration: 1.0, ease: 'power3.out', delay: 0.2, clearProps: 'all' });
+
+    // Section headings - safe per-element trigger
+    document.querySelectorAll('.section-title').forEach(function (el) {
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 90%', once: true },
+        y: 30, opacity: 0, duration: 0.7, ease: 'power3.out', clearProps: 'all'
+      });
+    });
+
+    document.querySelectorAll('.section-desc, .section-tag').forEach(function (el) {
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 92%', once: true },
+        y: 20, opacity: 0, duration: 0.6, ease: 'power2.out', clearProps: 'all'
+      });
+    });
+
+    // Cards: animate each individually so missing sections never block
+    document.querySelectorAll('.feature-box').forEach(function (el, i) {
+      gsap.from(getTarget(el), {
+        scrollTrigger: { trigger: getTarget(el), start: 'top 92%', once: true },
+        y: 40, opacity: 0, duration: 0.7, delay: i * 0.08, ease: 'back.out(1.2)', clearProps: 'all'
+      });
+    });
+
+    document.querySelectorAll('.req-card').forEach(function (el, i) {
+      gsap.from(getTarget(el), {
+        scrollTrigger: { trigger: getTarget(el), start: 'top 92%', once: true },
+        y: 40, opacity: 0, duration: 0.7, delay: i * 0.08, ease: 'back.out(1.2)', clearProps: 'all'
+      });
+    });
+
+    document.querySelectorAll('.price-card').forEach(function (el, i) {
+      gsap.from(getTarget(el), {
+        scrollTrigger: { trigger: getTarget(el), start: 'top 92%', once: true },
+        y: 40, opacity: 0, duration: 0.7, delay: i * 0.1, ease: 'power3.out', clearProps: 'all'
+      });
+    });
+
+    document.querySelectorAll('.accordion-item').forEach(function (el, i) {
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 95%', once: true },
+        x: -20, opacity: 0, duration: 0.5, delay: i * 0.08, ease: 'power2.out', clearProps: 'all'
+      });
+    });
+
+    // Info card
+    var infoCard = document.querySelector('.lift-info-card');
+    if (infoCard) {
+      gsap.from(infoCard.querySelectorAll('h3, p, .info-item'), {
+        scrollTrigger: { trigger: getTarget(infoCard), start: 'top 90%', once: true },
+        y: 20, opacity: 0, duration: 0.5, stagger: 0.07, ease: 'power2.out', clearProps: 'all'
+      });
+    }
+
+    // Bottom banner
+    var banner = document.querySelector('.bottom-details-banner');
+    if (banner) {
+      gsap.from(getTarget(banner), {
+        scrollTrigger: { trigger: getTarget(banner), start: 'top 95%', once: true },
+        scale: 0.97, y: 30, opacity: 0, duration: 0.9, ease: 'power3.out', clearProps: 'all'
+      });
+    }
+
+    setTimeout(function () { ScrollTrigger.refresh(); }, 300);
+  });
+</script>
+{% endblock %}
+
+{% endblock %}

@@ -1,0 +1,626 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+{% block title %}Luxury Home Lifts & Residential Elevators India | Skyluxe Elevators{% endblock %}
+
+{% block meta_description %}Upgrade your home with Skyluxe Elevators' premium home lifts. Swedish-designed, space-saving luxury residential elevators in India. Safe, silent, and elegant.{% endblock %}
+
+{% block meta_keywords %}home lift india, residential elevator, luxury home elevator, small home lift, domestic lift, skyluxe home lift{% endblock %}
+
+{% block canonical_url %}https://www.skyluxeelevators.com/home-lift.html{% endblock %}
+
+{% block og_title %}Luxury Home Lifts & Residential Elevators India | Skyluxe Elevators{% endblock %}
+{% block og_description %}Premium Swedish-designed home lifts for modern Indian homes. Safe, silent, and elegant residential elevators.{% endblock %}
+{% block og_url %}https://www.skyluxeelevators.com/home-lift.html{% endblock %}
+{% block og_image %}{% static 'img/1st.webp' %}{% endblock %}
+{% block og_image_alt %}Luxury Home Lift by Skyluxe Elevators{% endblock %}
+
+{% block twitter_title %}Luxury Home Lifts | Skyluxe Elevators{% endblock %}
+{% block twitter_description %}Premium Swedish-designed home lifts for modern Indian homes. Safe, silent, and elegant.{% endblock %}
+{% block twitter_image %}{% static 'img/1st.webp' %}{% endblock %}
+
+{% block structured_data %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Luxury Home Lift",
+  "image": "{% static 'img/1st.webp' %}",
+  "description": "Premium Swedish-designed luxury home lifts and residential elevators by Skyluxe Elevators. Safe, silent, and space-saving solutions for modern homes.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Skyluxe Elevators"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "INR",
+    "availability": "https://schema.org/InStock",
+    "url": "https://www.skyluxeelevators.com/home-lift.html"
+  }
+}
+</script>
+{% endblock %}
+
+{% block active_lifts %}
+active
+{% endblock %}
+{% block dd_home_lift %}
+active
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/lifts.css' %}">
+<link rel="stylesheet" href="{% static 'css/home-lift.css' %}">
+{% endblock %}
+
+{% block content %}
+<!--  ===========================
+     HERO
+===========================  -->
+<section class="hero" style="background-image: url('static/img/homeslider.png');">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">RESIDENTIAL ELEVATORS</div>
+    <h1>Home <span class="c-pri">Lift</span></h1>
+    <p>Whisper-quiet, space-saving luxury lifts crafted for modern residences.</p>
+    <a href="contact.html" class="btn-pri">Get Free Quote</a>
+  </div>
+</section>
+
+<!--  ===========================
+     DETAILS + SPECS
+===========================  -->
+<section class="lift-details-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">RESIDENTIAL ELEVATOR GUIDE</span>
+      <h2 class="section-title">Premium <span class="c-pri">Home Lifts</span></h2>
+      <p class="section-desc">Designed for 2–6 floor homes — combining silent operation, smart safety and luxury
+        aesthetics without requiring a machine room or deep pit.</p>
+    </div>
+
+    <div class="row g-4 align-items-stretch">
+      <!-- IMAGE -->
+      <div class="col-lg-7">
+        <div class="main-lift-image">
+          <img src="{% static 'img/home3.jpg' %}" alt="Home Lift" />
+          <div class="image-overlay">
+            <h3>Panoramic Glass Home Lift</h3>
+            <p>Swedish-engineered screw-drive platform lift with silent movement and premium finishes.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SPECS CARD -->
+      <div class="col-lg-5">
+        <div class="lift-info-card">
+          <span class="section-tag">PRODUCT SPECS</span>
+          <h3>Residential Lift</h3>
+          <p>Ideal for duplex, triplex and bungalow homes. Minimal civil work, self-supporting glass shaft, no machine
+            room needed.</p>
+          <div class="info-list">
+            <div class="info-item">
+              <span>Lift Type</span> <strong>Platform / Screw Drive</strong>
+            </div>
+            <div class="info-item">
+              <span>Technology</span> <strong>EcoSilent 2.0</strong>
+            </div>
+            <div class="info-item">
+              <span>Capacity</span> <strong>Up to 400 KG</strong>
+            </div>
+            <div class="info-item">
+              <span>Floors Served</span> <strong>2 – 6 Floors</strong>
+            </div>
+            <div class="info-item">
+              <span>Min. Shaft Size</span> <strong>900 × 900 mm</strong>
+            </div>
+            <div class="info-item">
+              <span>Pit Requirement</span> <strong>Zero / 50 mm</strong>
+            </div>
+            <div class="info-item">
+              <span>Power Supply</span> <strong>Single Phase 230V</strong>
+            </div>
+            <div class="info-item">
+              <span>Installation</span> <strong>5 – 7 Days</strong>
+            </div>
+            <div class="info-item">
+              <span>Warranty</span> <strong>2 Years + AMC</strong>
+            </div>
+
+          </div>
+          <button class="btn-lift-details">Get Full Brochure</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--  ===========================
+     LIFT TYPES VARIATIONS
+===========================  -->
+<section class="tech-section" style="padding: 100px 0; background: #fbf9f4;">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">CHOOSE YOUR DRIVE SYSTEM</span>
+      <h2 class="section-title">Home Lift <span class="c-pri">Technologies</span></h2>
+      <p class="section-desc">Our home lifts are available in two premium drive variations. Choose the technology that
+        fits your villa layout.</p>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <!-- Hydraulic -->
+      <div class="col-lg-5 col-md-6">
+        <div class="price-card"
+          style="height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <h4>Hydraulic Home Lift</h4>
+            <p class="plan-sub">Ultimate Jerk-free Piston Comfort</p>
+            <div class="price" style="font-size: 20px; font-weight: 500; margin: 15px 0;">
+              Smooth piston drive unit
+            </div>
+            <ul style="text-align: left; margin-bottom: 25px;">
+              <li><i class="fas fa-check"></i> Extremely quiet piston travel</li>
+              <li><i class="fas fa-check"></i> Zero-vibration Italian valve tech</li>
+              <li><i class="fas fa-check"></i> Remote pump placement options</li>
+              <li><i class="fas fa-check"></i> Safest gravity-based ARD system</li>
+            </ul>
+          </div>
+          <a href="home-hydraulic-lift.html" class="btn-lift-details text-decoration-none d-inline-block text-center"
+            style="background-color: var(--gold); border: none; padding: 14px 20px; border-radius: 30px; color: #fff;">Explore
+            Hydraulic Tech <i class="fas fa-arrow-right ms-1"></i></a>
+        </div>
+      </div>
+
+      <!-- Gearless -->
+      <div class="col-lg-5 col-md-6">
+        <div class="price-card featured"
+          style="height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <h4>Gearless Traction Lift</h4>
+            <p class="plan-sub">MRL Energy-Saving High-Speed Drive</p>
+            <div class="price" style="font-size: 20px; font-weight: 500; margin: 15px 0;">
+              Modern PMSM Motor Drive
+            </div>
+            <ul style="text-align: left; margin-bottom: 25px;">
+              <li><i class="fas fa-check"></i> High travel speeds up to 1.0 m/s</li>
+              <li><i class="fas fa-check"></i> Space saving machine room-less (MRL)</li>
+              <li><i class="fas fa-check"></i> Runs on single phase power supply</li>
+              <li><i class="fas fa-check"></i> 50% energy savings over geared traction</li>
+            </ul>
+          </div>
+          <a href="home-belt-drive-lift.html" class="btn-lift-details text-decoration-none d-inline-block text-center"
+            style="background-color: #fff; border: none; padding: 14px 20px; border-radius: 30px; color: #111;">Explore
+            Gearless Tech <i class="fas fa-arrow-right ms-1"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--  ===========================
+     FEATURES
+===========================  -->
+<section class="features-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">WHAT'S INCLUDED</span>
+      <h2 class="section-title">Key <span class="c-pri">Features</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <div class="feature-icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h4>Lift Parts</h4>
+          <ul>
+            <li>Aluminium / Steel Cabin</li>
+            <li>Tempered Glass Shaft</li>
+            <li>Touchscreen Control Panel</li>
+            <li>Screw / Hydraulic Drive Motor</li>
+            <li>Soft Start / Stop System</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <div class="feature-icon">
+            <i class="fas fa-layer-group"></i>
+          </div>
+          <h4>Premium Finishes</h4>
+          <ul>
+            <li>Tempered Glass Walls</li>
+            <li>Oak Wood / Walnut Cabin</li>
+            <li>Powder-Coated Steel Frame</li>
+            <li>LED Ambient Lighting</li>
+            <li>Leather Handrail Option</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h4>Safety Features</h4>
+          <ul>
+            <li>Emergency Battery Lowering</li>
+            <li>Auto Door Lock System</li>
+            <li>Overload Sensor & Alarm</li>
+            <li>Obstruction Detection</li>
+            <li>GSM / Phone Intercom</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <div class="feature-icon">
+            <i class="fas fa-indian-rupee-sign"></i>
+          </div>
+          <h4>Price Includes</h4>
+          <ul>
+            <li>Complete Installation</li>
+            <li>Cabin + Glass Shaft</li>
+            <li>Full Safety Setup</li>
+            <li>2 Year Warranty</li>
+            <li>Free 1st Year Service</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--  ===========================
+     REQUIREMENTS
+===========================  -->
+<section class="requirements-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">BEFORE INSTALLATION</span>
+      <h2 class="section-title">Site <span class="c-pri">Requirements</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="req-card">
+          <div class="req-icon">
+            <i class="fas fa-ruler-combined"></i>
+          </div>
+          <h5>SPACE</h5>
+          <h3>Minimum Area</h3>
+          <p>Minimum shaft footprint of 900×900 mm needed. No machine room required. Self-supporting shaft — suitable
+            for existing homes without major civil work.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="req-card">
+          <div class="req-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h5>POWER</h5>
+          <h3>Electrical Supply</h3>
+          <p>Standard single-phase 230V supply is sufficient. Our EcoSilent drives use 35% less power than conventional
+            lifts. Average monthly cost: ₹200–₹500.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="req-card">
+          <div class="req-icon">
+            <i class="fas fa-hard-hat"></i>
+          </div>
+          <h5>CIVIL WORK</h5>
+          <h3>Minimal Pit</h3>
+          <p>Only a 50–100 mm shallow pit is needed. Zero-pit models also available. No brick or concrete shaft
+            construction required for most standard models.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="req-card">
+          <div class="req-icon">
+            <i class="fas fa-building"></i>
+          </div>
+          <h5>FLOORS</h5>
+          <h3>Floor Coverage</h3>
+          <p>Serves 2 to 6 floors with floor-to-floor height up to 3000 mm per level. Custom multi-level configurations
+            available for large bungalows and villas.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="req-card">
+          <div class="req-icon">
+            <i class="fas fa-weight-hanging"></i>
+          </div>
+          <h5>LOAD</h5>
+          <h3>Weight Capacity</h3>
+          <p>Standard models carry up to 400 KG (4–5 persons). Heavy-duty variants available up to 600 KG, including
+            wheelchair-accessible configurations.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="req-card">
+          <div class="req-icon">
+            <i class="fas fa-calendar-check"></i>
+          </div>
+          <h5>TIMELINE</h5>
+          <h3>Installation Period</h3>
+          <p>Full installation completed in 5–7 working days. Our factory-trained technicians manage everything from
+            site preparation to final commissioning and testing.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--  ===========================
+     FAQ
+===========================  -->
+<section class="faq-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">HAVE QUESTIONS?</span>
+      <h2 class="section-title">Frequently Asked <span class="c-pri">Questions</span></h2>
+    </div>
+    <div class="accordion faq-accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#faq1">How much space is needed to install a home lift?</button></h2>
+        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Our home lifts require a minimum shaft area of just 900×900 mm. No machine room
+            needed. The self-supporting glass shaft can be installed without major civil construction, even inside
+            existing homes.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#faq2">Is a pit or machine room required?</button></h2>
+        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">No. Our screw-drive technology requires only a 50–100 mm shallow pit, and zero-pit
+            models are also available. There is no need for a separate machine room — the drive unit sits inside the
+            shaft top or base.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#faq3">Is a home lift safe for elderly and children?</button></h2>
+        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Absolutely. Every lift includes emergency battery lowering, obstruction sensors,
+            auto door lock, overload protection, emergency alarm, and GSM intercom — making it fully safe for all age
+            groups.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#faq4">What is the monthly electricity cost?</button></h2>
+        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Our EcoSilent drives consume 30–40% less electricity than traditional lift motors.
+            For typical residential usage (15–20 trips/day), monthly electricity costs range from ₹200 to ₹500 depending
+            on the model.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#faq5">Can the cabin design match my home interiors?</button></h2>
+        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Yes! We offer full customisation — oak wood, walnut, tempered glass, powder-coated
+            steel, custom RAL colours, ambient LED lighting, leather handrails and mirror panels — all tailored to
+            complement your interiors.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--  ===========================
+     BOTTOM BANNER
+===========================  -->
+<section style="padding: 60px 0 120px; background: #ffffff;">
+  <div class="container">
+    <div class="bottom-details-banner">
+      <div class="banner-content">
+        <span>WHY CHOOSE SKYLUXE</span>
+        <h2>Home Elevators Built For Luxury Living</h2>
+        <p>Combining Swedish engineering, luxury aesthetics and smart safety systems — our home lifts are trusted across
+          250+ premium residences in India.</p>
+        <a href="hcac.html" class="btn-pri mt-3">Contact Our Experts</a>
+      </div>
+      <div class="banner-image">
+        <img src="static/img/homeb.png" alt="Luxury Home Lift" />
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+
+    // Prevent animations from firing before GSAP is ready
+    if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') {
+      console.warn('GSAP or ScrollTrigger not loaded. Animations disabled.');
+      return;
+    }
+    gsap.registerPlugin(ScrollTrigger);
+
+    // 1. ADVANCED 3D TILT EFFECT
+    // Fixes layout bugs by preserving flex and heights, disabled on touch/mobile for smooth scrolling
+    (function () {
+      const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (window.innerWidth < 768);
+      if (isTouchDevice) return; // Solve scrolling error on mobile
+
+      function initTilt(selector, tiltRangeX = 8, tiltRangeY = 10, translateZVal = 15) {
+        const nodes = document.querySelectorAll(selector);
+        nodes.forEach(card => {
+          if (card.closest('.tilt-frame')) return;
+
+          const frame = document.createElement('div');
+          frame.className = 'tilt-frame';
+          frame.style.borderRadius = window.getComputedStyle(card).borderRadius || '24px';
+
+          const inner = document.createElement('div');
+          inner.className = 'tilt-inner';
+          inner.style.borderRadius = 'inherit';
+
+          const sheen = document.createElement('div');
+          sheen.className = 'tilt-sheen';
+
+          const parent = card.parentNode;
+          parent.replaceChild(frame, card);
+          inner.appendChild(card);
+          frame.appendChild(inner);
+          frame.appendChild(sheen);
+
+          frame.addEventListener('mousemove', function (e) {
+            const r = frame.getBoundingClientRect();
+            const px = (e.clientX - r.left) / r.width;
+            const py = (e.clientY - r.top) / r.height;
+
+            const rotY = (px - 0.5) * -tiltRangeY;
+            const rotX = (py - 0.5) * tiltRangeX;
+
+            inner.style.transform = `rotateX(${rotX}deg) rotateY(${rotY}deg)`;
+
+            // 3D pop out effect on children
+            const childElements = card.querySelectorAll('h3, h4, h5, img, .price-val, .price, button, .btn-lift-details, .feature-icon, .req-icon, .banner-image img, ul');
+            childElements.forEach(el => {
+              el.style.transform = `translateZ(${translateZVal}px)`;
+              el.style.transition = 'transform 0.3s ease';
+            });
+
+            // Dynamic light reflection
+            const sheenX = px * 100;
+            const sheenY = py * 100;
+            sheen.style.background = `radial-gradient(circle at ${sheenX}% ${sheenY}%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 70%)`;
+            sheen.style.opacity = '1';
+          });
+
+          frame.addEventListener('mouseleave', function () {
+            inner.style.transform = 'rotateX(0deg) rotateY(0deg)';
+            const childElements = card.querySelectorAll('h3, h4, h5, img, .price-val, .price, button, .btn-lift-details, .feature-icon, .req-icon, .banner-image img, ul');
+            childElements.forEach(el => {
+              el.style.transform = 'translateZ(0px)';
+            });
+            sheen.style.opacity = '0';
+          });
+        });
+      }
+
+      // Apply 3D Tilt to ALL main functionalities
+      initTilt('.price-card', 12, 14, 25);
+      initTilt('.feature-box', 10, 12, 20);
+      initTilt('.req-card', 10, 12, 20);
+      initTilt('.lift-info-card', 6, 8, 15);
+      initTilt('.main-lift-image', 8, 10, 30);
+      initTilt('.bottom-details-banner', 5, 8, 20);
+    })();
+
+    // 2. COMPREHENSIVE GSAP SCROLL ANIMATIONS FOR EVERY ELEMENT
+
+    // Helper: Animate the OUTER tilt-frame instead of the inner 3D card to avoid rendering bugs!
+    function getAnimTarget(selector) {
+      const els = document.querySelectorAll(selector);
+      return Array.from(els).map(el => {
+        const frame = el.closest('.tilt-frame');
+        return frame ? frame : el;
+      });
+    }
+
+    // Hero Parallax & Float
+    gsap.to('.hero', {
+      scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true },
+      backgroundPosition: '50% 100%', ease: 'none'
+    });
+    gsap.from('.hero-content', { y: 50, opacity: 0, duration: 1.2, ease: 'power3.out', delay: 0.2 });
+
+    // Titles & Subtitles fade up
+    gsap.utils.toArray('.section-title').forEach((title) => {
+      gsap.from(title, {
+        scrollTrigger: { trigger: title, start: 'top 85%' },
+        y: 40, opacity: 0, duration: 0.8, ease: 'power3.out'
+      });
+    });
+
+    gsap.utils.toArray('.section-desc, .section-tag').forEach((desc) => {
+      gsap.from(desc, {
+        scrollTrigger: { trigger: desc, start: 'top 88%' },
+        y: 30, opacity: 0, duration: 0.8, ease: 'power2.out'
+      });
+    });
+
+    // Lift Details Info Card items stagger
+    const infoCardTargets = getAnimTarget('.lift-info-card');
+    if (infoCardTargets.length > 0) {
+      gsap.from('.lift-info-card h3, .lift-info-card p, .lift-info-card .info-item', {
+        scrollTrigger: { trigger: infoCardTargets[0], start: 'top 85%' },
+        y: 30, opacity: 0, duration: 0.6, stagger: 0.08, ease: 'power2.out'
+      });
+    }
+
+    // Feature Boxes stagger animation
+    const featureBoxes = getAnimTarget('.feature-box');
+    if (featureBoxes.length > 0) {
+      gsap.from(featureBoxes, {
+        scrollTrigger: { trigger: '.features-section', start: 'top 80%' },
+        y: 60, opacity: 0, duration: 0.8, stagger: 0.15, ease: 'back.out(1.2)'
+      });
+    }
+
+    // Requirements Cards stagger animation
+    const reqCards = getAnimTarget('.req-card');
+    if (reqCards.length > 0) {
+      gsap.from(reqCards, {
+        scrollTrigger: { trigger: '.requirements-section', start: 'top 80%' },
+        y: 60, opacity: 0, duration: 0.8, stagger: 0.15, ease: 'back.out(1.2)'
+      });
+    }
+
+    // Pricing Cards stagger
+    const priceCards = getAnimTarget('.price-card');
+    if (priceCards.length > 0) {
+      gsap.from(priceCards, {
+        scrollTrigger: { trigger: '.pricing-section', start: 'top 80%' },
+        y: 80, opacity: 0, duration: 0.9, stagger: 0.2, ease: 'power3.out'
+      });
+    }
+
+    // FAQ Accordion stagger slide-in (Removed GSAP animation to fix visibility issue)
+    /*
+    const faqItems = document.querySelectorAll('.accordion-item');
+    if (faqItems.length > 0) {
+      gsap.from(faqItems, {
+        scrollTrigger: { trigger: '.faq-section', start: 'top 85%' },
+        x: -30, opacity: 0, duration: 0.6, stagger: 0.1, ease: 'power2.out'
+      });
+    }
+    */
+
+    // Bottom Banner scale-in
+    const bottomBanners = getAnimTarget('.bottom-details-banner');
+    if (bottomBanners.length > 0) {
+      gsap.from(bottomBanners, {
+        scrollTrigger: { trigger: bottomBanners[0], start: 'top 90%' },
+        scale: 0.95, y: 50, opacity: 0, duration: 1, ease: 'power3.out'
+      });
+    }
+
+    // Make sure scroll triggers calculate correct positions after tilt wrappers are added
+    setTimeout(() => {
+      ScrollTrigger.refresh();
+    }, 500);
+
+  });
+</script>
+{% endblock %}

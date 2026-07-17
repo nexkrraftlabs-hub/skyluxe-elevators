@@ -1,0 +1,305 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+{% block title %}Double Stacker Parking Lifts | Skyluxe Elevators India{% endblock %}
+
+{% block meta_description %}Double your parking capacity with Skyluxe Elevators' double stacker parking lifts. Safe, space-saving hydraulic vehicle stackers for homes and apartments.{% endblock %}
+
+{% block meta_keywords %}double stacker parking lift, car stacker india, hydraulic parking lift, space saving car lift, skyluxe parking elevator, two car parking lift{% endblock %}
+
+{% block canonical_url %}https://www.skyluxeelevators.com/double-stacker-parking-lift.html{% endblock %}
+
+{% block og_title %}Double Stacker Parking Lifts | Skyluxe Elevators India{% endblock %}
+{% block og_description %}Double your parking capacity safely with space-saving hydraulic vehicle stackers for homes and apartments.{% endblock %}
+{% block og_url %}https://www.skyluxeelevators.com/double-stacker-parking-lift.html{% endblock %}
+{% block og_image %}{% static 'img/6th.webp' %}{% endblock %}
+{% block og_image_alt %}Double Stacker Parking Lift by Skyluxe Elevators{% endblock %}
+
+{% block twitter_title %}Double Stacker Parking Lifts | Skyluxe Elevators{% endblock %}
+{% block twitter_description %}Double your parking capacity safely with space-saving hydraulic vehicle stackers.{% endblock %}
+{% block twitter_image %}{% static 'img/6th.webp' %}{% endblock %}
+
+{% block structured_data %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Double Stacker Parking Lift",
+  "image": "{% static 'img/6th.webp' %}",
+  "description": "Safe and space-saving double stacker parking lifts and hydraulic vehicle stackers by Skyluxe Elevators.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Skyluxe Elevators"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "INR",
+    "availability": "https://schema.org/InStock",
+    "url": "https://www.skyluxeelevators.com/double-stacker-parking-lift.html"
+  }
+}
+</script>
+{% endblock %}
+
+{% block active_lifts %}active{% endblock %}
+{% block dd_car %}active{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/lifts.css' %}">
+<link rel="stylesheet" href="{% static 'css/double-stacker-parking-lift.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="hero" style="background-image: url('static/img/carlift.png');">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">PARKING LIFT SYSTEM</div>
+    <h1>Double Stacker <span class="c-pri">Parking Lift</span></h1>
+    <p>Two-level parking solution that doubles vehicle capacity in the same footprint.</p>
+    <a href="{% url 'contact' %}?product=double-stacker-parking-lift" class="btn-pri">Get Free Quote</a>
+  </div>
+</section>
+
+<section class="lift-details-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">SPACE SAVING PARKING</span>
+      <h2 class="section-title">Two Cars in <span class="c-pri">One Bay</span></h2>
+      <p class="section-desc">Double stacker parking lifts are made for apartments, villas, commercial lots, and
+        buildings with limited parking area.</p>
+    </div>
+    <div class="row g-4 align-items-stretch">
+      <div class="col-lg-7">
+        <div class="main-lift-image">
+          <img src="{% static 'img/dublecar.png' %}" alt="Double Stacker Parking Lift">
+          <div class="image-overlay">
+            <h3>Double Parking Capacity</h3>
+            <p>Use vertical space intelligently with a compact two-level parking platform.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="lift-info-card">
+          <span class="section-tag">PRODUCT BIO DATA</span>
+          <h3>Double Stacker Parking Lift</h3>
+          <p>A space-saving parking system for sites where increasing parking count is more important than creating new
+            floor area.</p>
+          <div class="info-list">
+            <div class="info-item"><span>Type</span><strong>Two Level Parking</strong></div>
+            <div class="info-item"><span>Capacity</span><strong>2000 - 3000 KG</strong></div>
+            <div class="info-item"><span>Cars</span><strong>2 Per Bay</strong></div>
+            <div class="info-item"><span>Operation</span><strong>Hydraulic</strong></div>
+            <div class="info-item"><span>Use Case</span><strong>Parking Expansion</strong></div>
+            <div class="info-item"><span>Safety</span><strong>Mechanical Locks</strong></div>
+          </div>
+          <a href="{% url 'contact' %}?product=double-stacker-parking-lift"
+            class="btn-lift-details text-decoration-none d-inline-block text-center">Request Quote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">PARKING BENEFITS</span>
+      <h2 class="section-title">Compact and <span class="c-pri">High Utility</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fas fa-square-parking"></i></div>
+          <h4>More Parking</h4>
+          <ul>
+            <li>Two cars per bay</li>
+            <li>Space saving layout</li>
+            <li>Basement friendly</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fas fa-lock"></i></div>
+          <h4>Safety Locks</h4>
+          <ul>
+            <li>Mechanical locking</li>
+            <li>Anti-fall system</li>
+            <li>Limit switches</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fas fa-building-user"></i></div>
+          <h4>Applications</h4>
+          <ul>
+            <li>Apartments</li>
+            <li>Villas</li>
+            <li>Commercial parking</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fas fa-sliders"></i></div>
+          <h4>Custom Fit</h4>
+          <ul>
+            <li>Vehicle size based</li>
+            <li>Platform options</li>
+            <li>Indoor layouts</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% block extra_js %}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+
+    // Safety check
+    if (typeof gsap === 'undefined') { return; }
+    if (typeof ScrollTrigger !== 'undefined') { gsap.registerPlugin(ScrollTrigger); }
+
+    // ============================================================
+    // 1. 3D TILT EFFECT (touch device disabled)
+    // ============================================================
+    (function () {
+      if (window.innerWidth < 768 || ('ontouchstart' in window)) return;
+
+      function initTilt(selector, tiltX, tiltY, tz) {
+        document.querySelectorAll(selector).forEach(function (card) {
+          if (card.closest('.tilt-frame')) return;
+
+          var frame = document.createElement('div');
+          frame.className = 'tilt-frame';
+          frame.style.borderRadius = window.getComputedStyle(card).borderRadius || '24px';
+
+          var inner = document.createElement('div');
+          inner.className = 'tilt-inner';
+          inner.style.borderRadius = 'inherit';
+
+          var sheen = document.createElement('div');
+          sheen.className = 'tilt-sheen';
+
+          card.parentNode.replaceChild(frame, card);
+          inner.appendChild(card);
+          frame.appendChild(inner);
+          frame.appendChild(sheen);
+
+          frame.addEventListener('mousemove', function (e) {
+            var r = frame.getBoundingClientRect();
+            var px = (e.clientX - r.left) / r.width;
+            var py = (e.clientY - r.top) / r.height;
+            inner.style.transform = 'rotateX(' + ((py - 0.5) * tiltX) + 'deg) rotateY(' + ((px - 0.5) * -tiltY) + 'deg)';
+            sheen.style.background = 'radial-gradient(circle at ' + (px * 100) + '% ' + (py * 100) + '%, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 70%)';
+            sheen.style.opacity = '1';
+            card.querySelectorAll('h3,h4,h5,img,.price-val,.price,button,.btn-lift-details,.feature-icon,.req-icon').forEach(function (el) {
+              el.style.transform = 'translateZ(' + tz + 'px)';
+            });
+          });
+
+          frame.addEventListener('mouseleave', function () {
+            inner.style.transform = 'rotateX(0deg) rotateY(0deg)';
+            sheen.style.opacity = '0';
+            card.querySelectorAll('h3,h4,h5,img,.price-val,.price,button,.btn-lift-details,.feature-icon,.req-icon').forEach(function (el) {
+              el.style.transform = 'translateZ(0px)';
+            });
+          });
+        });
+      }
+
+      initTilt('.price-card', 12, 14, 25);
+      initTilt('.feature-box', 10, 12, 20);
+      initTilt('.req-card', 10, 12, 20);
+      initTilt('.lift-info-card', 6, 8, 15);
+      initTilt('.main-lift-image', 8, 10, 30);
+      initTilt('.bottom-details-banner', 5, 8, 20);
+    })();
+
+    // ============================================================
+    // 2. GSAP SCROLL ANIMATIONS - SAFE VERSION
+    // Elements are already visible; we only animate if ScrollTrigger loaded
+    // ============================================================
+    if (typeof ScrollTrigger === 'undefined') return;
+
+    // Helper: get the outer tilt-frame wrapper if tilt was applied
+    function getTarget(el) {
+      var f = el.closest('.tilt-frame');
+      return f || el;
+    }
+
+    // Hero entrance (no opacity - already visible)
+    gsap.from('.hero-content', { y: 40, duration: 1.0, ease: 'power3.out', delay: 0.2, clearProps: 'all' });
+
+    // Section headings - safe per-element trigger
+    document.querySelectorAll('.section-title').forEach(function (el) {
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 90%', once: true },
+        y: 30, opacity: 0, duration: 0.7, ease: 'power3.out', clearProps: 'all'
+      });
+    });
+
+    document.querySelectorAll('.section-desc, .section-tag').forEach(function (el) {
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 92%', once: true },
+        y: 20, opacity: 0, duration: 0.6, ease: 'power2.out', clearProps: 'all'
+      });
+    });
+
+    // Cards: animate each individually so missing sections never block
+    document.querySelectorAll('.feature-box').forEach(function (el, i) {
+      gsap.from(getTarget(el), {
+        scrollTrigger: { trigger: getTarget(el), start: 'top 92%', once: true },
+        y: 40, opacity: 0, duration: 0.7, delay: i * 0.08, ease: 'back.out(1.2)', clearProps: 'all'
+      });
+    });
+
+    document.querySelectorAll('.req-card').forEach(function (el, i) {
+      gsap.from(getTarget(el), {
+        scrollTrigger: { trigger: getTarget(el), start: 'top 92%', once: true },
+        y: 40, opacity: 0, duration: 0.7, delay: i * 0.08, ease: 'back.out(1.2)', clearProps: 'all'
+      });
+    });
+
+    document.querySelectorAll('.price-card').forEach(function (el, i) {
+      gsap.from(getTarget(el), {
+        scrollTrigger: { trigger: getTarget(el), start: 'top 92%', once: true },
+        y: 40, opacity: 0, duration: 0.7, delay: i * 0.1, ease: 'power3.out', clearProps: 'all'
+      });
+    });
+
+    document.querySelectorAll('.accordion-item').forEach(function (el, i) {
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 95%', once: true },
+        x: -20, opacity: 0, duration: 0.5, delay: i * 0.08, ease: 'power2.out', clearProps: 'all'
+      });
+    });
+
+    // Info card
+    var infoCard = document.querySelector('.lift-info-card');
+    if (infoCard) {
+      gsap.from(infoCard.querySelectorAll('h3, p, .info-item'), {
+        scrollTrigger: { trigger: getTarget(infoCard), start: 'top 90%', once: true },
+        y: 20, opacity: 0, duration: 0.5, stagger: 0.07, ease: 'power2.out', clearProps: 'all'
+      });
+    }
+
+    // Bottom banner
+    var banner = document.querySelector('.bottom-details-banner');
+    if (banner) {
+      gsap.from(getTarget(banner), {
+        scrollTrigger: { trigger: getTarget(banner), start: 'top 95%', once: true },
+        scale: 0.97, y: 30, opacity: 0, duration: 0.9, ease: 'power3.out', clearProps: 'all'
+      });
+    }
+
+    setTimeout(function () { ScrollTrigger.refresh(); }, 300);
+  });
+</script>
+{% endblock %}
+
+{% endblock %}
