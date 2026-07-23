@@ -1,42 +1,60 @@
 {% extends 'pages/base.html' %}
 {% load static %}
 
-{% block title %}Double Stacker Parking Lifts | Skyluxe Elevators India{% endblock %}
+{% block title %}Double Stacker Parking Lift in Lucknow | Skyluxe Elevators{% endblock %}
 
-{% block meta_description %}Double your parking capacity with Skyluxe Elevators' double stacker parking lifts. Safe, space-saving hydraulic vehicle stackers for homes and apartments.{% endblock %}
+{% block meta_description %}Double your parking capacity in Lucknow with Skyluxe Elevators' double stacker parking lifts. Safe, space-saving hydraulic vehicle stackers for homes.{% endblock %}
 
-{% block meta_keywords %}double stacker parking lift, car stacker india, hydraulic parking lift, space saving car lift, skyluxe parking elevator, two car parking lift{% endblock %}
+{% block meta_keywords %}double stacker parking lift lucknow, car stacker lucknow, hydraulic parking lift up, space saving car lift lucknow, skyluxe parking elevator{% endblock %}
 
-{% block canonical_url %}https://www.skyluxeelevators.com/double-stacker-parking-lift.html{% endblock %}
+{% block canonical_url %}https://skyluxeelevators.com/double-stacker-parking-lift.html{% endblock %}
 
-{% block og_title %}Double Stacker Parking Lifts | Skyluxe Elevators India{% endblock %}
-{% block og_description %}Double your parking capacity safely with space-saving hydraulic vehicle stackers for homes and apartments.{% endblock %}
-{% block og_url %}https://www.skyluxeelevators.com/double-stacker-parking-lift.html{% endblock %}
+{% block og_title %}Double Stacker Parking Lift in Lucknow | Skyluxe Elevators{% endblock %}
+{% block og_description %}Double your parking capacity safely with space-saving hydraulic vehicle stackers for homes and apartments in Lucknow, UP.{% endblock %}
+{% block og_url %}https://skyluxeelevators.com/double-stacker-parking-lift.html{% endblock %}
 {% block og_image %}{% static 'img/6th.webp' %}{% endblock %}
-{% block og_image_alt %}Double Stacker Parking Lift by Skyluxe Elevators{% endblock %}
+{% block og_image_alt %}Double Stacker Parking Lift in Lucknow by Skyluxe Elevators{% endblock %}
 
-{% block twitter_title %}Double Stacker Parking Lifts | Skyluxe Elevators{% endblock %}
-{% block twitter_description %}Double your parking capacity safely with space-saving hydraulic vehicle stackers.{% endblock %}
+{% block twitter_title %}Double Stacker Parking Lift in Lucknow | Skyluxe Elevators{% endblock %}
+{% block twitter_description %}Double your parking capacity safely with space-saving hydraulic vehicle stackers in Lucknow.{% endblock %}
 {% block twitter_image %}{% static 'img/6th.webp' %}{% endblock %}
 
 {% block structured_data %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Double Stacker Parking Lift",
-  "image": "{% static 'img/6th.webp' %}",
-  "description": "Safe and space-saving double stacker parking lifts and hydraulic vehicle stackers by Skyluxe Elevators.",
-  "brand": {
-    "@type": "Brand",
-    "name": "Skyluxe Elevators"
-  },
-  "offers": {
-    "@type": "AggregateOffer",
-    "priceCurrency": "INR",
-    "availability": "https://schema.org/InStock",
-    "url": "https://www.skyluxeelevators.com/double-stacker-parking-lift.html"
-  }
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Double Stacker Parking Lift Installation in Lucknow",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Skyluxe Elevators",
+        "url": "https://skyluxeelevators.com"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Lucknow"
+      },
+      "description": "Professional installation of space-saving double stacker parking lifts and hydraulic vehicle stackers in Lucknow by Skyluxe Elevators."
+    },
+    {
+      "@type": "Product",
+      "name": "Double Stacker Parking Lift",
+      "image": "{% static 'img/6th.webp' %}",
+      "description": "Safe and space-saving double stacker parking lifts and hydraulic vehicle stackers by Skyluxe Elevators in Lucknow, Uttar Pradesh.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Skyluxe Elevators"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://skyluxeelevators.com/double-stacker-parking-lift.html"
+      }
+    }
+  ]
 }
 </script>
 {% endblock %}

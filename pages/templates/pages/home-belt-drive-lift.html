@@ -1,42 +1,60 @@
 {% extends 'pages/base.html' %}
 {% load static %}
 
-{% block title %}Belt Drive Home Lifts & Elevators India | Skyluxe Elevators{% endblock %}
+{% block title %}Belt Drive Home Lift in Lucknow | Silent Elevators | Skyluxe{% endblock %}
 
-{% block meta_description %}Experience ultra-smooth and silent rides with Skyluxe Elevators' belt drive home lifts in India. Energy-efficient, gearless residential elevator solutions.{% endblock %}
+{% block meta_description %}Get silent and energy-efficient belt drive home lifts in Lucknow, Uttar Pradesh. Skyluxe Elevators is the top supplier of gearless residential elevators.{% endblock %}
 
-{% block meta_keywords %}belt drive home lift, gearless home elevator, silent home lift india, energy efficient elevator, skyluxe belt drive lift{% endblock %}
+{% block meta_keywords %}belt drive home lift in lucknow, silent home lift lucknow, gearless home elevator lucknow, lift supplier lucknow{% endblock %}
 
-{% block canonical_url %}https://www.skyluxeelevators.com/home-belt-drive-lift.html{% endblock %}
+{% block canonical_url %}https://skyluxeelevators.com/home-belt-drive-lift.html{% endblock %}
 
-{% block og_title %}Belt Drive Home Lifts & Elevators India | Skyluxe Elevators{% endblock %}
-{% block og_description %}Ultra-smooth and silent belt drive home lifts in India. Energy-efficient, gearless residential elevator solutions.{% endblock %}
-{% block og_url %}https://www.skyluxeelevators.com/home-belt-drive-lift.html{% endblock %}
+{% block og_title %}Belt Drive Home Lift in Lucknow | Silent Elevators | Skyluxe{% endblock %}
+{% block og_description %}Premium belt drive home lifts and residential elevators in Lucknow. Safe, silent, and energy-efficient solutions for low-rise homes.{% endblock %}
+{% block og_url %}https://skyluxeelevators.com/home-belt-drive-lift.html{% endblock %}
 {% block og_image %}{% static 'img/1st.webp' %}{% endblock %}
-{% block og_image_alt %}Belt Drive Home Lift by Skyluxe Elevators{% endblock %}
+{% block og_image_alt %}Belt Drive Home Lift in Lucknow by Skyluxe Elevators{% endblock %}
 
-{% block twitter_title %}Belt Drive Home Lifts | Skyluxe Elevators{% endblock %}
-{% block twitter_description %}Ultra-smooth and silent belt drive home lifts in India. Energy-efficient, gearless residential elevator solutions.{% endblock %}
+{% block twitter_title %}Belt Drive Home Lift in Lucknow | Skyluxe Elevators{% endblock %}
+{% block twitter_description %}Premium belt drive home lifts and residential elevators in Lucknow & Uttar Pradesh.{% endblock %}
 {% block twitter_image %}{% static 'img/1st.webp' %}{% endblock %}
 
 {% block structured_data %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Belt Drive Home Lift",
-  "image": "{% static 'img/1st.webp' %}",
-  "description": "Ultra-smooth, silent, and energy-efficient belt drive home lifts by Skyluxe Elevators.",
-  "brand": {
-    "@type": "Brand",
-    "name": "Skyluxe Elevators"
-  },
-  "offers": {
-    "@type": "AggregateOffer",
-    "priceCurrency": "INR",
-    "availability": "https://schema.org/InStock",
-    "url": "https://www.skyluxeelevators.com/home-belt-drive-lift.html"
-  }
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Belt Drive Home Lift Installation in Lucknow",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Skyluxe Elevators",
+        "url": "https://skyluxeelevators.com"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Lucknow"
+      },
+      "description": "Professional installation and supply of premium belt-driven home lifts and residential elevators in Lucknow by Skyluxe Elevators."
+    },
+    {
+      "@type": "Product",
+      "name": "Belt Drive Home Lift",
+      "image": "{% static 'img/1st.webp' %}",
+      "description": "Premium belt drive home lifts and residential elevators by Skyluxe Elevators in Lucknow, Uttar Pradesh.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Skyluxe Elevators"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://skyluxeelevators.com/home-belt-drive-lift.html"
+      }
+    }
+  ]
 }
 </script>
 {% endblock %}

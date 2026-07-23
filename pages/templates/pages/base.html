@@ -10,44 +10,46 @@
   <!-- ═══════════════════════════════════════════════
        TITLE  (overridden per page)
   ═══════════════════════════════════════════════ -->
-  <title>{% block title %}Luxury Home Lifts & Elevators in India | Skyluxe Elevators{% endblock %}</title>
+  <title>{% block title %}Elevator Company in Lucknow | Lift Manufacturer & Supplier | Skyluxe Elevators{% endblock %}</title>
 
   <!-- ═══════════════════════════════════════════════
        CORE META
   ═══════════════════════════════════════════════ -->
   <meta name="description"
-    content="{% block meta_description %}Skyluxe Elevators offers premium home lifts, passenger lifts, hospital lifts, car lifts & capsule elevators in India. Swedish-designed European quality. Get a free quote today.{% endblock %}">
+    content="{% block meta_description %}Skyluxe Elevators is the leading elevator company in Lucknow, Uttar Pradesh. We manufacture & supply premium home lifts, passenger lifts, hospital lifts, and car lifts. Get a free quote today!{% endblock %}">
   <meta name="keywords"
-    content="{% block meta_keywords %}home lift, elevator india, passenger lift, hospital lift, car lift, capsule lift, goods lift, skyluxe elevators, luxury elevator india, residential elevator{% endblock %}">
+    content="{% block meta_keywords %}elevator company in lucknow, lift manufacturer in lucknow, lift supplier in lucknow, home lift in lucknow, passenger lift in lucknow, hospital lift in lucknow, goods lift in lucknow, car lift in lucknow, lift installation in lucknow, lift maintenance in lucknow, elevator company in uttar pradesh{% endblock %}">
   <meta name="author" content="Skyluxe Elevators Pvt. Ltd.">
   <meta name="robots" content="{% block meta_robots %}index, follow{% endblock %}">
   <meta name="revisit-after" content="7 days">
 
   <!-- ── Local / Geo SEO ─────────────────────────────────────────── -->
-  <meta name="geo.region" content="IN">
-  <meta name="geo.placename" content="India">
+  <meta name="geo.region" content="IN-UP">
+  <meta name="geo.placename" content="Lucknow">
+  <meta name="geo.position" content="26.8467;80.9462">
+  <meta name="ICBM" content="26.8467, 80.9462">
   <meta name="language" content="English">
 
   <!-- ═══════════════════════════════════════════════
        CANONICAL  (overridden per page)
   ═══════════════════════════════════════════════ -->
-  <link rel="canonical" href="{% block canonical_url %}https://www.skyluxeelevators.com/{% endblock %}">
+  <link rel="canonical" href="{% block canonical_url %}https://skyluxeelevators.com/{% endblock %}">
 
   <!-- ═══════════════════════════════════════════════
        OPEN GRAPH  (overridden per page)
   ═══════════════════════════════════════════════ -->
   <meta property="og:site_name" content="Skyluxe Elevators">
   <meta property="og:type" content="{% block og_type %}website{% endblock %}">
-  <meta property="og:url" content="{% block og_url %}https://www.skyluxeelevators.com/{% endblock %}">
+  <meta property="og:url" content="{% block og_url %}https://skyluxeelevators.com/{% endblock %}">
   <meta property="og:title"
-    content="{% block og_title %}Luxury Home Lifts & Elevators in India | Skyluxe Elevators{% endblock %}">
+    content="{% block og_title %}Elevator Company in Lucknow | Lift Manufacturer & Supplier | Skyluxe Elevators{% endblock %}">
   <meta property="og:description"
-    content="{% block og_description %}Skyluxe Elevators offers premium home lifts, passenger lifts, hospital lifts, car lifts & capsule elevators in India. Swedish-designed European quality. Get a free quote today.{% endblock %}">
+    content="{% block og_description %}Skyluxe Elevators offers premium Swedish-designed home lifts, passenger lifts, hospital lifts, and car lifts in Lucknow and Uttar Pradesh. High quality, safe, and certified.{% endblock %}">
   <meta property="og:image" content="{% block og_image %}{% static 'img/skyluxelogo.png' %}{% endblock %}">
   <meta property="og:image:width" content="800">
   <meta property="og:image:height" content="600">
   <meta property="og:image:alt"
-    content="{% block og_image_alt %}Skyluxe Elevators – Premium Elevator Manufacturer India{% endblock %}">
+    content="{% block og_image_alt %}Skyluxe Elevators – Premium Elevator Company in Lucknow{% endblock %}">
   <meta property="og:locale" content="en_IN">
 
   <!-- ═══════════════════════════════════════════════
@@ -57,9 +59,9 @@
   <meta name="twitter:site" content="@SkyluxeElevators">
   <meta name="twitter:creator" content="@SkyluxeElevators">
   <meta name="twitter:title"
-    content="{% block twitter_title %}Luxury Home Lifts & Elevators in India | Skyluxe Elevators{% endblock %}">
+    content="{% block twitter_title %}Elevator Company in Lucknow | Skyluxe Elevators{% endblock %}">
   <meta name="twitter:description"
-    content="{% block twitter_description %}Skyluxe Elevators offers premium home lifts, passenger lifts, hospital lifts, car lifts & capsule elevators in India. Swedish-designed, European quality.{% endblock %}">
+    content="{% block twitter_description %}Premium Swedish-designed home lifts, passenger lifts, and car lifts in Lucknow. Best elevator installation and maintenance in Uttar Pradesh.{% endblock %}">
   <meta name="twitter:image" content="{% block twitter_image %}{% static 'img/skyluxelogo.png' %}{% endblock %}">
   <meta name="twitter:image:alt"
     content="{% block twitter_image_alt %}Skyluxe Elevators – Premium Elevator Manufacturer India{% endblock %}">
@@ -73,15 +75,26 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Organization",
-        "@id": "https://www.skyluxeelevators.com/#organization",
-        "name": "Skyluxe Elevators Pvt. Ltd.",
-        "url": "https://www.skyluxeelevators.com",
+        "@type": "LocalBusiness",
+        "@id": "https://skyluxeelevators.com/#localbusiness",
+        "name": "Skyluxe Elevators",
+        "url": "https://skyluxeelevators.com",
         "logo": {
           "@type": "ImageObject",
           "url": "{% static 'img/skyluxelogo.png' %}",
           "width": 140,
           "height": 48
+        },
+        "image": "{% static 'img/homeslider.png' %}",
+        "telephone": "+91-7318202141",
+        "email": "skyluxeelevators@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Hazratganj",
+          "addressLocality": "Lucknow",
+          "addressRegion": "Uttar Pradesh",
+          "postalCode": "226001",
+          "addressCountry": "IN"
         },
         "contactPoint": [
           {
@@ -105,27 +118,29 @@
           "https://www.youtube.com/@skyluxeelevators",
           "https://www.linkedin.com/company/skyluxeelevators"
         ],
-        "email": "skyluxeelevators@gmail.com",
-        "address": {
-          "@type": "PostalAddress",
-          "addressCountry": "IN"
-        }
+        "priceRange": "₹₹₹",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+            "opens": "09:00",
+            "closes": "19:00"
+          }
+        ],
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "26.8467",
+          "longitude": "80.9462"
+        },
+        "hasMap": "https://maps.google.com/?q=Skyluxe+Elevators+Lucknow"
       },
       {
         "@type": "WebSite",
-        "@id": "https://www.skyluxeelevators.com/#website",
-        "url": "https://www.skyluxeelevators.com",
+        "@id": "https://skyluxeelevators.com/#website",
+        "url": "https://skyluxeelevators.com",
         "name": "Skyluxe Elevators",
-        "description": "Premium home lifts, passenger lifts, hospital lifts, car lifts and capsule elevators in India.",
-        "publisher": {"@id": "https://www.skyluxeelevators.com/#organization"},
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "https://www.skyluxeelevators.com/?s={search_term_string}"
-          },
-          "query-input": "required name=search_term_string"
-        }
+        "description": "Premium home lifts, passenger lifts, hospital lifts, car lifts and capsule elevators in Lucknow, Uttar Pradesh.",
+        "publisher": {"@id": "https://skyluxeelevators.com/#localbusiness"}
       }
     ]
   }
@@ -1455,6 +1470,34 @@
 
   {% block content %}{% endblock %}
 
+  <!-- Service Areas Section -->
+  <section class="service-areas-section py-5" style="background-color: #fcfbf7; border-top: 1px solid var(--border);">
+    <div class="container">
+      <div class="text-center mb-4">
+        <span class="text-uppercase tracking-wider c-pri fw-semibold" style="font-size: 0.85rem; letter-spacing: 2px;">Areas We Serve</span>
+        <h2 class="section-title mt-2" style="font-family: var(--font-display); font-weight: 700; font-size: 2rem;">Elevator Installation & Maintenance Service Areas</h2>
+        <p class="section-desc max-w-2xl mx-auto" style="font-size: 0.95rem;">As the leading elevator company in Uttar Pradesh, we provide premium residential home lifts, passenger lifts, and commercial elevator services across Lucknow and surrounding regions.</p>
+      </div>
+      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3 justify-content-center text-center">
+        <div class="col"><div class="p-3 bg-white rounded shadow-sm border border-light"><i class="fas fa-map-marker-alt c-pri me-2"></i>Gomti Nagar</div></div>
+        <div class="col"><div class="p-3 bg-white rounded shadow-sm border border-light"><i class="fas fa-map-marker-alt c-pri me-2"></i>Aliganj</div></div>
+        <div class="col"><div class="p-3 bg-white rounded shadow-sm border border-light"><i class="fas fa-map-marker-alt c-pri me-2"></i>Indira Nagar</div></div>
+        <div class="col"><div class="p-3 bg-white rounded shadow-sm border border-light"><i class="fas fa-map-marker-alt c-pri me-2"></i>Hazratganj</div></div>
+        <div class="col"><div class="p-3 bg-white rounded shadow-sm border border-light"><i class="fas fa-map-marker-alt c-pri me-2"></i>Jankipuram</div></div>
+        <div class="col"><div class="p-3 bg-white rounded shadow-sm border border-light"><i class="fas fa-map-marker-alt c-pri me-2"></i>Alambagh</div></div>
+        <div class="col"><div class="p-3 bg-white rounded shadow-sm border border-light"><i class="fas fa-map-marker-alt c-pri me-2"></i>Charbagh</div></div>
+        <div class="col"><div class="p-3 bg-white rounded shadow-sm border border-light"><i class="fas fa-map-marker-alt c-pri me-2"></i>Ashiyana</div></div>
+        <div class="col"><div class="p-3 bg-white rounded shadow-sm border border-light"><i class="fas fa-map-marker-alt c-pri me-2"></i>Chinhat</div></div>
+        <div class="col"><div class="p-3 bg-white rounded shadow-sm border border-light"><i class="fas fa-map-marker-alt c-pri me-2"></i>Vikas Nagar</div></div>
+        <div class="col"><div class="p-3 bg-white rounded shadow-sm border border-light"><i class="fas fa-map-marker-alt c-pri me-2"></i>Mahanagar</div></div>
+        <div class="col"><div class="p-3 bg-white rounded shadow-sm border border-light"><i class="fas fa-map-marker-alt c-pri me-2"></i>Rajajipuram</div></div>
+        <div class="col"><div class="p-3 bg-white rounded shadow-sm border border-light"><i class="fas fa-map-marker-alt c-pri me-2"></i>Sitapur Road</div></div>
+        <div class="col"><div class="p-3 bg-white rounded shadow-sm border border-light"><i class="fas fa-map-marker-alt c-pri me-2"></i>Faizabad Road</div></div>
+        <div class="col"><div class="p-3 bg-white rounded shadow-sm border border-light"><i class="fas fa-map-marker-alt c-pri me-2"></i>Sultanpur Road</div></div>
+      </div>
+    </div>
+  </section>
+
   <!-- Premium Unified Footer -->
   <footer class="site-footer">
     <div class="footer-accent"></div>
@@ -1524,6 +1567,13 @@
               <div>
                 <small>Email</small>
                 <a href="mailto:skyluxeelevators@gmail.com">skyluxeelevators@gmail.com</a>
+              </div>
+            </li>
+            <li>
+              <span class="footer-contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+              <div>
+                <small>Office Address</small>
+                <span>Hazratganj, Lucknow, Uttar Pradesh, 226001</span>
               </div>
             </li>
             <li>

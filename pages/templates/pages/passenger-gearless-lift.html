@@ -1,42 +1,60 @@
 {% extends 'pages/base.html' %}
 {% load static %}
 
-{% block title %}Gearless Traction Passenger Lifts India | Skyluxe Elevators{% endblock %}
+{% block title %}Gearless Passenger Lift in Lucknow | High-Speed Elevators | Skyluxe{% endblock %}
 
-{% block meta_description %}High-speed, energy-efficient gearless traction passenger lifts by Skyluxe Elevators. Ideal for high-rise buildings offering smooth and silent rides.{% endblock %}
+{% block meta_description %}High-speed, energy-efficient gearless traction passenger lifts in Lucknow, Uttar Pradesh. Skyluxe Elevators offers smooth and silent rides for high-rise buildings.{% endblock %}
 
-{% block meta_keywords %}gearless passenger lift, gearless traction elevator india, high speed elevator, energy efficient lift, skyluxe gearless lift, high rise building elevator{% endblock %}
+{% block meta_keywords %}gearless passenger lift lucknow, gearless traction elevator lucknow, high speed elevator up, energy efficient lift, skyluxe gearless lift, high rise building elevator lucknow{% endblock %}
 
-{% block canonical_url %}https://www.skyluxeelevators.com/passenger-gearless-lift.html{% endblock %}
+{% block canonical_url %}https://skyluxeelevators.com/passenger-gearless-lift.html{% endblock %}
 
-{% block og_title %}Gearless Traction Passenger Lifts India | Skyluxe Elevators{% endblock %}
-{% block og_description %}High-speed, energy-efficient gearless traction passenger lifts by Skyluxe Elevators. Ideal for high-rise buildings offering smooth and silent rides.{% endblock %}
-{% block og_url %}https://www.skyluxeelevators.com/passenger-gearless-lift.html{% endblock %}
+{% block og_title %}Gearless Passenger Lift in Lucknow | High-Speed Elevators | Skyluxe{% endblock %}
+{% block og_description %}High-speed, energy-efficient gearless traction passenger lifts by Skyluxe Elevators in Lucknow. Ideal for high-rise buildings offering smooth and silent rides.{% endblock %}
+{% block og_url %}https://skyluxeelevators.com/passenger-gearless-lift.html{% endblock %}
 {% block og_image %}{% static 'img/2nd.webp' %}{% endblock %}
-{% block og_image_alt %}Gearless Passenger Lift by Skyluxe Elevators{% endblock %}
+{% block og_image_alt %}Gearless Passenger Lift in Lucknow by Skyluxe Elevators{% endblock %}
 
-{% block twitter_title %}Gearless Passenger Lifts | Skyluxe Elevators{% endblock %}
-{% block twitter_description %}High-speed, energy-efficient gearless traction passenger lifts for high-rise buildings.{% endblock %}
+{% block twitter_title %}Gearless Passenger Lift in Lucknow | Skyluxe Elevators{% endblock %}
+{% block twitter_description %}High-speed, energy-efficient gearless traction passenger lifts for high-rise buildings in Lucknow, Uttar Pradesh.{% endblock %}
 {% block twitter_image %}{% static 'img/2nd.webp' %}{% endblock %}
 
 {% block structured_data %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Gearless Traction Passenger Lift",
-  "image": "{% static 'img/2nd.webp' %}",
-  "description": "High-speed, energy-efficient gearless traction passenger lifts for high-rise buildings by Skyluxe Elevators.",
-  "brand": {
-    "@type": "Brand",
-    "name": "Skyluxe Elevators"
-  },
-  "offers": {
-    "@type": "AggregateOffer",
-    "priceCurrency": "INR",
-    "availability": "https://schema.org/InStock",
-    "url": "https://www.skyluxeelevators.com/passenger-gearless-lift.html"
-  }
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Gearless Passenger Lift Installation in Lucknow",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Skyluxe Elevators",
+        "url": "https://skyluxeelevators.com"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Lucknow"
+      },
+      "description": "Professional installation of high-speed gearless passenger lifts for high-rise buildings in Lucknow by Skyluxe Elevators."
+    },
+    {
+      "@type": "Product",
+      "name": "Gearless Traction Passenger Lift",
+      "image": "{% static 'img/2nd.webp' %}",
+      "description": "High-speed, energy-efficient gearless traction passenger lifts for high-rise buildings by Skyluxe Elevators in Lucknow, Uttar Pradesh.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Skyluxe Elevators"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://skyluxeelevators.com/passenger-gearless-lift.html"
+      }
+    }
+  ]
 }
 </script>
 {% endblock %}

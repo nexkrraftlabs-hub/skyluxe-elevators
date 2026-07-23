@@ -1,42 +1,60 @@
 {% extends 'pages/base.html' %}
 {% load static %}
 
-{% block title %}Geared Hospital Lifts & Stretcher Elevators | Skyluxe Elevators{% endblock %}
+{% block title %}Geared Hospital Lift in Lucknow | Stretcher Elevators | Skyluxe{% endblock %}
 
-{% block meta_description %}Skyluxe Elevators manufactures reliable and cost-effective geared hospital lifts and stretcher elevators for hospitals and clinics in India.{% endblock %}
+{% block meta_description %}Reliable geared hospital lifts and stretcher elevators in Lucknow, Uttar Pradesh. Skyluxe Elevators manufactures cost-effective medical lifts for clinics.{% endblock %}
 
-{% block meta_keywords %}geared hospital lift, stretcher elevator india, medical lift, hospital elevator, skyluxe hospital lift{% endblock %}
+{% block meta_keywords %}geared hospital lift lucknow, stretcher elevator lucknow, medical lift up, hospital elevator lucknow, skyluxe hospital lift{% endblock %}
 
-{% block canonical_url %}https://www.skyluxeelevators.com/geared-hospital-lift.html{% endblock %}
+{% block canonical_url %}https://skyluxeelevators.com/geared-hospital-lift.html{% endblock %}
 
-{% block og_title %}Geared Hospital Lifts & Stretcher Elevators | Skyluxe Elevators{% endblock %}
-{% block og_description %}Reliable and cost-effective geared hospital lifts and stretcher elevators for hospitals and clinics in India.{% endblock %}
-{% block og_url %}https://www.skyluxeelevators.com/geared-hospital-lift.html{% endblock %}
+{% block og_title %}Geared Hospital Lift in Lucknow | Stretcher Elevators | Skyluxe{% endblock %}
+{% block og_description %}Reliable and cost-effective geared hospital lifts and stretcher elevators for hospitals and clinics in Lucknow, UP.{% endblock %}
+{% block og_url %}https://skyluxeelevators.com/geared-hospital-lift.html{% endblock %}
 {% block og_image %}{% static 'img/3rd.webp' %}{% endblock %}
-{% block og_image_alt %}Geared Hospital Lift by Skyluxe Elevators{% endblock %}
+{% block og_image_alt %}Geared Hospital Lift in Lucknow by Skyluxe Elevators{% endblock %}
 
-{% block twitter_title %}Geared Hospital Lifts | Skyluxe Elevators{% endblock %}
-{% block twitter_description %}Reliable and cost-effective geared hospital lifts and stretcher elevators for hospitals and clinics.{% endblock %}
+{% block twitter_title %}Geared Hospital Lift in Lucknow | Skyluxe Elevators{% endblock %}
+{% block twitter_description %}Reliable and cost-effective geared hospital lifts and stretcher elevators for hospitals and clinics in Lucknow.{% endblock %}
 {% block twitter_image %}{% static 'img/3rd.webp' %}{% endblock %}
 
 {% block structured_data %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Geared Hospital Lift",
-  "image": "{% static 'img/3rd.webp' %}",
-  "description": "Reliable and cost-effective geared hospital lifts and stretcher elevators by Skyluxe Elevators.",
-  "brand": {
-    "@type": "Brand",
-    "name": "Skyluxe Elevators"
-  },
-  "offers": {
-    "@type": "AggregateOffer",
-    "priceCurrency": "INR",
-    "availability": "https://schema.org/InStock",
-    "url": "https://www.skyluxeelevators.com/geared-hospital-lift.html"
-  }
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Geared Hospital Lift Installation in Lucknow",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Skyluxe Elevators",
+        "url": "https://skyluxeelevators.com"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Lucknow"
+      },
+      "description": "Professional installation and supply of reliable geared hospital lifts and stretcher elevators for clinics in Lucknow by Skyluxe Elevators."
+    },
+    {
+      "@type": "Product",
+      "name": "Geared Hospital Lift",
+      "image": "{% static 'img/3rd.webp' %}",
+      "description": "Reliable and cost-effective geared hospital lifts and stretcher elevators by Skyluxe Elevators in Lucknow, Uttar Pradesh.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Skyluxe Elevators"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://skyluxeelevators.com/geared-hospital-lift.html"
+      }
+    }
+  ]
 }
 </script>
 {% endblock %}

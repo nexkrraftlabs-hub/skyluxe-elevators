@@ -1,42 +1,60 @@
 {% extends 'pages/base.html' %}
 {% load static %}
 
-{% block title %}Automatic Car Lifts & Parking Elevators | Skyluxe Elevators{% endblock %}
+{% block title %}Automatic Car Lift in Lucknow | Parking Elevators | Skyluxe{% endblock %}
 
-{% block meta_description %}Experience seamless vehicle parking with Skyluxe Elevators' automatic car lifts. High-speed, secure, and fully automated vehicle elevators for modern buildings.{% endblock %}
+{% block meta_description %}Experience seamless vehicle parking with automatic car lifts in Lucknow, Uttar Pradesh. Skyluxe Elevators provides high-speed, secure vehicle elevators.{% endblock %}
 
-{% block meta_keywords %}automatic car lift, auto door vehicle elevator, smart parking lift, automatic car elevator india, skyluxe automatic car lift{% endblock %}
+{% block meta_keywords %}automatic car lift lucknow, auto door vehicle elevator lucknow, smart parking lift up, automatic car elevator lucknow, skyluxe automatic car lift{% endblock %}
 
-{% block canonical_url %}https://www.skyluxeelevators.com/automatic-car-lift.html{% endblock %}
+{% block canonical_url %}https://skyluxeelevators.com/automatic-car-lift.html{% endblock %}
 
-{% block og_title %}Automatic Car Lifts & Parking Elevators | Skyluxe Elevators{% endblock %}
-{% block og_description %}High-speed, secure, and fully automated vehicle elevators for modern buildings and luxury homes.{% endblock %}
-{% block og_url %}https://www.skyluxeelevators.com/automatic-car-lift.html{% endblock %}
+{% block og_title %}Automatic Car Lift in Lucknow | Parking Elevators | Skyluxe{% endblock %}
+{% block og_description %}High-speed, secure, and fully automated vehicle elevators for modern buildings and luxury homes in Lucknow, UP.{% endblock %}
+{% block og_url %}https://skyluxeelevators.com/automatic-car-lift.html{% endblock %}
 {% block og_image %}{% static 'img/6th.webp' %}{% endblock %}
-{% block og_image_alt %}Automatic Car Lift by Skyluxe Elevators{% endblock %}
+{% block og_image_alt %}Automatic Car Lift in Lucknow by Skyluxe Elevators{% endblock %}
 
-{% block twitter_title %}Automatic Car Lifts | Skyluxe Elevators{% endblock %}
-{% block twitter_description %}High-speed, secure, and fully automated vehicle elevators for modern buildings.{% endblock %}
+{% block twitter_title %}Automatic Car Lift in Lucknow | Skyluxe Elevators{% endblock %}
+{% block twitter_description %}High-speed, secure, and fully automated vehicle elevators for modern buildings in Lucknow.{% endblock %}
 {% block twitter_image %}{% static 'img/6th.webp' %}{% endblock %}
 
 {% block structured_data %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Automatic Car Lift",
-  "image": "{% static 'img/6th.webp' %}",
-  "description": "High-speed, secure, and fully automated vehicle elevators and car lifts by Skyluxe Elevators.",
-  "brand": {
-    "@type": "Brand",
-    "name": "Skyluxe Elevators"
-  },
-  "offers": {
-    "@type": "AggregateOffer",
-    "priceCurrency": "INR",
-    "availability": "https://schema.org/InStock",
-    "url": "https://www.skyluxeelevators.com/automatic-car-lift.html"
-  }
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Automatic Car Lift Installation in Lucknow",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Skyluxe Elevators",
+        "url": "https://skyluxeelevators.com"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Lucknow"
+      },
+      "description": "Professional installation and supply of high-speed automatic car lifts and smart parking elevators in Lucknow by Skyluxe Elevators."
+    },
+    {
+      "@type": "Product",
+      "name": "Automatic Car Lift",
+      "image": "{% static 'img/6th.webp' %}",
+      "description": "High-speed, secure, and fully automated vehicle elevators and car lifts by Skyluxe Elevators in Lucknow, Uttar Pradesh.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Skyluxe Elevators"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://skyluxeelevators.com/automatic-car-lift.html"
+      }
+    }
+  ]
 }
 </script>
 {% endblock %}

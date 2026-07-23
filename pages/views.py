@@ -110,7 +110,7 @@ def blog(request):
 
 def sitemap_view(request):
     """Serve dynamic XML sitemap for Google Search Console."""
-    site_url = getattr(settings, 'SITE_URL', 'https://www.skyluxeelevators.com')
+    site_url = getattr(settings, 'SITE_URL', 'https://skyluxeelevators.com')
     context = {
         'site_url': site_url.rstrip('/'),
         'today': date.today().isoformat(),
@@ -121,7 +121,7 @@ def sitemap_view(request):
 
 def robots_txt_view(request):
     """Serve robots.txt with correct sitemap URL."""
-    site_url = getattr(settings, 'SITE_URL', 'https://www.skyluxeelevators.com')
+    site_url = getattr(settings, 'SITE_URL', 'https://skyluxeelevators.com')
     context = {'site_url': site_url.rstrip('/')}
     content = render_to_string('pages/robots.txt', context)
     return HttpResponse(content, content_type='text/plain; charset=utf-8')

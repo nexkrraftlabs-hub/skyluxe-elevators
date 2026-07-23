@@ -1,22 +1,22 @@
 {% extends 'pages/base.html' %}
 {% load static %}
 
-{% block title %}About Skyluxe Elevators | Premium Elevator Manufacturer India{% endblock %}
+{% block title %}About Us | Elevator Company in Lucknow | Skyluxe Elevators{% endblock %}
 
-{% block meta_description %}Learn about Skyluxe Elevators Pvt. Ltd. – India's trusted elevator manufacturer. Swedish-designed luxury home lifts, passenger lifts, hospital lifts & more. Over 500 projects delivered with European quality standards.{% endblock %}
+{% block meta_description %}Learn about Skyluxe Elevators, a leading elevator company & lift manufacturer in Lucknow, Uttar Pradesh. Swedish design, premium home lifts, passenger lifts & installation services.{% endblock %}
 
-{% block meta_keywords %}about skyluxe elevators, elevator manufacturer india, luxury lift company, home elevator company india, swedish design elevator{% endblock %}
+{% block meta_keywords %}about skyluxe elevators, elevator company in lucknow, lift manufacturer in lucknow, lift supplier in lucknow, home lift lucknow{% endblock %}
 
-{% block canonical_url %}https://www.skyluxeelevators.com/about.html{% endblock %}
+{% block canonical_url %}https://skyluxeelevators.com/about.html{% endblock %}
 
-{% block og_title %}About Skyluxe Elevators | Premium Elevator Manufacturer India{% endblock %}
-{% block og_description %}India's trusted elevator manufacturer. Swedish-designed luxury home lifts, passenger lifts, hospital lifts & more. 500+ projects delivered.{% endblock %}
-{% block og_url %}https://www.skyluxeelevators.com/about.html{% endblock %}
+{% block og_title %}About Us | Elevator Company in Lucknow | Skyluxe Elevators{% endblock %}
+{% block og_description %}Learn about Skyluxe Elevators, the premier lift manufacturer and supplier in Lucknow, Uttar Pradesh. Swedish design, European quality home lifts & passenger lifts.{% endblock %}
+{% block og_url %}https://skyluxeelevators.com/about.html{% endblock %}
 {% block og_image %}{% static 'img/VGO0749_HDR-scaled.jpg' %}{% endblock %}
-{% block og_image_alt %}Skyluxe Elevators – About Our Elevator Manufacturing Company{% endblock %}
+{% block og_image_alt %}Skyluxe Elevators – About Our Elevator Company in Lucknow{% endblock %}
 
-{% block twitter_title %}About Skyluxe Elevators | Premium Elevator Manufacturer India{% endblock %}
-{% block twitter_description %}India's trusted elevator manufacturer – Swedish-designed luxury home lifts, passenger lifts & hospital lifts. 500+ projects delivered.{% endblock %}
+{% block twitter_title %}About Us | Elevator Company in Lucknow | Skyluxe Elevators{% endblock %}
+{% block twitter_description %}Discover the leading elevator manufacturer & supplier in Lucknow. Certified Swedish design home lifts and passenger lifts.{% endblock %}
 {% block twitter_image %}{% static 'img/VGO0749_HDR-scaled.jpg' %}{% endblock %}
 
 {% block structured_data %}
@@ -24,18 +24,25 @@
 {
   "@context": "https://schema.org",
   "@type": "AboutPage",
-  "@id": "https://www.skyluxeelevators.com/about.html#webpage",
-  "url": "https://www.skyluxeelevators.com/about.html",
-  "name": "About Skyluxe Elevators | Premium Elevator Manufacturer India",
-  "description": "Skyluxe Elevators Pvt. Ltd. is India's trusted premium elevator manufacturer offering Swedish-designed luxury home lifts, passenger lifts, hospital lifts and car lifts.",
-  "isPartOf": {"@id": "https://www.skyluxeelevators.com/#website"},
+  "@id": "https://skyluxeelevators.com/about.html#webpage",
+  "url": "https://skyluxeelevators.com/about.html",
+  "name": "About Us | Elevator Company in Lucknow | Skyluxe Elevators",
+  "description": "Skyluxe Elevators is a premium elevator manufacturer and supplier based in Lucknow, Uttar Pradesh, offering Swedish-designed residential home lifts and commercial passenger lifts.",
+  "isPartOf": {"@id": "https://skyluxeelevators.com/#website"},
   "about": {
     "@type": "Organization",
-    "name": "Skyluxe Elevators Pvt. Ltd.",
-    "url": "https://www.skyluxeelevators.com",
+    "name": "Skyluxe Elevators",
+    "url": "https://skyluxeelevators.com",
     "foundingDate": "2015",
-    "areaServed": "India",
-    "description": "Premium elevator manufacturer with Swedish-design philosophy. Products include home lifts, passenger lifts, hospital lifts, capsule lifts, goods lifts and car lifts.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Hazratganj",
+      "addressLocality": "Lucknow",
+      "addressRegion": "Uttar Pradesh",
+      "postalCode": "226001",
+      "addressCountry": "IN"
+    },
+    "description": "Premium elevator company in Lucknow with Swedish-design philosophy. Products include home lifts, passenger lifts, hospital lifts, capsule lifts, goods lifts and car lifts.",
     "email": "skyluxeelevators@gmail.com",
     "telephone": "+91-7318202141"
   }
@@ -87,8 +94,8 @@
     </div>
 
     <div class="hero-content">
-      <h1>About Skyluxe Elevators</h1>
-      <p>India's Trusted Luxury Elevator Manufacturer – Swedish Design, European Quality.</p>
+      <h1>Elevator Company in Lucknow: About Skyluxe</h1>
+      <p>The Leading Lift Manufacturer & Supplier in Lucknow and Uttar Pradesh – Swedish Design, European Quality.</p>
       <a href="{% url 'contact' %}"><button class="btn btn-pri">Get a Free Quote</button></a>
     </div>
   </section>

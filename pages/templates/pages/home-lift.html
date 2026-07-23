@@ -1,42 +1,60 @@
 {% extends 'pages/base.html' %}
 {% load static %}
 
-{% block title %}Luxury Home Lifts & Residential Elevators India | Skyluxe Elevators{% endblock %}
+{% block title %}Home Lift in Lucknow | Premium Residential Elevators | Skyluxe{% endblock %}
 
-{% block meta_description %}Upgrade your home with Skyluxe Elevators' premium home lifts. Swedish-designed, space-saving luxury residential elevators in India. Safe, silent, and elegant.{% endblock %}
+{% block meta_description %}Looking for the best home lift in Lucknow? Skyluxe Elevators provides premium, Swedish-designed residential elevators and home lifts in Hazratganj, Gomti Nagar & Aliganj.{% endblock %}
 
-{% block meta_keywords %}home lift india, residential elevator, luxury home elevator, small home lift, domestic lift, skyluxe home lift{% endblock %}
+{% block meta_keywords %}home lift in lucknow, residential elevator lucknow, home lift price lucknow, luxury villa lift lucknow, home lift installation lucknow{% endblock %}
 
-{% block canonical_url %}https://www.skyluxeelevators.com/home-lift.html{% endblock %}
+{% block canonical_url %}https://skyluxeelevators.com/home-lift.html{% endblock %}
 
-{% block og_title %}Luxury Home Lifts & Residential Elevators India | Skyluxe Elevators{% endblock %}
-{% block og_description %}Premium Swedish-designed home lifts for modern Indian homes. Safe, silent, and elegant residential elevators.{% endblock %}
-{% block og_url %}https://www.skyluxeelevators.com/home-lift.html{% endblock %}
+{% block og_title %}Home Lift in Lucknow | Premium Residential Elevators | Skyluxe{% endblock %}
+{% block og_description %}Swedish-designed luxury home lifts and residential elevators in Lucknow. Space-saving, safe, and whisper-quiet operation.{% endblock %}
+{% block og_url %}https://skyluxeelevators.com/home-lift.html{% endblock %}
 {% block og_image %}{% static 'img/1st.webp' %}{% endblock %}
-{% block og_image_alt %}Luxury Home Lift by Skyluxe Elevators{% endblock %}
+{% block og_image_alt %}Premium Home Lift in Lucknow by Skyluxe Elevators{% endblock %}
 
-{% block twitter_title %}Luxury Home Lifts | Skyluxe Elevators{% endblock %}
-{% block twitter_description %}Premium Swedish-designed home lifts for modern Indian homes. Safe, silent, and elegant.{% endblock %}
+{% block twitter_title %}Home Lift in Lucknow | Skyluxe Elevators{% endblock %}
+{% block twitter_description %}Premium Swedish-designed home lifts in Lucknow. Safe, silent, and elegant residential elevators.{% endblock %}
 {% block twitter_image %}{% static 'img/1st.webp' %}{% endblock %}
 
 {% block structured_data %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Luxury Home Lift",
-  "image": "{% static 'img/1st.webp' %}",
-  "description": "Premium Swedish-designed luxury home lifts and residential elevators by Skyluxe Elevators. Safe, silent, and space-saving solutions for modern homes.",
-  "brand": {
-    "@type": "Brand",
-    "name": "Skyluxe Elevators"
-  },
-  "offers": {
-    "@type": "AggregateOffer",
-    "priceCurrency": "INR",
-    "availability": "https://schema.org/InStock",
-    "url": "https://www.skyluxeelevators.com/home-lift.html"
-  }
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Home Lift Installation and Supply in Lucknow",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Skyluxe Elevators",
+        "url": "https://skyluxeelevators.com"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Lucknow"
+      },
+      "description": "Premium Swedish-designed luxury home lifts and residential elevators by Skyluxe Elevators. Safe, silent, and space-saving solutions for modern homes in Lucknow."
+    },
+    {
+      "@type": "Product",
+      "name": "Luxury Home Lift",
+      "image": "{% static 'img/1st.webp' %}",
+      "description": "Premium Swedish-designed luxury home lifts and residential elevators by Skyluxe Elevators. Safe, silent, and space-saving solutions for modern homes.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Skyluxe Elevators"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://skyluxeelevators.com/home-lift.html"
+      }
+    }
+  ]
 }
 </script>
 {% endblock %}
@@ -61,8 +79,8 @@ active
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-badge">RESIDENTIAL ELEVATORS</div>
-    <h1>Home <span class="c-pri">Lift</span></h1>
-    <p>Whisper-quiet, space-saving luxury lifts crafted for modern residences.</p>
+    <h1>Home <span class="c-pri">Lift in Lucknow</span></h1>
+    <p>Whisper-quiet, space-saving luxury home lifts and residential elevators crafted for modern residences in Lucknow, UP.</p>
     <a href="contact.html" class="btn-pri">Get Free Quote</a>
   </div>
 </section>
@@ -74,7 +92,7 @@ active
   <div class="container">
     <div class="text-center mb-5">
       <span class="section-tag">RESIDENTIAL ELEVATOR GUIDE</span>
-      <h2 class="section-title">Premium <span class="c-pri">Home Lifts</span></h2>
+      <h2 class="section-title">Premium <span class="c-pri">Home Lifts in Lucknow</span></h2>
       <p class="section-desc">Designed for 2–6 floor homes — combining silent operation, smart safety and luxury
         aesthetics without requiring a machine room or deep pit.</p>
     </div>
@@ -83,7 +101,7 @@ active
       <!-- IMAGE -->
       <div class="col-lg-7">
         <div class="main-lift-image">
-          <img src="{% static 'img/home3.jpg' %}" alt="Home Lift" />
+          <img src="{% static 'img/home3.jpg' %}" alt="Luxury Home Lift in Lucknow by Skyluxe Elevators" />
           <div class="image-overlay">
             <h3>Panoramic Glass Home Lift</h3>
             <p>Swedish-engineered screw-drive platform lift with silent movement and premium finishes.</p>

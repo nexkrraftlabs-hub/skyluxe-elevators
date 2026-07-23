@@ -1,42 +1,60 @@
 {% extends 'pages/base.html' %}
 {% load static %}
 
-{% block title %}Manual Car Lifts & Vehicle Elevators | Skyluxe Elevators{% endblock %}
+{% block title %}Manual Car Lift in Lucknow | Vehicle Elevators | Skyluxe{% endblock %}
 
-{% block meta_description %}Skyluxe Elevators provides sturdy and reliable manual car lifts for efficient vehicle parking in residential and commercial buildings.{% endblock %}
+{% block meta_description %}Skyluxe Elevators provides sturdy and reliable manual car lifts for efficient vehicle parking in residential and commercial buildings in Lucknow, Uttar Pradesh.{% endblock %}
 
-{% block meta_keywords %}manual car lift, vehicle elevator india, parking lift, manual vehicle lift, skyluxe car lift, automobile elevator{% endblock %}
+{% block meta_keywords %}manual car lift lucknow, vehicle elevator lucknow, parking lift lucknow, manual vehicle lift up, skyluxe car lift, automobile elevator lucknow{% endblock %}
 
-{% block canonical_url %}https://www.skyluxeelevators.com/manual-car-lift.html{% endblock %}
+{% block canonical_url %}https://skyluxeelevators.com/manual-car-lift.html{% endblock %}
 
-{% block og_title %}Manual Car Lifts & Vehicle Elevators | Skyluxe Elevators{% endblock %}
-{% block og_description %}Sturdy and reliable manual car lifts for efficient vehicle parking in residential and commercial buildings.{% endblock %}
-{% block og_url %}https://www.skyluxeelevators.com/manual-car-lift.html{% endblock %}
+{% block og_title %}Manual Car Lift in Lucknow | Vehicle Elevators | Skyluxe{% endblock %}
+{% block og_description %}Sturdy and reliable manual car lifts for efficient vehicle parking in residential and commercial buildings in Lucknow, UP.{% endblock %}
+{% block og_url %}https://skyluxeelevators.com/manual-car-lift.html{% endblock %}
 {% block og_image %}{% static 'img/6th.webp' %}{% endblock %}
-{% block og_image_alt %}Manual Car Lift by Skyluxe Elevators{% endblock %}
+{% block og_image_alt %}Manual Car Lift in Lucknow by Skyluxe Elevators{% endblock %}
 
-{% block twitter_title %}Manual Car Lifts | Skyluxe Elevators{% endblock %}
-{% block twitter_description %}Sturdy and reliable manual car lifts for efficient vehicle parking.{% endblock %}
+{% block twitter_title %}Manual Car Lift in Lucknow | Skyluxe Elevators{% endblock %}
+{% block twitter_description %}Sturdy and reliable manual car lifts for efficient vehicle parking in Lucknow.{% endblock %}
 {% block twitter_image %}{% static 'img/6th.webp' %}{% endblock %}
 
 {% block structured_data %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Manual Car Lift",
-  "image": "{% static 'img/6th.webp' %}",
-  "description": "Sturdy and reliable manual car lifts and vehicle elevators by Skyluxe Elevators.",
-  "brand": {
-    "@type": "Brand",
-    "name": "Skyluxe Elevators"
-  },
-  "offers": {
-    "@type": "AggregateOffer",
-    "priceCurrency": "INR",
-    "availability": "https://schema.org/InStock",
-    "url": "https://www.skyluxeelevators.com/manual-car-lift.html"
-  }
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Manual Car Lift Installation in Lucknow",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Skyluxe Elevators",
+        "url": "https://skyluxeelevators.com"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Lucknow"
+      },
+      "description": "Professional installation and supply of sturdy manual car lifts and vehicle elevators in Lucknow by Skyluxe Elevators."
+    },
+    {
+      "@type": "Product",
+      "name": "Manual Car Lift",
+      "image": "{% static 'img/6th.webp' %}",
+      "description": "Sturdy and reliable manual car lifts and vehicle elevators by Skyluxe Elevators in Lucknow, Uttar Pradesh.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Skyluxe Elevators"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://skyluxeelevators.com/manual-car-lift.html"
+      }
+    }
+  ]
 }
 </script>
 {% endblock %}

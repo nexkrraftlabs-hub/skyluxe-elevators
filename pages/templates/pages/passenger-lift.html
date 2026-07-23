@@ -1,42 +1,60 @@
 {% extends 'pages/base.html' %}
 {% load static %}
 
-{% block title %}Commercial Passenger Lifts in India | Skyluxe Elevators{% endblock %}
+{% block title %}Passenger Lift in Lucknow | Commercial Elevators | Skyluxe{% endblock %}
 
-{% block meta_description %}Skyluxe Elevators offers premium commercial passenger lifts for buildings, hotels, and apartments in India. Reliable, energy-efficient, and smooth rides.{% endblock %}
+{% block meta_description %}Get the best commercial passenger lifts in Lucknow, Uttar Pradesh. Skyluxe Elevators is the top passenger lift manufacturer & installer in Lucknow. High safety & reliability.{% endblock %}
 
-{% block meta_keywords %}passenger lift india, commercial elevator, building lift, apartment elevator, passenger elevator manufacturer, skyluxe passenger lift{% endblock %}
+{% block meta_keywords %}passenger lift in lucknow, commercial elevator lucknow, passenger lift manufacturer lucknow, elevator supplier lucknow, lift installation lucknow{% endblock %}
 
-{% block canonical_url %}https://www.skyluxeelevators.com/passenger-lift.html{% endblock %}
+{% block canonical_url %}https://skyluxeelevators.com/passenger-lift.html{% endblock %}
 
-{% block og_title %}Commercial Passenger Lifts in India | Skyluxe Elevators{% endblock %}
-{% block og_description %}Premium commercial passenger lifts for buildings, hotels, and apartments. Reliable, energy-efficient, and smooth.{% endblock %}
-{% block og_url %}https://www.skyluxeelevators.com/passenger-lift.html{% endblock %}
+{% block og_title %}Passenger Lift in Lucknow | Commercial Elevators | Skyluxe{% endblock %}
+{% block og_description %}Top passenger lift manufacturer & installer in Lucknow. Safe, reliable, and energy-efficient building elevators.{% endblock %}
+{% block og_url %}https://skyluxeelevators.com/passenger-lift.html{% endblock %}
 {% block og_image %}{% static 'img/2nd.webp' %}{% endblock %}
-{% block og_image_alt %}Commercial Passenger Lift by Skyluxe Elevators{% endblock %}
+{% block og_image_alt %}Commercial Passenger Lift in Lucknow by Skyluxe Elevators{% endblock %}
 
-{% block twitter_title %}Commercial Passenger Lifts | Skyluxe Elevators{% endblock %}
-{% block twitter_description %}Premium commercial passenger lifts for buildings, hotels, and apartments.{% endblock %}
+{% block twitter_title %}Passenger Lift in Lucknow | Skyluxe Elevators{% endblock %}
+{% block twitter_description %}Leading passenger lift supplier in Lucknow & Uttar Pradesh. High quality, safe commercial elevators.{% endblock %}
 {% block twitter_image %}{% static 'img/2nd.webp' %}{% endblock %}
 
 {% block structured_data %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Passenger Lift",
-  "image": "{% static 'img/2nd.webp' %}",
-  "description": "Premium commercial passenger lifts and elevators by Skyluxe Elevators for buildings, hotels, and apartments in India.",
-  "brand": {
-    "@type": "Brand",
-    "name": "Skyluxe Elevators"
-  },
-  "offers": {
-    "@type": "AggregateOffer",
-    "priceCurrency": "INR",
-    "availability": "https://schema.org/InStock",
-    "url": "https://www.skyluxeelevators.com/passenger-lift.html"
-  }
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Commercial Passenger Lift Installation in Lucknow",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Skyluxe Elevators",
+        "url": "https://skyluxeelevators.com"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Lucknow"
+      },
+      "description": "Premium passenger lifts and elevators by Skyluxe Elevators for commercial complexes, hotels, and residential apartments in Lucknow."
+    },
+    {
+      "@type": "Product",
+      "name": "Passenger Lift",
+      "image": "{% static 'img/2nd.webp' %}",
+      "description": "Premium commercial passenger lifts and elevators by Skyluxe Elevators for buildings, hotels, and apartments in Lucknow, Uttar Pradesh.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Skyluxe Elevators"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://skyluxeelevators.com/passenger-lift.html"
+      }
+    }
+  ]
 }
 </script>
 {% endblock %}
@@ -59,8 +77,8 @@ active
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-badge">COMMERCIAL ELEVATORS</div>
-    <h1>Passenger <span class="c-pri">Lift</span></h1>
-    <p>High-capacity, high-speed elevators for offices, malls and commercial buildings.</p>
+    <h1>Passenger <span class="c-pri">Lift in Lucknow</span></h1>
+    <p>High-capacity, high-speed commercial passenger lifts and building elevators in Lucknow, UP.</p>
     <a href="{% url 'contact' %}" class="btn-pri">Get Free Quote</a>
   </div>
 </section>
@@ -70,14 +88,14 @@ active
   <div class="container">
     <div class="text-center mb-5">
       <span class="section-tag">COMMERCIAL ELEVATOR GUIDE</span>
-      <h2 class="section-title">Premium <span class="c-pri">Passenger Lifts</span></h2>
+      <h2 class="section-title">Premium <span class="c-pri">Passenger Lifts in Lucknow</span></h2>
       <p class="section-desc">Built for high-traffic commercial spaces — offices, retail malls, hotels and apartments.
         High-speed, energy-efficient and fully customisable.</p>
     </div>
     <div class="row g-4 align-items-stretch">
       <div class="col-lg-7">
         <div class="main-lift-image">
-          <img src="static/img/passengerskyluxe2.png" alt="Passenger Lift" />
+          <img src="static/img/passengerskyluxe2.png" alt="Commercial Passenger Lift in Lucknow by Skyluxe Elevators" />
           <div class="image-overlay">
             <h3>High-Speed Passenger Elevator</h3>
             <p>MRL traction drive with energy-regeneration and smart destination control.</p>

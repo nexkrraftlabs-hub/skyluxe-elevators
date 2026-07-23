@@ -1,42 +1,60 @@
 {% extends 'pages/base.html' %}
 {% load static %}
 
-{% block title %}Hydraulic Home Lifts in India | Skyluxe Elevators{% endblock %}
+{% block title %}Hydraulic Home Lift in Lucknow | Residential Elevators | Skyluxe{% endblock %}
 
-{% block meta_description %}Skyluxe Elevators offers premium hydraulic home lifts in India. Smooth, silent, and safe residential elevators perfect for low-rise homes.{% endblock %}
+{% block meta_description %}Premium hydraulic home lifts in Lucknow, Uttar Pradesh. Get silent, smooth residential elevators from Skyluxe Elevators. Perfect for duplexes & bungalows.{% endblock %}
 
-{% block meta_keywords %}hydraulic home lift, hydraulic elevator india, residential hydraulic lift, skyluxe hydraulic lift, home elevator{% endblock %}
+{% block meta_keywords %}hydraulic home lift in lucknow, hydraulic elevator lucknow, residential hydraulic lift lucknow, home lift supplier lucknow{% endblock %}
 
-{% block canonical_url %}https://www.skyluxeelevators.com/home-hydraulic-lift.html{% endblock %}
+{% block canonical_url %}https://skyluxeelevators.com/home-hydraulic-lift.html{% endblock %}
 
-{% block og_title %}Hydraulic Home Lifts in India | Skyluxe Elevators{% endblock %}
-{% block og_description %}Premium hydraulic home lifts in India. Smooth, silent, and safe residential elevators perfect for low-rise homes.{% endblock %}
-{% block og_url %}https://www.skyluxeelevators.com/home-hydraulic-lift.html{% endblock %}
+{% block og_title %}Hydraulic Home Lift in Lucknow | Residential Elevators | Skyluxe{% endblock %}
+{% block og_description %}Premium hydraulic home lifts and residential elevators in Lucknow. Safe, silent, and space-saving solutions for low-rise homes.{% endblock %}
+{% block og_url %}https://skyluxeelevators.com/home-hydraulic-lift.html{% endblock %}
 {% block og_image %}{% static 'img/1st.webp' %}{% endblock %}
-{% block og_image_alt %}Hydraulic Home Lift by Skyluxe Elevators{% endblock %}
+{% block og_image_alt %}Hydraulic Home Lift in Lucknow by Skyluxe Elevators{% endblock %}
 
-{% block twitter_title %}Hydraulic Home Lifts | Skyluxe Elevators{% endblock %}
-{% block twitter_description %}Premium hydraulic home lifts in India. Smooth, silent, and safe.{% endblock %}
+{% block twitter_title %}Hydraulic Home Lift in Lucknow | Skyluxe Elevators{% endblock %}
+{% block twitter_description %}Premium hydraulic home lifts and residential elevators in Lucknow & Uttar Pradesh.{% endblock %}
 {% block twitter_image %}{% static 'img/1st.webp' %}{% endblock %}
 
 {% block structured_data %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Hydraulic Home Lift",
-  "image": "{% static 'img/1st.webp' %}",
-  "description": "Premium hydraulic home lifts and residential elevators by Skyluxe Elevators. Smooth, silent, and safe solutions for modern homes.",
-  "brand": {
-    "@type": "Brand",
-    "name": "Skyluxe Elevators"
-  },
-  "offers": {
-    "@type": "AggregateOffer",
-    "priceCurrency": "INR",
-    "availability": "https://schema.org/InStock",
-    "url": "https://www.skyluxeelevators.com/home-hydraulic-lift.html"
-  }
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Hydraulic Home Lift Installation in Lucknow",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Skyluxe Elevators",
+        "url": "https://skyluxeelevators.com"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Lucknow"
+      },
+      "description": "Professional installation and supply of premium hydraulic home lifts and residential elevators in Lucknow by Skyluxe Elevators."
+    },
+    {
+      "@type": "Product",
+      "name": "Hydraulic Home Lift",
+      "image": "{% static 'img/1st.webp' %}",
+      "description": "Premium hydraulic home lifts and residential elevators by Skyluxe Elevators in Lucknow, Uttar Pradesh.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Skyluxe Elevators"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://skyluxeelevators.com/home-hydraulic-lift.html"
+      }
+    }
+  ]
 }
 </script>
 {% endblock %}

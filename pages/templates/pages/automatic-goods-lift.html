@@ -1,42 +1,60 @@
 {% extends 'pages/base.html' %}
 {% load static %}
 
-{% block title %}Automatic Goods Lifts & Freight Elevators | Skyluxe Elevators{% endblock %}
+{% block title %}Automatic Goods Lift in Lucknow | Freight Elevators | Skyluxe{% endblock %}
 
-{% block meta_description %}Enhance productivity with Skyluxe Elevators' automatic goods lifts. High-speed, heavy-duty freight elevators with automatic doors for seamless material handling.{% endblock %}
+{% block meta_description %}Enhance productivity with automatic goods lifts in Lucknow, Uttar Pradesh. Skyluxe Elevators offers high-speed, heavy-duty freight elevators with automatic doors.{% endblock %}
 
-{% block meta_keywords %}automatic goods lift, auto door freight elevator, fast material handling lift, industrial automatic lift india, skyluxe automatic goods lift{% endblock %}
+{% block meta_keywords %}automatic goods lift lucknow, auto door freight elevator lucknow, fast material handling lift up, industrial automatic lift lucknow, skyluxe automatic goods lift{% endblock %}
 
-{% block canonical_url %}https://www.skyluxeelevators.com/automatic-goods-lift.html{% endblock %}
+{% block canonical_url %}https://skyluxeelevators.com/automatic-goods-lift.html{% endblock %}
 
-{% block og_title %}Automatic Goods Lifts & Freight Elevators | Skyluxe Elevators{% endblock %}
-{% block og_description %}Enhance productivity with high-speed, heavy-duty freight elevators featuring automatic doors for seamless material handling.{% endblock %}
-{% block og_url %}https://www.skyluxeelevators.com/automatic-goods-lift.html{% endblock %}
+{% block og_title %}Automatic Goods Lift in Lucknow | Freight Elevators | Skyluxe{% endblock %}
+{% block og_description %}Enhance productivity with high-speed, heavy-duty freight elevators featuring automatic doors for seamless material handling in Lucknow, UP.{% endblock %}
+{% block og_url %}https://skyluxeelevators.com/automatic-goods-lift.html{% endblock %}
 {% block og_image %}{% static 'img/5th.webp' %}{% endblock %}
-{% block og_image_alt %}Automatic Goods Lift by Skyluxe Elevators{% endblock %}
+{% block og_image_alt %}Automatic Goods Lift in Lucknow by Skyluxe Elevators{% endblock %}
 
-{% block twitter_title %}Automatic Goods Lifts | Skyluxe Elevators{% endblock %}
-{% block twitter_description %}High-speed, heavy-duty freight elevators with automatic doors for seamless material handling.{% endblock %}
+{% block twitter_title %}Automatic Goods Lift in Lucknow | Skyluxe Elevators{% endblock %}
+{% block twitter_description %}High-speed, heavy-duty freight elevators with automatic doors for seamless material handling in Lucknow.{% endblock %}
 {% block twitter_image %}{% static 'img/5th.webp' %}{% endblock %}
 
 {% block structured_data %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Automatic Goods Lift",
-  "image": "{% static 'img/5th.webp' %}",
-  "description": "High-speed, heavy-duty automatic goods lifts and freight elevators by Skyluxe Elevators.",
-  "brand": {
-    "@type": "Brand",
-    "name": "Skyluxe Elevators"
-  },
-  "offers": {
-    "@type": "AggregateOffer",
-    "priceCurrency": "INR",
-    "availability": "https://schema.org/InStock",
-    "url": "https://www.skyluxeelevators.com/automatic-goods-lift.html"
-  }
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Automatic Goods Lift Installation in Lucknow",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Skyluxe Elevators",
+        "url": "https://skyluxeelevators.com"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Lucknow"
+      },
+      "description": "Professional installation and supply of heavy-duty automatic goods lifts and high-speed freight elevators in Lucknow by Skyluxe Elevators."
+    },
+    {
+      "@type": "Product",
+      "name": "Automatic Goods Lift",
+      "image": "{% static 'img/5th.webp' %}",
+      "description": "High-speed, heavy-duty automatic goods lifts and freight elevators by Skyluxe Elevators in Lucknow, Uttar Pradesh.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Skyluxe Elevators"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://skyluxeelevators.com/automatic-goods-lift.html"
+      }
+    }
+  ]
 }
 </script>
 {% endblock %}
