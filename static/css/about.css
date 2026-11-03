@@ -1,0 +1,391 @@
+/* ===================================================
+   about.css – Skyluxe Elevators About Page
+   Cleaned, deduplicated & production-ready
+   =================================================== */
+
+/* ─── GOOGLE FONTS ─────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap');
+
+/* ─── RESET ─────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* ─── BODY ──────────────────────────────────────── */
+body {
+  overflow-x: hidden;
+  font-family: 'DM Sans', sans-serif;
+}
+
+p, span, a, li, button, input, textarea, label, small {
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.section-title, .section-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* ─── HERO ──────────────────────────────────────── */
+.hero {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-swiper {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero-swiper .swiper-slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.65) 100%);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 5;
+  max-width: 800px;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 18px;
+  line-height: 1.15;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+}
+
+.hero-content p {
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  color: rgba(255,255,255,0.88);
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+
+.hero-content .btn-pri {
+  position: relative;
+  z-index: 6;
+  font-size: 1rem;
+  padding: 14px 36px;
+  border-radius: 50px;
+  background: #c8a45d;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.hero-content .btn-pri:hover {
+  background: #a97c33;
+  transform: translateY(-2px);
+}
+
+/* ─── ABOUT LUXURY SECTIONS ─────────────────────── */
+.luxury-sections {
+  background: #fff;
+  padding: 100px 0;
+}
+
+.tag {
+  display: inline-block;
+  color: #c8a45d;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.section-heading {
+  font-size: clamp(1.8rem, 4vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.section-text {
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+/* ─── LUXURY IMAGE WITH 3D TILT ─────────────────── */
+.luxury-img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  display: block;
+}
+
+.luxury-img:hover {
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.18);
+}
+
+/* 3D Tilt Frame (injected by JS) */
+.tilt-frame {
+  perspective: 1000px;
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.tilt-inner {
+  transition: transform 0.15s ease;
+  transform-style: preserve-3d;
+}
+
+.tilt-sheen {
+  position: absolute;
+  inset: 0;
+  border-radius: 22px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.content-box {
+  animation: fadeUp 0.8s ease both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── CONTACT SECTION ───────────────────────────── */
+.contact-section {
+  padding: 100px 0;
+  background: #f8f7f4;
+}
+
+.contact-title {
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #111;
+  line-height: 1.2;
+}
+
+.contact-text {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 36px;
+  font-size: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.contact-item i {
+  width: 48px;
+  height: 48px;
+  background: #c8a45d;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.contact-form-wrapper {
+  background: #fff;
+  padding: 50px;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.luxury-input {
+  height: 58px;
+  border-radius: 14px;
+  border: 1.5px solid #e2e2e2;
+  padding: 0 18px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+
+.luxury-input:focus {
+  border-color: #c8a45d;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(200, 164, 93, 0.15);
+}
+
+textarea.luxury-input {
+  height: 150px;
+  padding: 16px 18px;
+  resize: vertical;
+}
+
+.luxury-btn {
+  background: #c8a45d;
+  color: #fff;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.luxury-btn:hover {
+  background: #a97c33;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* ─── FAQ SECTION ───────────────────────────────── */
+.faq-section {
+  background: #0f1115;
+  padding: 100px 0;
+}
+
+.faq-accordion {
+  max-width: 900px;
+  margin: auto;
+}
+
+.faq-accordion .accordion-item {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 18px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.faq-accordion .accordion-button {
+  background: transparent;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 26px 28px;
+  box-shadow: none;
+  font-family: 'Playfair Display', Georgia, serif;
+  border-radius: 18px;
+}
+
+.faq-accordion .accordion-button:not(.collapsed) {
+  background: #c8a45d;
+  color: #fff;
+  border-radius: 18px 18px 0 0;
+}
+
+.faq-accordion .accordion-button::after {
+  filter: invert(1);
+}
+
+.faq-accordion .accordion-button:not(.collapsed)::after {
+  filter: none;
+}
+
+.faq-accordion .accordion-body {
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.85;
+  padding: 22px 28px 28px;
+  font-size: 0.95rem;
+}
+
+/* ─── GLOBAL UTILITIES ──────────────────────────── */
+.c-pri { color: #c8a45d !important; }
+
+.btn-pri {
+  background: #c8a45d;
+  color: #fff;
+  border: none;
+  padding: 14px 34px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.btn-pri:hover {
+  background: #a97c33;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* ─── RESPONSIVE ────────────────────────────────── */
+@media (max-width: 991px) {
+  .luxury-sections {
+    padding: 70px 0;
+  }
+  .contact-section {
+    padding: 70px 0;
+  }
+  .faq-section {
+    padding: 70px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .luxury-img {
+    height: 320px;
+  }
+  .tilt-frame {
+    height: auto;
+  }
+  .contact-title {
+    font-size: 2rem;
+  }
+  .contact-form-wrapper {
+    padding: 28px 20px;
+  }
+  .section-heading {
+    font-size: 1.75rem;
+  }
+  .luxury-sections {
+    padding: 56px 0;
+  }
+}
