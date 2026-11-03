@@ -453,13 +453,6 @@
       color: #fff;
     }
 
-    /* ═══════════════════════════════════════════════════════
-                                                         HERO — S-SHAPE VIDEO CUTOUT
-                                                      ═══════════════════════════════════════════════════════ */
-    /* ═══════════════════════════════
-         CLEAN HERO
-      ═══════════════════════════════ */
-
     .hero {
       position: relative;
       height: 100vh;
@@ -470,41 +463,15 @@
       justify-content: center;
     }
 
-    /* FULL SCREEN DUAL VIDEO */
-    .hero-video {
+    .hero-image {
       position: absolute;
-      top: 0;
-      height: 100%;
-      width: 50%;
-      z-index: 1;
-      overflow: hidden;
-    }
-
-    .hero-video.left-video {
-      left: 0;
-    }
-
-    .hero-video.right-video {
-      right: 0;
-    }
-
-    .hero-video video {
+      inset: 0;
       width: 100%;
       height: 100%;
+      z-index: 1;
       object-fit: cover;
+      object-position: center 55%;
       filter: brightness(0.82) contrast(1.05) saturate(1.05);
-    }
-
-    /* thin gold center divider */
-    .hero-divider {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 2px;
-      height: 100%;
-      background: linear-gradient(to bottom, transparent, rgba(199, 155, 47, 0.6), transparent);
-      z-index: 3;
     }
 
     /* DARK GRADIENT OVERLAY */
@@ -954,26 +921,49 @@
       font-weight: 700;
     }
 
-    /* ═══════════════════════════════════════════════════════
-                                                         VIDEO SECTION
-                                                      ═══════════════════════════════════════════════════════ */
-    .video-section {
+    .image-feature {
       background: var(--off-white) !important;
     }
 
-    .video-container {
-      border: 1px solid var(--border);
+    .image-feature-visual {
       position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-card);
     }
 
-    .video-container::before {
-      content: '';
+    .image-feature-visual img {
+      width: 100%;
+      height: clamp(300px, 42vw, 560px);
+      object-fit: cover;
+    }
+
+    .image-feature-caption {
       position: absolute;
-      inset: -1px;
-      border-radius: inherit;
-      background: linear-gradient(135deg, var(--gold), transparent, var(--gold));
-      z-index: -1;
-      opacity: 0.25;
+      inset: auto 0 0;
+      padding: 48px 28px 24px;
+      color: var(--white);
+      font-family: var(--font-display);
+      font-size: clamp(1.15rem, 2vw, 1.65rem);
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.68));
+    }
+
+    .image-feature-eyebrow {
+      margin-bottom: 12px;
+      color: var(--gold-dark);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+    }
+
+    @media (max-width: 767px) {
+      .image-feature-visual img {
+        height: 320px;
+      }
+
+      .image-feature-caption {
+        padding: 40px 20px 18px;
+      }
     }
 
     /* ═══════════════════════════════════════════════════════
@@ -2129,10 +2119,6 @@
         opacity: 0.8;
       }
 
-      .hero-divider {
-        opacity: 0.45;
-      }
-
       .section-title {
         font-size: clamp(1.65rem, 4.5vw, 2.2rem);
         margin-bottom: 34px;
@@ -2338,14 +2324,14 @@
 
     .left-door {
       left: 0;
-      background-image: url("../img/liftpart1.png");
+      background-image: url("../img/liftpart1.webp");
       background-position: right center;
       transition: transform 1.7s cubic-bezier(.2,.85,.2,1), opacity 0.35s ease;
     }
 
     .right-door {
       right: 0;
-      background-image: url("../img/liftpart2.png");
+      background-image: url("../img/liftpart2.webp");
       background-position: left center;
       transition: transform 1.7s cubic-bezier(.2,.85,.2,1), opacity 0.35s ease;
     }

@@ -44,7 +44,7 @@
     content="About Us | Elevator Company in Lucknow | Skyluxe Elevators">
   <meta property="og:description"
     content="Learn about Skyluxe Elevators, the premier lift manufacturer and supplier in Lucknow, Uttar Pradesh. Swedish design, European quality home lifts & passenger lifts.">
-  <meta property="og:image" content="static/img/VGO0749_HDR-scaled.jpg">
+  <meta property="og:image" content="static/img/VGO0749_HDR-scaled.webp">
   <meta property="og:image:width" content="800">
   <meta property="og:image:height" content="600">
   <meta property="og:image:alt"
@@ -61,7 +61,7 @@
     content="About Us | Elevator Company in Lucknow | Skyluxe Elevators">
   <meta name="twitter:description"
     content="Discover the leading elevator manufacturer & supplier in Lucknow. Certified Swedish design home lifts and passenger lifts.">
-  <meta name="twitter:image" content="static/img/VGO0749_HDR-scaled.jpg">
+  <meta name="twitter:image" content="static/img/VGO0749_HDR-scaled.webp">
   <meta name="twitter:image:alt"
     content="Skyluxe Elevators – Premium Elevator Manufacturer India">
 
@@ -945,263 +945,7 @@
 </head>
 
 <body>
-  <!-- SPLASH SCREEN START -->
-  <style>
-    #splash-screen {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: #000;
-      z-index: 999999;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      transition: opacity 0.5s ease, visibility 0.5s ease;
-    }
 
-    #splash-screen.hidden {
-      opacity: 0;
-      visibility: hidden;
-    }
-
-    #splash-screen canvas {
-      max-width: 100%;
-      max-height: 100vh;
-      object-fit: contain;
-      position: relative;
-      z-index: 1;
-      opacity: 0;
-      /* hidden initially */
-    }
-
-    .elevator-door {
-      position: absolute;
-      top: 0;
-      height: 100%;
-      width: 50%;
-      z-index: 10;
-      object-fit: cover;
-      /* Looks good on mobile without squishing */
-    }
-
-    #door-left {
-      left: 0;
-      object-position: right;
-    }
-
-    #door-right {
-      right: 0;
-      object-position: left;
-    }
-
-    @media (min-width: 768px) {
-      .elevator-door {
-        object-fit: fill;
-        /* Stretches on laptop so nothing is hidden */
-      }
-    }
-  </style>
-
-  <div id="splash-screen">
-    <img id="door-left" class="elevator-door" src="static/img/liftpart1.png" alt="Left Door">
-    <img id="door-right" class="elevator-door" src="static/img/liftpart2.png" alt="Right Door">
-    <canvas id="splash-c" width="500" height="520"></canvas>
-  </div>
-
-  <script>
-    if (sessionStorage.getItem('splashSeen')) {
-      document.getElementById('splash-screen').style.display = 'none';
-    } else {
-      document.body.style.overflow = 'hidden';
-      (function wait() {
-        if (typeof gsap === 'undefined') { setTimeout(wait, 80); return; }
-
-        var canvas = document.getElementById('splash-c');
-        var dl = document.getElementById('door-left');
-        var dr = document.getElementById('door-right');
-        if (!canvas || !dl || !dr) return;
-
-        var ctx = canvas.getContext('2d');
-        var cx = 250;
-        var bots = 292;
-
-        var state = { b1: 0, b2: 0, b3: 0, b4: 0, b5: 0, arr: 0, ring: 0, txt: 0, sub: 0, glow: 0, ringP: 1 };
-
-        var gap = 3;
-        var bW = [20, 24, 36, 24, 20];
-        var bH = [108, 132, 170, 132, 108];
-        var totalBW = bW.reduce(function (a, b) { return a + b; }, 0) + gap * 4;
-        var bX = [];
-        var acc = cx - totalBW / 2;
-        bW.forEach(function (w) { bX.push(acc); acc += w + gap; });
-
-        function drawFrame() {
-          ctx.clearRect(0, 0, 500, 520);
-          var ringY = bots, ringRx = 108, ringRy = 18;
-
-          if (state.ring > 0) {
-            ctx.save();
-            ctx.translate(cx, ringY); ctx.scale(state.ring, 1); ctx.translate(-cx, -ringY);
-            ctx.beginPath();
-            ctx.ellipse(cx, ringY, ringRx, ringRy, 0, Math.PI, Math.PI * 2);
-            ctx.strokeStyle = '#8c672b'; ctx.lineWidth = 7; ctx.stroke();
-            ctx.restore();
-          }
-
-          var heights = [
-            Math.round(bH[0] * state.b1), Math.round(bH[1] * state.b2),
-            Math.round(bH[2] * state.b3), Math.round(bH[3] * state.b4),
-            Math.round(bH[4] * state.b5)
-          ];
-          heights.forEach(function (h, i) {
-            if (h <= 0) return;
-            var x = bX[i], w = bW[i], y = bots - h;
-            if (i === 2) {
-              var g = ctx.createLinearGradient(x, y, x + w, bots);
-              g.addColorStop(0, '#f0c76b'); g.addColorStop(1, '#a97c33');
-              ctx.shadowColor = '#c8a45d'; ctx.shadowBlur = 14 + state.glow * 10;
-              ctx.fillStyle = g; ctx.fillRect(x, y, w, h); ctx.shadowBlur = 0;
-              ctx.fillStyle = 'rgba(255,255,255,0.2)'; ctx.fillRect(x + 5, y + 4, 5, h - 8);
-            } else if (i < 2) {
-              var g2 = ctx.createLinearGradient(x, y, x + w, bots);
-              g2.addColorStop(0, '#fdfbf7'); g2.addColorStop(0.5, '#ebd8ab'); g2.addColorStop(1, '#c8a45d');
-              ctx.fillStyle = g2; ctx.fillRect(x, y, w, h);
-            } else {
-              var g3 = ctx.createLinearGradient(x, y, x + w, bots);
-              g3.addColorStop(0, '#c8a45d'); g3.addColorStop(0.5, '#ebd8ab'); g3.addColorStop(1, '#fdfbf7');
-              ctx.fillStyle = g3; ctx.fillRect(x, y, w, h);
-            }
-          });
-
-          if (state.arr > 0) {
-            ctx.globalAlpha = state.arr;
-            ctx.beginPath(); ctx.moveTo(cx, 100); ctx.lineTo(cx - 30, 128); ctx.lineTo(cx + 30, 128); ctx.closePath();
-            var ga = ctx.createLinearGradient(cx - 30, 100, cx + 30, 128);
-            ga.addColorStop(0, '#fdfbf7'); ga.addColorStop(1, '#c8a45d');
-            ctx.fillStyle = ga; ctx.fill();
-            ctx.beginPath(); ctx.moveTo(cx, 80); ctx.lineTo(cx - 22, 106); ctx.lineTo(cx + 22, 106); ctx.closePath();
-            ctx.shadowColor = '#f0c76b'; ctx.shadowBlur = 12;
-            var gb = ctx.createLinearGradient(cx, 80, cx, 106);
-            gb.addColorStop(0, '#f0c76b'); gb.addColorStop(1, '#a97c33');
-            ctx.fillStyle = gb; ctx.fill();
-            ctx.shadowBlur = 0; ctx.globalAlpha = 1;
-          }
-
-          if (state.ring > 0) {
-            ctx.save();
-            var sc = state.ring * (0.98 + state.ringP * 0.02);
-            ctx.translate(cx, ringY); ctx.scale(sc, 1); ctx.translate(-cx, -ringY);
-            ctx.beginPath(); ctx.ellipse(cx, ringY, ringRx, ringRy, 0, 0, Math.PI);
-            ctx.strokeStyle = '#3d2b11'; ctx.lineWidth = 14; ctx.stroke();
-            ctx.beginPath(); ctx.ellipse(cx, ringY, ringRx, ringRy, 0, 0, Math.PI);
-            ctx.strokeStyle = '#f0c76b'; ctx.lineWidth = 8; ctx.stroke();
-            ctx.beginPath(); ctx.ellipse(cx, ringY, ringRx - 20, ringRy - 3, 0, 0.1, Math.PI - 0.1);
-            ctx.strokeStyle = '#c8a45d'; ctx.lineWidth = 4; ctx.stroke();
-            ctx.beginPath(); ctx.ellipse(cx, ringY - 3, ringRx - 38, ringRy - 6, 0, 0.15, Math.PI - 0.15);
-            ctx.strokeStyle = 'rgba(255,255,255,0.95)'; ctx.lineWidth = 2.5; ctx.stroke();
-            ctx.restore();
-          }
-
-          if (state.txt > 0) {
-            ctx.globalAlpha = state.txt;
-            ctx.font = "italic bold 72px 'Arial Black', Arial, sans-serif";
-            ctx.textBaseline = 'alphabetic';
-
-            var wSky = ctx.measureText('Sky').width;
-            var wLuxe = ctx.measureText('Luxe').width;
-            var totalTW = wSky + wLuxe;
-            var tx = cx - totalTW / 2;
-            var textY = 370;
-
-            var gSky = ctx.createLinearGradient(0, 310, 0, 373);
-            gSky.addColorStop(0, '#f0c76b'); gSky.addColorStop(1, '#c8a45d');
-            ctx.fillStyle = gSky; ctx.fillText('Sky', tx, textY);
-
-            var gLuxe = ctx.createLinearGradient(0, 310, 0, 373);
-            gLuxe.addColorStop(0, '#c8a45d'); gLuxe.addColorStop(1, '#a97c33');
-            ctx.fillStyle = gLuxe; ctx.fillText('Luxe', tx + wSky, textY);
-
-            var lx1 = tx - 4;
-            var lx2 = tx + totalTW + 4;
-            var ly = textY + 3;
-            var lyMid = textY + 7;
-
-            var lineGrad = ctx.createLinearGradient(lx1, 0, lx2, 0);
-            lineGrad.addColorStop(0, 'rgba(200,164,93,0.2)');
-            lineGrad.addColorStop(0.2, 'rgba(240,199,107,0.85)');
-            lineGrad.addColorStop(0.5, 'rgba(200,164,93,1)');
-            lineGrad.addColorStop(0.8, 'rgba(240,199,107,0.7)');
-            lineGrad.addColorStop(1, 'rgba(200,164,93,0.15)');
-
-            ctx.beginPath();
-            ctx.moveTo(lx1, ly);
-            ctx.quadraticCurveTo(cx, lyMid, lx2, ly);
-            ctx.strokeStyle = lineGrad;
-            ctx.lineWidth = 1.8;
-            ctx.stroke();
-
-            ctx.globalAlpha = 1;
-          }
-
-          if (state.sub > 0) {
-            ctx.globalAlpha = state.sub;
-            ctx.font = "italic 400 14px Georgia, 'Times New Roman', serif";
-            ctx.fillStyle = '#c8a45d';
-            ctx.textAlign = 'center';
-            ctx.textBaseline = 'alphabetic';
-            ctx.letterSpacing = '3px';
-            ctx.fillText('Elevators Pvt. Ltd.', cx, 410);
-            ctx.letterSpacing = '0px';
-            ctx.textAlign = 'left';
-            ctx.globalAlpha = 1;
-          }
-        }
-
-        var masterTl = gsap.timeline({
-          onComplete: function () {
-            setTimeout(function () {
-              var splash = document.getElementById('splash-screen');
-              if (splash) {
-                splash.classList.add('hidden');
-                document.body.style.overflow = '';
-                sessionStorage.setItem('splashSeen', 'true');
-                setTimeout(function () { splash.style.display = 'none'; }, 500);
-              }
-            }, 1000); // hide 1s after animation is fully complete
-          }
-        });
-
-        // Open doors sequence
-        masterTl.to(dl, { xPercent: -100, duration: 1.5, ease: "power2.inOut" }, 0.5)
-          .to(dr, { xPercent: 100, duration: 1.5, ease: "power2.inOut" }, 0.5)
-          .to(canvas, { opacity: 1, duration: 0.5 }, 1.0); // canvas fades in while doors open
-
-        // Original logo animation sequence
-        var tl = gsap.timeline({ onUpdate: drawFrame });
-        tl.to(state, { b1: 1, duration: 0.5, ease: 'power3.out' }, 0.0)
-          .to(state, { b5: 1, duration: 0.5, ease: 'power3.out' }, 0.1)
-          .to(state, { b2: 1, duration: 0.55, ease: 'power3.out' }, 0.22)
-          .to(state, { b4: 1, duration: 0.55, ease: 'power3.out' }, 0.32)
-          .to(state, { b3: 1, duration: 0.7, ease: 'power4.out' }, 0.45)
-          .to(state, { arr: 1, duration: 0.4, ease: 'back.out(2)' }, 1.1)
-          .to(state, { ring: 1, duration: 0.65, ease: 'elastic.out(1,0.55)' }, 1.45)
-          .to(state, { txt: 1, duration: 0.55, ease: 'power3.out' }, 1.85)
-          .to(state, { sub: 1, duration: 0.5, ease: 'power2.out' }, 2.35);
-
-        // Add to master timeline at 1.5 seconds (right when doors finish opening)
-        masterTl.add(tl, 1.5);
-
-        gsap.to(state, { glow: 1, repeat: -1, yoyo: true, duration: 2, ease: 'sine.inOut', delay: 4.7, onUpdate: drawFrame });
-        gsap.to(state, { ringP: 0, repeat: -1, yoyo: true, duration: 2.5, ease: 'sine.inOut', delay: 4.5, onUpdate: drawFrame });
-
-        drawFrame();
-      })();
-    }
-  </script>
-  <!-- SPLASH SCREEN END -->
 
   <!-- Premium Unified Navbar -->
   <!-- Mobile Overlay Backdrop -->
@@ -1211,7 +955,7 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container d-flex flex-row justify-content-between align-items-center flex-nowrap">
         <a class="navbar-brand" href="index.html">
-          <img src="static/img/skyluxelogo.png" alt="Skyluxe Logo"
+          <img src="static/img/skyluxelogo.webp" alt="Skyluxe Logo"
             style="height: 48px; width: auto; max-width: 140px;">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -1428,10 +1172,10 @@
   <section class="hero">
     <div class="swiper hero-swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide" style="background-image:url('static/img/VGO0749_HDR-scaled.jpg')">
+        <div class="swiper-slide" style="background-image:url('static/img/VGO0749_HDR-scaled.webp')">
           <div class="hero-overlay"></div>
         </div>
-        <div class="swiper-slide" style="background-image:url('static/img/VGO05128-copy-scaled.jpg')">
+        <div class="swiper-slide" style="background-image:url('static/img/VGO05128-copy-scaled.webp')">
           <div class="hero-overlay"></div>
         </div>
       </div>
@@ -1462,7 +1206,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <img src="static/img/home1.jpg" class="img-fluid luxury-img zoom-img fade-up" alt="Skyluxe luxury elevator – Swedish engineering" loading="lazy" decoding="async" />
+          <img src="static/img/home1.webp" class="img-fluid luxury-img zoom-img fade-up" alt="Skyluxe luxury elevator – Swedish engineering" loading="lazy" decoding="async" />
         </div>
       </div>
 
@@ -1480,7 +1224,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <img src="static/img/home3.jpg" class="img-fluid luxury-img zoom-img fade-up" alt="Skyluxe glass elevator – minimal design for modern interiors" loading="lazy" decoding="async" />
+          <img src="static/img/home3.webp" class="img-fluid luxury-img zoom-img fade-up" alt="Skyluxe glass elevator – minimal design for modern interiors" loading="lazy" decoding="async" />
         </div>
       </div>
 
@@ -1498,7 +1242,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <img src="static/img/homeskyluxe.png" class="img-fluid luxury-img zoom-img fade-up" alt="Skyluxe screw-drive lift technology" loading="lazy" decoding="async" />
+          <img src="static/img/homeskyluxe.webp" class="img-fluid luxury-img zoom-img fade-up" alt="Skyluxe screw-drive lift technology" loading="lazy" decoding="async" />
         </div>
       </div>
 
@@ -1516,7 +1260,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <img src="static/img/slider5.png" class="img-fluid luxury-img zoom-img fade-up" alt="Skyluxe smart lift with luxury comfort features" loading="lazy" decoding="async" />
+          <img src="static/img/slider5.webp" class="img-fluid luxury-img zoom-img fade-up" alt="Skyluxe smart lift with luxury comfort features" loading="lazy" decoding="async" />
         </div>
       </div>
 
@@ -1534,7 +1278,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <img src="static/img/homeskyluxe2.png" class="img-fluid luxury-img zoom-img fade-up" alt="Safe home elevator for family – Skyluxe" loading="lazy" decoding="async" />
+          <img src="static/img/homeskyluxe2.webp" class="img-fluid luxury-img zoom-img fade-up" alt="Safe home elevator for family – Skyluxe" loading="lazy" decoding="async" />
         </div>
       </div>
 
@@ -1552,7 +1296,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <img src="static/img/skyluxepre.png" class="img-fluid luxury-img zoom-img fade-up" alt="Custom luxury elevator – Skyluxe Elevators" loading="lazy" decoding="async" />
+          <img src="static/img/skyluxepre.webp" class="img-fluid luxury-img zoom-img fade-up" alt="Custom luxury elevator – Skyluxe Elevators" loading="lazy" decoding="async" />
         </div>
       </div>
     </div>
@@ -1567,7 +1311,7 @@
 
       <div class="india-map-wrapper position-relative mx-auto section-anim" style="max-width: 800px;">
         <!-- Map Image -->
-        <img src="static/img/235986b3-39c1-4be4-8ba2-b5f75eff359b.png" class="w-100 opacity-25"
+        <img src="static/img/235986b3-39c1-4be4-8ba2-b5f75eff359b.webp" class="w-100 opacity-25"
           alt="India Map" />
 
         <!-- Overlay Text -->
