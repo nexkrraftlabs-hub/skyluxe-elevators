@@ -39,6 +39,10 @@ body :not(i):not([class*="fa-"]) {
   font-family: var(--site-font) !important;
 }
 
+.navbar-nav .nav-link {
+  font-size: 0.88rem !important;
+}
+
 body :is(h1, h2, h3, h4, h5, h6, .section-title, .contact-title) {
   font-family: var(--heading-font) !important;
   font-weight: 800 !important;
