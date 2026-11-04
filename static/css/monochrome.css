@@ -74,6 +74,13 @@ body :is(h1, h2, h3, h4, h5, h6, .section-title, .contact-title) {
   filter: none !important;
 }
 
+@media (min-width: 992px) {
+  .hero-nav-layout .mega-dropdown .mega-menu {
+    top: calc(50% + 9px) !important;
+    transform: translateX(-50%) !important;
+  }
+}
+
 body section:not(.hero):not(.clients-hero):not(.proj-hero):not(footer *) {
   background: #fff !important;
   color: #111 !important;
