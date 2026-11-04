@@ -143,43 +143,11 @@ h1, h2, h3, h4, h5, h6,
   object-fit: cover;
   border-radius: 22px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
   display: block;
 }
 
 .luxury-img:hover {
   box-shadow: 0 28px 70px rgba(0, 0, 0, 0.18);
-}
-
-/* 3D Tilt Frame (injected by JS) */
-.tilt-frame {
-  perspective: 1000px;
-  border-radius: 22px;
-  overflow: hidden;
-}
-
-.tilt-inner {
-  transition: transform 0.15s ease;
-  transform-style: preserve-3d;
-}
-
-.tilt-sheen {
-  position: absolute;
-  inset: 0;
-  border-radius: 22px;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 2;
-}
-
-.content-box {
-  animation: fadeUp 0.8s ease both;
-}
-
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(40px); }
-  to   { opacity: 1; transform: translateY(0); }
 }
 
 /* ─── CONTACT SECTION ───────────────────────────── */
@@ -373,9 +341,6 @@ textarea.luxury-input {
   .luxury-img {
     height: 320px;
   }
-  .tilt-frame {
-    height: auto;
-  }
   .contact-title {
     font-size: 2rem;
   }
@@ -388,4 +353,19 @@ textarea.luxury-input {
   .luxury-sections {
     padding: 56px 0;
   }
+}
+
+html {
+  scroll-behavior: auto !important;
+}
+
+body.no-motion *,
+body.no-motion *::before,
+body.no-motion *::after {
+  animation: none !important;
+  transition: none !important;
+}
+
+body.no-motion *:hover {
+  transform: none !important;
 }

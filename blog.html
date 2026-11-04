@@ -91,14 +91,14 @@
   <link rel="icon" type="image/png" sizes="32x32" href="static/img/skyluxelogo.png">
   <link rel="apple-touch-icon" sizes="180x180" href="static/img/skyluxelogo.png">
   <link rel="manifest" href="static/site.webmanifest">
-  <meta name="theme-color" content="#c8a45d">
+  <meta name="theme-color" content="#ffffff">
   <meta name="msapplication-TileColor" content="#111111">
 
   <!-- ═══════════════════════════════════════════════
        PRECONNECT (reduces TCP + DNS latency)
   ═══════════════════════════════════════════════ -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
@@ -106,8 +106,7 @@
        EXTERNAL CSS  (render-critical first)
   ═══════════════════════════════════════════════ -->
   <!-- Google Fonts — loaded via <link> (not @import) to avoid render-blocking -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@300;400;600;700;800;900&family=Outfit:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap">
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
@@ -127,7 +126,7 @@
   <!-- ── Core Styles ──────────────────────────────────────────────── -->
   <style>
     :root {
-      --gold: #c8a45d;
+      --gold: #111111;
       --gold-light: #f0c76b;
       --gold-dark: #a97c33;
       --gold-soft: rgba(200, 164, 93, 0.14);
@@ -925,6 +924,9 @@
   
 <link rel="stylesheet" href="static/css/blog.css">
 
+  <link rel="stylesheet" href="static/css/hero.css">
+  <link rel="stylesheet" href="static/css/monochrome.css">
+  <script defer src="static/js/hero.js"></script>
 </head>
 
 <body>
@@ -949,8 +951,7 @@
           <!-- Mobile Nav Header -->
           <div class="mobile-nav-header d-lg-none">
             <div class="mobile-nav-logo">
-              <i class="fas fa-elevator c-pri me-2"></i>
-              <span>SKYLUXE</span>
+              <img src="static/img/skyluxelogo.webp" alt="Skyluxe Elevators" />
             </div>
             <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">
               <i class="fas fa-times"></i>
@@ -973,7 +974,7 @@
               </a>
               <div class="mega-menu">
                 <a href="home-lift.html" class="mega-item">
-                  <img src="static/img/1st.webp" alt="Skyluxe Home Lift – Luxury Residential Elevator"
+                  <img src="static/img/h1.webp" alt="Skyluxe Home Lift – Luxury Residential Elevator"
                     loading="lazy" width="72" height="96" />
                   <div class="mega-text">
                     <h5>Home Lift</h5>
@@ -982,7 +983,7 @@
                 </a>
 
                 <a href="passenger-lift.html" class="mega-item">
-                  <img src="static/img/2nd.webp" alt="Skyluxe Passenger Lift – Commercial Elevator"
+                  <img src="static/img/p1.webp" alt="Skyluxe Passenger Lift – Commercial Elevator"
                     loading="lazy" width="72" height="96" />
                   <div class="mega-text">
                     <h5>Passenger Lift</h5>
@@ -991,7 +992,7 @@
                 </a>
 
                 <a href="hospital-lift.html" class="mega-item">
-                  <img src="static/img/3rd.webp" alt="Skyluxe Hospital Lift – Patient Transport Elevator"
+                  <img src="static/img/hs1.webp" alt="Skyluxe Hospital Lift – Patient Transport Elevator"
                     loading="lazy" width="72" height="96" />
                   <div class="mega-text">
                     <h5>Hospital Lift</h5>
@@ -1000,7 +1001,7 @@
                 </a>
 
                 <a href="capsule-lift.html" class="mega-item">
-                  <img src="static/img/4th.webp" alt="Skyluxe Capsule Lift – Panoramic Glass Elevator"
+                  <img src="static/img/c1.webp" alt="Skyluxe Capsule Lift – Panoramic Glass Elevator"
                     loading="lazy" width="72" height="96" />
                   <div class="mega-text">
                     <h5>Capsule Lift</h5>
@@ -1009,7 +1010,7 @@
                 </a>
 
                 <a href="goods-lift.html" class="mega-item">
-                  <img src="static/img/5th.webp" alt="Skyluxe Goods Lift – Industrial Freight Elevator"
+                  <img src="static/img/g1.webp" alt="Skyluxe Goods Lift – Industrial Freight Elevator"
                     loading="lazy" width="72" height="96" />
                   <div class="mega-text">
                     <h5>Goods Lift</h5>
@@ -1018,7 +1019,7 @@
                 </a>
 
                 <a href="car-lift.html" class="mega-item">
-                  <img src="static/img/6th.webp" alt="Skyluxe Car Lift – Vehicle Elevator and Stacker"
+                  <img src="static/img/car4.webp" alt="Skyluxe Car Lift – Vehicle Elevator and Stacker"
                     loading="lazy" width="72" height="96" />
                   <div class="mega-text">
                     <h5>Car Lift</h5>
@@ -1027,7 +1028,7 @@
                 </a>
 
                 <a href="chair.html" class="mega-item">
-                  <img src="static/img/1st.webp" alt="Skyluxe Chair Lift – Stair Mobility Solution"
+                  <img src="static/img/ch1.webp" alt="Skyluxe Chair Lift – Stair Mobility Solution"
                     loading="lazy" width="72" height="96" />
                   <div class="mega-text">
                     <h5>Chair Lift</h5>
@@ -1153,11 +1154,17 @@
 
 <!-- Hero Section -->
 <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('static/img/blogslider.webp');">
-  <div class="hero-overlay"></div>
+
   <div class="hero-content">
-    <span class="hero-badge">INSIGHTS & UPDATES</span>
     <h1>Blog & News</h1>
     <p>Latest articles about home lifts, technology, and luxury living</p>
+    <div class="hero-actions">
+      <a class="hero-cta hero-cta-primary" href="contact.html">
+        Get a free consultation
+        <span class="hero-cta-arrow" aria-hidden="true">?</span>
+      </a>
+      <a class="hero-cta hero-cta-secondary" href="index.html#products">Explore our lifts</a>
+    </div>
   </div>
 </section>
 
@@ -1168,7 +1175,7 @@
     <div class="row mb-5 pb-5 border-bottom border-secondary">
       <div class="col-lg-12">
         <div style="padding: 32px;">
-          <span style="color: #c8a45d; letter-spacing: 2px; font-size: 12px; margin-bottom: 12px;">NEWS - MAY 11,
+          <span style="color: #111111; letter-spacing: 2px; font-size: 12px; margin-bottom: 12px;">NEWS - MAY 11,
             2026</span>
           <h2 style="color: #222; font-size: 42px; font-weight: 700; margin-bottom: 22px; line-height: 1.2;">Types of
             Lift Technologies for Homes in India</h2>
@@ -1180,7 +1187,7 @@
           <div style="display: flex; gap: 16px;">
             <a href="#" class="btn-pri" style="text-decoration: none;">Read Full Article</a>
             <button
-              style="background: transparent; border: 2px solid #c8a45d; color: #c8a45d; padding: 12px 28px; border-radius: 50px; cursor: pointer; font-weight: 600;">Share
+              style="background: transparent; border: 2px solid #111111; color: #111111; padding: 12px 28px; border-radius: 50px; cursor: pointer; font-weight: 600;">Share
               Article</button>
           </div>
         </div>
@@ -1193,9 +1200,9 @@
       <div class="col-lg-6">
         <div
           style="background: #f8f8f8; border: 1px solid #e0e0e0; border-radius: 25px; padding: 32px; transition: 0.4s; cursor: pointer;"
-          onmouseover="this.style.backgroundColor='#fff'; this.style.borderColor='#c8a45d';"
+          onmouseover="this.style.backgroundColor='#fff'; this.style.borderColor='#111111';"
           onmouseout="this.style.backgroundColor='#f8f8f8'; this.style.borderColor='#e0e0e0';">
-          <span style="color: #c8a45d; letter-spacing: 2px; font-size: 11px; text-transform: uppercase;">NEWS - APRIL
+          <span style="color: #111111; letter-spacing: 2px; font-size: 11px; text-transform: uppercase;">NEWS - APRIL
             21, 2026</span>
           <h3 style="color: #222; font-size: 24px; font-weight: 700; margin: 14px 0;">How does a Skyluxe Lift
             Screw-Drive
@@ -1203,7 +1210,7 @@
           <p style="color: #666; font-size: 15px; line-height: 1.7; margin-bottom: 20px;">
             Understanding the mechanical principle of screw-driven elevators and why they are superior in energy
             efficiency and safety.</p>
-          <a href="#" style="color: #c8a45d; text-decoration: none; font-weight: 600;">Read More →</a>
+          <a href="#" style="color: #111111; text-decoration: none; font-weight: 600;">Read More →</a>
         </div>
       </div>
 
@@ -1211,9 +1218,9 @@
       <div class="col-lg-6">
         <div
           style="background: #f8f8f8; border: 1px solid #e0e0e0; border-radius: 25px; padding: 32px; transition: 0.4s; cursor: pointer;"
-          onmouseover="this.style.backgroundColor='#fff'; this.style.borderColor='#c8a45d';"
+          onmouseover="this.style.backgroundColor='#fff'; this.style.borderColor='#111111';"
           onmouseout="this.style.backgroundColor='#f8f8f8'; this.style.borderColor='#e0e0e0';">
-          <span style="color: #c8a45d; letter-spacing: 2px; font-size: 11px; text-transform: uppercase;">NEWS - MARCH
+          <span style="color: #111111; letter-spacing: 2px; font-size: 11px; text-transform: uppercase;">NEWS - MARCH
             09, 2026</span>
           <h3 style="color: #222; font-size: 24px; font-weight: 700; margin: 14px 0;">Ultimate Guide to Skyluxe Lift
             Group
@@ -1222,7 +1229,7 @@
             Swedish roots to a global leader in home elevators - explore the journey of Skyluxe Lift and its
             innovations.
           </p>
-          <a href="#" style="color: #c8a45d; text-decoration: none; font-weight: 600;">Read More →</a>
+          <a href="#" style="color: #111111; text-decoration: none; font-weight: 600;">Read More →</a>
         </div>
       </div>
 
@@ -1230,16 +1237,16 @@
       <div class="col-lg-6">
         <div
           style="background: #f8f8f8; border: 1px solid #e0e0e0; border-radius: 25px; padding: 32px; transition: 0.4s; cursor: pointer;"
-          onmouseover="this.style.backgroundColor='#fff'; this.style.borderColor='#c8a45d';"
+          onmouseover="this.style.backgroundColor='#fff'; this.style.borderColor='#111111';"
           onmouseout="this.style.backgroundColor='#f8f8f8'; this.style.borderColor='#e0e0e0';">
-          <span style="color: #c8a45d; letter-spacing: 2px; font-size: 11px; text-transform: uppercase;">NEWS - FEB 15,
+          <span style="color: #111111; letter-spacing: 2px; font-size: 11px; text-transform: uppercase;">NEWS - FEB 15,
             2026</span>
           <h3 style="color: #222; font-size: 24px; font-weight: 700; margin: 14px 0;">Modern Home Elevators in Luxury
             Architecture</h3>
           <p style="color: #666; font-size: 15px; line-height: 1.7; margin-bottom: 20px;">How
             elevators are redefining modern home design and adding both functional and aesthetic value to luxury
             properties.</p>
-          <a href="#" style="color: #c8a45d; text-decoration: none; font-weight: 600;">Read More →</a>
+          <a href="#" style="color: #111111; text-decoration: none; font-weight: 600;">Read More →</a>
         </div>
       </div>
 
@@ -1247,16 +1254,16 @@
       <div class="col-lg-6">
         <div
           style="background: #f8f8f8; border: 1px solid #e0e0e0; border-radius: 25px; padding: 32px; transition: 0.4s; cursor: pointer;"
-          onmouseover="this.style.backgroundColor='#fff'; this.style.borderColor='#c8a45d';"
+          onmouseover="this.style.backgroundColor='#fff'; this.style.borderColor='#111111';"
           onmouseout="this.style.backgroundColor='#f8f8f8'; this.style.borderColor='#e0e0e0';">
-          <span style="color: #c8a45d; letter-spacing: 2px; font-size: 11px; text-transform: uppercase;">NEWS - JAN 28,
+          <span style="color: #111111; letter-spacing: 2px; font-size: 11px; text-transform: uppercase;">NEWS - JAN 28,
             2026</span>
           <h3 style="color: #222; font-size: 24px; font-weight: 700; margin: 14px 0;">Home Lifts: Safety Standards &
             Certifications</h3>
           <p style="color: #666; font-size: 15px; line-height: 1.7; margin-bottom: 20px;">
             Understanding European safety standards EN81-41 and why they matter for your family's security and peace of
             mind.</p>
-          <a href="#" style="color: #c8a45d; text-decoration: none; font-weight: 600;">Read More →</a>
+          <a href="#" style="color: #111111; text-decoration: none; font-weight: 600;">Read More →</a>
         </div>
       </div>
     </div>
@@ -1269,7 +1276,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6">
-        <span style="color: #c8a45d; letter-spacing: 3px; font-size: 12px; display: block; margin-bottom: 18px;">STAY
+        <span style="color: #111111; letter-spacing: 3px; font-size: 12px; display: block; margin-bottom: 18px;">STAY
           UPDATED</span>
         <h2 style="color: #222; font-size: 48px; line-height: 1.2; margin-bottom: 22px; font-weight: 700;">Subscribe to
           Our Blog</h2>
@@ -1317,11 +1324,7 @@
       <div class="row g-4 footer-main">
         <div class="col-lg-4 col-md-6 footer-col footer-brand">
           <div class="footer-logo">
-            <span class="footer-logo-icon"><i class="fas fa-elevator"></i></span>
-            <div>
-              <span class="footer-logo-text">SKYLUXE</span>
-              <span class="footer-logo-sub">ELEVATORS</span>
-            </div>
+            <img class="footer-logo-image" src="static/img/skyluxelogo.webp" alt="Skyluxe Elevators" />
           </div>
           <p class="footer-desc">Premium home lifts designed in Sweden with European quality standards. Your luxury, our
             commitment.</p>
@@ -1405,7 +1408,7 @@
             <p><i class="far fa-copyright"></i> 2026 SKYLUXE ELEVATORS India. All rights reserved.</p>
           </div>
           <div class="col-md-6 text-center text-md-end">
-            <p>Designed with <i class="fas fa-heart footer-heart"></i> by &amp;Nexkrraft Labs </p>
+            <p>Designed with <i class="fas fa-heart footer-heart"></i> by Nexkrraft Labs </p>
           </div>
         </div>
       </div>

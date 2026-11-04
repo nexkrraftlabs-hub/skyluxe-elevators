@@ -108,14 +108,14 @@
   <link rel="icon" type="image/png" sizes="32x32" href="static/img/skyluxelogo.png">
   <link rel="apple-touch-icon" sizes="180x180" href="static/img/skyluxelogo.png">
   <link rel="manifest" href="static/site.webmanifest">
-  <meta name="theme-color" content="#c8a45d">
+  <meta name="theme-color" content="#ffffff">
   <meta name="msapplication-TileColor" content="#111111">
 
   <!-- ═══════════════════════════════════════════════
        PRECONNECT (reduces TCP + DNS latency)
   ═══════════════════════════════════════════════ -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
@@ -123,14 +123,11 @@
        EXTERNAL CSS  (render-critical first)
   ═══════════════════════════════════════════════ -->
   <!-- Google Fonts — loaded via <link> (not @import) to avoid render-blocking -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@300;400;600;700;800;900&family=Outfit:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap">
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GS8N47317Q"></script>
 <script>
@@ -525,7 +522,7 @@
         border-radius: 0 22px 22px 0 !important;
         box-shadow: 14px 0 50px rgba(0, 0, 0, 0.18) !important;
         transform: translateX(-110%) !important;
-        transition: transform 0.36s cubic-bezier(.4, 0, .2, 1) !important;
+        transition: transform 0.36s cubic-bezier(.4, 0, .2, 1);
         z-index: 2010 !important;
         overflow-y: auto !important;
       }
@@ -848,19 +845,6 @@
 
     .footer-heart {
       color: var(--gold);
-      animation: heartBeat 1.5s ease-in-out infinite;
-    }
-
-    @keyframes heartBeat {
-
-      0%,
-      100% {
-        transform: scale(1);
-      }
-
-      50% {
-        transform: scale(1.3);
-      }
     }
 
     /* Mobile/Tablet padding fixes for containers */
@@ -942,9 +926,12 @@
   
 <link rel="stylesheet" href="static/css/about.css">
 
+  <link rel="stylesheet" href="static/css/hero.css">
+  <link rel="stylesheet" href="static/css/monochrome.css">
+  <script defer src="static/js/hero.js"></script>
 </head>
 
-<body>
+<body class="no-motion">
 
 
   <!-- Premium Unified Navbar -->
@@ -966,8 +953,7 @@
           <!-- Mobile Nav Header -->
           <div class="mobile-nav-header d-lg-none">
             <div class="mobile-nav-logo">
-              <i class="fas fa-elevator c-pri me-2"></i>
-              <span>SKYLUXE</span>
+              <img src="static/img/skyluxelogo.webp" alt="Skyluxe Elevators" />
             </div>
             <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">
               <i class="fas fa-times"></i>
@@ -990,7 +976,7 @@
               </a>
               <div class="mega-menu">
                 <a href="home-lift.html" class="mega-item">
-                  <img src="static/img/1st.webp" alt="Skyluxe Home Lift – Luxury Residential Elevator"
+                  <img src="static/img/h1.webp" alt="Skyluxe Home Lift – Luxury Residential Elevator"
                     loading="lazy" width="72" height="96" />
                   <div class="mega-text">
                     <h5>Home Lift</h5>
@@ -999,7 +985,7 @@
                 </a>
 
                 <a href="passenger-lift.html" class="mega-item">
-                  <img src="static/img/2nd.webp" alt="Skyluxe Passenger Lift – Commercial Elevator"
+                  <img src="static/img/p1.webp" alt="Skyluxe Passenger Lift – Commercial Elevator"
                     loading="lazy" width="72" height="96" />
                   <div class="mega-text">
                     <h5>Passenger Lift</h5>
@@ -1008,7 +994,7 @@
                 </a>
 
                 <a href="hospital-lift.html" class="mega-item">
-                  <img src="static/img/3rd.webp" alt="Skyluxe Hospital Lift – Patient Transport Elevator"
+                  <img src="static/img/hs1.webp" alt="Skyluxe Hospital Lift – Patient Transport Elevator"
                     loading="lazy" width="72" height="96" />
                   <div class="mega-text">
                     <h5>Hospital Lift</h5>
@@ -1017,7 +1003,7 @@
                 </a>
 
                 <a href="capsule-lift.html" class="mega-item">
-                  <img src="static/img/4th.webp" alt="Skyluxe Capsule Lift – Panoramic Glass Elevator"
+                  <img src="static/img/c1.webp" alt="Skyluxe Capsule Lift – Panoramic Glass Elevator"
                     loading="lazy" width="72" height="96" />
                   <div class="mega-text">
                     <h5>Capsule Lift</h5>
@@ -1026,7 +1012,7 @@
                 </a>
 
                 <a href="goods-lift.html" class="mega-item">
-                  <img src="static/img/5th.webp" alt="Skyluxe Goods Lift – Industrial Freight Elevator"
+                  <img src="static/img/g1.webp" alt="Skyluxe Goods Lift – Industrial Freight Elevator"
                     loading="lazy" width="72" height="96" />
                   <div class="mega-text">
                     <h5>Goods Lift</h5>
@@ -1035,7 +1021,7 @@
                 </a>
 
                 <a href="car-lift.html" class="mega-item">
-                  <img src="static/img/6th.webp" alt="Skyluxe Car Lift – Vehicle Elevator and Stacker"
+                  <img src="static/img/car4.webp" alt="Skyluxe Car Lift – Vehicle Elevator and Stacker"
                     loading="lazy" width="72" height="96" />
                   <div class="mega-text">
                     <h5>Car Lift</h5>
@@ -1044,7 +1030,7 @@
                 </a>
 
                 <a href="chair.html" class="mega-item">
-                  <img src="static/img/1st.webp" alt="Skyluxe Chair Lift – Stair Mobility Solution"
+                  <img src="static/img/ch1.webp" alt="Skyluxe Chair Lift – Stair Mobility Solution"
                     loading="lazy" width="72" height="96" />
                   <div class="mega-text">
                     <h5>Chair Lift</h5>
@@ -1170,23 +1156,20 @@
   <!-- DJANGO MESSAGES -->
     <!-- HERO -->
   <section class="hero">
-    <div class="swiper hero-swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide" style="background-image:url('static/img/VGO0749_HDR-scaled.webp')">
-          <div class="hero-overlay"></div>
-        </div>
-        <div class="swiper-slide" style="background-image:url('static/img/VGO05128-copy-scaled.webp')">
-          <div class="hero-overlay"></div>
-        </div>
-      </div>
+  <img class="hero-image" src="static/img/VGO0749_HDR-scaled.webp"
+      alt="Skyluxe luxury elevator in a contemporary home" fetchpriority="high" decoding="async">
+  <div class="hero-content">
+    <h1>Elevator Company in Lucknow: About Skyluxe</h1>
+    <p>The Leading Lift Manufacturer & Supplier in Lucknow and Uttar Pradesh – Swedish Design, European Quality.</p>
+    <div class="hero-actions">
+      <a class="hero-cta hero-cta-primary" href="contact.html">
+        Get a free consultation
+        <span class="hero-cta-arrow" aria-hidden="true">?</span>
+      </a>
+      <a class="hero-cta hero-cta-secondary" href="index.html#products">Explore our lifts</a>
     </div>
-
-    <div class="hero-content">
-      <h1>Elevator Company in Lucknow: About Skyluxe</h1>
-      <p>The Leading Lift Manufacturer & Supplier in Lucknow and Uttar Pradesh – Swedish Design, European Quality.</p>
-      <a href="contact.html"><button class="btn btn-pri">Get a Free Quote</button></a>
-    </div>
-  </section>
+  </div>
+</section>
 
   <!-- ABOUT SECTIONS -->
   <section class="luxury-sections py-5">
@@ -1260,7 +1243,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <img src="static/img/slider5.webp" class="img-fluid luxury-img zoom-img fade-up" alt="Skyluxe smart lift with luxury comfort features" loading="lazy" decoding="async" />
+          <img src="static/img/VGO05128-copy-scaled.webp" class="img-fluid luxury-img zoom-img fade-up" alt="Skyluxe smart lift with luxury comfort features" loading="lazy" decoding="async" />
         </div>
       </div>
 
@@ -1297,41 +1280,6 @@
         </div>
         <div class="col-lg-6">
           <img src="static/img/skyluxepre.webp" class="img-fluid luxury-img zoom-img fade-up" alt="Custom luxury elevator – Skyluxe Elevators" loading="lazy" decoding="async" />
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section trusted-by bg-light py-5 overflow-hidden">
-    <div class="container text-center">
-      <div class="mb-5 section-anim">
-        <h2 class="fw-bold text-dark mb-2 text-uppercase" style="letter-spacing: 1px;">WE ARE <span
-            class="c-pri">TRUSTED BY</span></h2>
-        <p class="text-muted">Hundreds of customers across The India</p>
-      </div>
-
-      <div class="india-map-wrapper position-relative mx-auto section-anim" style="max-width: 800px;">
-        <!-- Map Image -->
-        <img src="static/img/235986b3-39c1-4be4-8ba2-b5f75eff359b.webp" class="w-100 opacity-25"
-          alt="India Map" />
-
-        <!-- Overlay Text -->
-        <div class="position-absolute top-50 start-50 translate-middle text-end w-100">
-          <h3 class="fw-bold text-dark mb-0 display-4 counter" style="opacity: 0.8;">0</h3>
-          <p class="fw-bold text-uppercase c-pri mb-0" style="letter-spacing: 2px;">Installations in India</p>
-        </div>
-
-        <!-- Map Pins (Simplified for Bootstrap) -->
-        <div class="position-absolute text-warning" style="top: 30%; left: 40%;">
-          <i class="fas fa-map-marker-alt fs-4"></i>
-        </div>
-        <div class="position-absolute text-warning" style="top: 45%; left: 70%;">
-          <i class="fas fa-map-marker-alt fs-4"></i>
-        </div>
-        <div class="position-absolute text-warning" style="top: 60%; left: 50%;">
-          <i class="fas fa-map-marker-alt fs-4"></i>
-        </div>
-        <div class="position-absolute text-warning" style="top: 75%; left: 40%;">
-          <i class="fas fa-map-marker-alt fs-4"></i>
         </div>
       </div>
     </div>
@@ -1530,11 +1478,7 @@
       <div class="row g-4 footer-main">
         <div class="col-lg-4 col-md-6 footer-col footer-brand">
           <div class="footer-logo">
-            <span class="footer-logo-icon"><i class="fas fa-elevator"></i></span>
-            <div>
-              <span class="footer-logo-text">SKYLUXE</span>
-              <span class="footer-logo-sub">ELEVATORS</span>
-            </div>
+            <img class="footer-logo-image" src="static/img/skyluxelogo.webp" alt="Skyluxe Elevators" />
           </div>
           <p class="footer-desc">Premium home lifts designed in Sweden with European quality standards. Your luxury, our
             commitment.</p>
@@ -1618,7 +1562,7 @@
             <p><i class="far fa-copyright"></i> 2026 SKYLUXE ELEVATORS India. All rights reserved.</p>
           </div>
           <div class="col-md-6 text-center text-md-end">
-            <p>Designed with <i class="fas fa-heart footer-heart"></i> by &amp;Nexkrraft Labs </p>
+            <p>Designed with <i class="fas fa-heart footer-heart"></i> by Nexkrraft Labs </p>
           </div>
         </div>
       </div>
@@ -1628,12 +1572,6 @@
 
   <!-- Bootstrap JS Bundle (defer – non-blocking) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
-  <!-- Swiper JS (defer – non-blocking) -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-  <!-- GSAP JS (defer – non-blocking) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-
   <!-- Universal Scripts -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -1690,239 +1628,6 @@
       }
     });
   </script>
-
-  <!-- Page Specific Script Hook -->
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // 3D TILT FOR IMAGES
-      (function () {
-        function initTilt(selector) {
-          const nodes = document.querySelectorAll(selector);
-          nodes.forEach(img => {
-            if (img.closest('.tilt-frame')) return;
-
-            const frame = document.createElement('div');
-            frame.className = 'tilt-frame';
-            const inner = document.createElement('div');
-            inner.className = 'tilt-inner';
-            const sheen = document.createElement('div');
-            sheen.className = 'tilt-sheen';
-
-            const parent = img.parentNode;
-            parent.replaceChild(frame, img);
-            inner.appendChild(img);
-            frame.appendChild(inner);
-            frame.appendChild(sheen);
-
-            // Hover interactions: 3D rotational tilt + floating image layer + dynamic sheen
-            frame.addEventListener('mousemove', function (e) {
-              const r = frame.getBoundingClientRect();
-              const px = (e.clientX - r.left) / r.width;
-              const py = (e.clientY - r.top) / r.height;
-
-              const rotY = (px - 0.5) * -12; // increased tilt range for stronger 3D depth
-              const rotX = (py - 0.5) * 10;
-
-              inner.style.transform = `rotateX(${rotX}deg) rotateY(${rotY}deg)`;
-              // translateZ creates a depth offset (parallax) without scaling the image outward
-              img.style.transform = 'translateZ(25px)';
-
-              // Dynamic reflection light sheen following the cursor
-              const sheenX = px * 100;
-              const sheenY = py * 100;
-              sheen.style.background = `radial-gradient(circle at ${sheenX}% ${sheenY}%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 70%)`;
-              sheen.style.opacity = '1';
-            });
-
-            frame.addEventListener('mouseleave', function () {
-              inner.style.transform = 'rotateX(0deg) rotateY(0deg)';
-              img.style.transform = 'translateZ(0px)';
-              sheen.style.opacity = '0';
-            });
-          });
-        }
-        initTilt('.luxury-img');
-      })();
-
-      // HERO SWIPER
-
-      new Swiper('.hero-swiper', {
-        loop: true,
-        effect: 'fade',
-        speed: 1500,
-
-        autoplay: {
-          delay: 4000
-        }
-      })
-
-
-      // GSAP
-
-      gsap.registerPlugin(ScrollTrigger)
-
-      // PAGE LOAD
-
-      gsap.from('.hero-content', {
-        opacity: 0,
-        y: 50,
-        duration: 0.6,
-        ease: 'power3.out'
-      })
-
-      // HERO CONTENT
-
-      gsap.from('.hero-content h1', {
-        y: 120,
-        opacity: 0,
-        duration: 0.7,
-        ease: 'power4.out'
-      })
-
-      gsap.from('.hero-content p', {
-        y: 80,
-        opacity: 0,
-        duration: 0.6,
-        delay: 0.1,
-        ease: 'power3.out'
-      })
-
-      gsap.from('.hero-content .btn', {
-        scale: 0,
-        opacity: 0,
-        duration: 0.5,
-        delay: 0.2,
-        ease: 'back.out(1.7)'
-      })
-
-      // SECTION HEADINGS
-
-      gsap.utils.toArray('.section-heading').forEach((el) => {
-        gsap.from(el, {
-          scrollTrigger: {
-            trigger: el,
-            start: 'top 85%'
-          },
-
-          y: 80,
-          opacity: 0,
-          duration: 0.6,
-          ease: 'power4.out'
-        })
-      })
-
-      // SECTION TEXT
-
-      gsap.utils.toArray('.section-text').forEach((el) => {
-        gsap.from(el, {
-          scrollTrigger: {
-            trigger: el,
-            start: 'top 90%'
-          },
-
-          y: 50,
-          opacity: 0,
-          duration: 0.5
-        })
-      })
-
-      // IMAGES
-
-      gsap.utils.toArray('.luxury-img').forEach((img) => {
-        gsap.from(img, {
-          scrollTrigger: {
-            trigger: img,
-            start: 'top 85%'
-          },
-
-          scale: 1.08,
-          opacity: 0,
-          duration: 0.7,
-          ease: 'power3.out'
-        })
-      })
-
-      // FAQ CARDS
-
-      gsap.utils.toArray('.faq-card').forEach((card, i) => {
-        gsap.from(card, {
-          scrollTrigger: {
-            trigger: card,
-            start: 'top 90%'
-          },
-
-          y: 80,
-          opacity: 0,
-          duration: 0.5,
-          delay: i * 0.05
-        })
-      })
-
-      // FOOTER
-
-      gsap.from('.footer-col', {
-        scrollTrigger: {
-          trigger: 'footer',
-          start: 'top 85%'
-        },
-
-        y: 100,
-        opacity: 0,
-        stagger: 0.1,
-        duration: 0.6
-      })
-
-      // MAP PINS
-
-      gsap.utils.toArray('.fa-map-marker-alt').forEach((pin, i) => {
-        gsap.from(pin, {
-          scrollTrigger: {
-            trigger: pin,
-            start: 'top 95%'
-          },
-
-          scale: 0,
-          opacity: 0,
-          duration: 0.5,
-          delay: i * 0.1,
-          ease: 'back.out(2)'
-        })
-
-        gsap.to(pin, {
-          y: -12,
-          duration: 1.5,
-          repeat: -1,
-          yoyo: true,
-          ease: 'sine.inOut',
-          delay: i * 0.1
-        })
-      })
-
-      // COUNTER ANIMATION
-
-      let counter = { value: 0 }
-
-      gsap.to(counter, {
-        value: 150,
-
-        duration: 1.5,
-
-        ease: 'power2.out',
-
-        scrollTrigger: {
-          trigger: '.counter',
-          start: 'top 85%'
-        },
-
-        onUpdate: function () {
-          document.querySelector('.counter').innerHTML = Math.floor(counter.value) + '+'
-        }
-      })
-    })
-  </script>
-
 
   <script src="static/js/contact-whatsapp.js" defer></script>
 </body>

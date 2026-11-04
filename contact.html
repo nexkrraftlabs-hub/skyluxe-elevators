@@ -118,14 +118,14 @@
   <link rel="icon" type="image/png" sizes="32x32" href="static/img/skyluxelogo.png">
   <link rel="apple-touch-icon" sizes="180x180" href="static/img/skyluxelogo.png">
   <link rel="manifest" href="static/site.webmanifest">
-  <meta name="theme-color" content="#c8a45d">
+  <meta name="theme-color" content="#ffffff">
   <meta name="msapplication-TileColor" content="#111111">
 
   <!-- ═══════════════════════════════════════════════
        PRECONNECT (reduces TCP + DNS latency)
   ═══════════════════════════════════════════════ -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
@@ -133,14 +133,11 @@
        EXTERNAL CSS  (render-critical first)
   ═══════════════════════════════════════════════ -->
   <!-- Google Fonts — loaded via <link> (not @import) to avoid render-blocking -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@300;400;600;700;800;900&family=Outfit:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap">
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GS8N47317Q"></script>
 <script>
@@ -535,7 +532,7 @@
         border-radius: 0 22px 22px 0 !important;
         box-shadow: 14px 0 50px rgba(0, 0, 0, 0.18) !important;
         transform: translateX(-110%) !important;
-        transition: transform 0.36s cubic-bezier(.4, 0, .2, 1) !important;
+        transition: transform 0.36s cubic-bezier(.4, 0, .2, 1);
         z-index: 2010 !important;
         overflow-y: auto !important;
       }
@@ -858,19 +855,6 @@
 
     .footer-heart {
       color: var(--gold);
-      animation: heartBeat 1.5s ease-in-out infinite;
-    }
-
-    @keyframes heartBeat {
-
-      0%,
-      100% {
-        transform: scale(1);
-      }
-
-      50% {
-        transform: scale(1.3);
-      }
     }
 
     /* Mobile/Tablet padding fixes for containers */
@@ -952,9 +936,12 @@
   
 <link rel="stylesheet" href="static/css/contact.css">
 
+  <link rel="stylesheet" href="static/css/hero.css">
+  <link rel="stylesheet" href="static/css/monochrome.css">
+  <script defer src="static/js/hero.js"></script>
 </head>
 
-<body>
+<body class="no-motion">
 
 
   <!-- Premium Unified Navbar -->
@@ -976,8 +963,7 @@
           <!-- Mobile Nav Header -->
           <div class="mobile-nav-header d-lg-none">
             <div class="mobile-nav-logo">
-              <i class="fas fa-elevator c-pri me-2"></i>
-              <span>SKYLUXE</span>
+              <img src="static/img/skyluxelogo.webp" alt="Skyluxe Elevators" />
             </div>
             <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">
               <i class="fas fa-times"></i>
@@ -1000,7 +986,7 @@
               </a>
               <div class="mega-menu">
                 <a href="home-lift.html" class="mega-item">
-                  <img src="static/img/1st.webp" alt="Skyluxe Home Lift – Luxury Residential Elevator"
+                  <img src="static/img/h1.webp" alt="Skyluxe Home Lift – Luxury Residential Elevator"
                     loading="lazy" width="72" height="96" />
                   <div class="mega-text">
                     <h5>Home Lift</h5>
@@ -1009,7 +995,7 @@
                 </a>
 
                 <a href="passenger-lift.html" class="mega-item">
-                  <img src="static/img/2nd.webp" alt="Skyluxe Passenger Lift – Commercial Elevator"
+                  <img src="static/img/p1.webp" alt="Skyluxe Passenger Lift – Commercial Elevator"
                     loading="lazy" width="72" height="96" />
                   <div class="mega-text">
                     <h5>Passenger Lift</h5>
@@ -1018,7 +1004,7 @@
                 </a>
 
                 <a href="hospital-lift.html" class="mega-item">
-                  <img src="static/img/3rd.webp" alt="Skyluxe Hospital Lift – Patient Transport Elevator"
+                  <img src="static/img/hs1.webp" alt="Skyluxe Hospital Lift – Patient Transport Elevator"
                     loading="lazy" width="72" height="96" />
                   <div class="mega-text">
                     <h5>Hospital Lift</h5>
@@ -1027,7 +1013,7 @@
                 </a>
 
                 <a href="capsule-lift.html" class="mega-item">
-                  <img src="static/img/4th.webp" alt="Skyluxe Capsule Lift – Panoramic Glass Elevator"
+                  <img src="static/img/c1.webp" alt="Skyluxe Capsule Lift – Panoramic Glass Elevator"
                     loading="lazy" width="72" height="96" />
                   <div class="mega-text">
                     <h5>Capsule Lift</h5>
@@ -1036,7 +1022,7 @@
                 </a>
 
                 <a href="goods-lift.html" class="mega-item">
-                  <img src="static/img/5th.webp" alt="Skyluxe Goods Lift – Industrial Freight Elevator"
+                  <img src="static/img/g1.webp" alt="Skyluxe Goods Lift – Industrial Freight Elevator"
                     loading="lazy" width="72" height="96" />
                   <div class="mega-text">
                     <h5>Goods Lift</h5>
@@ -1045,7 +1031,7 @@
                 </a>
 
                 <a href="car-lift.html" class="mega-item">
-                  <img src="static/img/6th.webp" alt="Skyluxe Car Lift – Vehicle Elevator and Stacker"
+                  <img src="static/img/car4.webp" alt="Skyluxe Car Lift – Vehicle Elevator and Stacker"
                     loading="lazy" width="72" height="96" />
                   <div class="mega-text">
                     <h5>Car Lift</h5>
@@ -1054,7 +1040,7 @@
                 </a>
 
                 <a href="chair.html" class="mega-item">
-                  <img src="static/img/1st.webp" alt="Skyluxe Chair Lift – Stair Mobility Solution"
+                  <img src="static/img/ch1.webp" alt="Skyluxe Chair Lift – Stair Mobility Solution"
                     loading="lazy" width="72" height="96" />
                   <div class="mega-text">
                     <h5>Chair Lift</h5>
@@ -1184,24 +1170,20 @@
   <!-- HERO -->
 
   <section class="hero">
-    <div class="swiper hero-swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide" style="background-image: url(static/img/VGO0749_HDR-scaled.webp);">
-          <div class="hero-overlay"></div>
-        </div>
-
-        <div class="swiper-slide" style="background-image: url(static/img/VGO05128-copy-scaled.webp);">
-          <div class="hero-overlay"></div>
-        </div>
-      </div>
+  <img class="hero-image" src="static/img/VGO0749_HDR-scaled.webp"
+      alt="Skyluxe luxury elevator in a contemporary home" fetchpriority="high" decoding="async">
+  <div class="hero-content">
+    <h1 class="hero-title">Contact <span class="hero-gold">Skyluxe Lucknow</span></h1>
+    <p class="hero-sub">We're here to help you find your perfect luxury elevator.<br>Reach out to our Lucknow & UP experts today.</p>
+    <div class="hero-actions">
+      <a class="hero-cta hero-cta-primary" href="#contact-form">
+        Get a free consultation
+        <span class="hero-cta-arrow" aria-hidden="true">?</span>
+      </a>
+      <a class="hero-cta hero-cta-secondary" href="index.html#products">Explore our lifts</a>
     </div>
-
-    <div class="hero-content">
-      <p class="hero-tag">GET IN TOUCH</p>
-      <h1 class="hero-title">Contact <span class="hero-gold">Skyluxe Lucknow</span></h1>
-      <p class="hero-sub">We're here to help you find your perfect luxury elevator.<br>Reach out to our Lucknow & UP experts today.</p>
-    </div>
-  </section>
+  </div>
+</section>
   <!-- SHOWROOMS SECTION -->
 
   <section class="showroom-section">
@@ -1211,7 +1193,7 @@
 
         <div class="col-lg-6">
           <div class="showroom-map-wrapper">
-            <iframe src="https://maps.google.com/maps?q=Skyluxe%20Elevators%20Lucknow&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://maps.google.com/maps?ll=26.8467,80.9462&t=&z=13&ie=UTF8&output=embed" allowfullscreen="" loading="lazy"></iframe>
 
             <!-- FLOATING BADGE -->
 
@@ -1332,7 +1314,7 @@
 
         <div class="col-lg-7">
           <div class="contact-form-wrapper">
-            <form class="js-whatsapp-form">
+            <form id="contact-form" class="js-whatsapp-form">
               <p role="status">Submitting opens WhatsApp with your inquiry prefilled. Tap Send there to complete it.</p>
               
 
@@ -1382,12 +1364,12 @@
   <section class="section faq-section bg-dark text-white">
     <div class="container">
       <div class="text-center mb-5">
-        <h2 class="section-title text-white text-3d-white">
+        <h2 class="section-title text-white">
           Frequently Asked
           <span class="c-pri">Questions</span>
         </h2>
 
-        <p class="text-light opacity-75">Everything you need to know about our luxury elevators.</p>
+        <p class="text-light">Everything you need to know about our luxury elevators.</p>
       </div>
 
       <div class="accordion faq-accordion" id="faqAccordion">
@@ -1513,7 +1495,7 @@
 
         <div class="col-lg-7">
           <div class="map-wrapper">
-            <iframe src="https://www.google.com/maps?q=Lucknow&output=embed" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps?ll=26.8467,80.9462&z=11&output=embed" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </div>
       </div>
@@ -1556,11 +1538,7 @@
       <div class="row g-4 footer-main">
         <div class="col-lg-4 col-md-6 footer-col footer-brand">
           <div class="footer-logo">
-            <span class="footer-logo-icon"><i class="fas fa-elevator"></i></span>
-            <div>
-              <span class="footer-logo-text">SKYLUXE</span>
-              <span class="footer-logo-sub">ELEVATORS</span>
-            </div>
+            <img class="footer-logo-image" src="static/img/skyluxelogo.webp" alt="Skyluxe Elevators" />
           </div>
           <p class="footer-desc">Premium home lifts designed in Sweden with European quality standards. Your luxury, our
             commitment.</p>
@@ -1644,7 +1622,7 @@
             <p><i class="far fa-copyright"></i> 2026 SKYLUXE ELEVATORS India. All rights reserved.</p>
           </div>
           <div class="col-md-6 text-center text-md-end">
-            <p>Designed with <i class="fas fa-heart footer-heart"></i> by &amp;Nexkrraft Labs </p>
+            <p>Designed with <i class="fas fa-heart footer-heart"></i> by Nexkrraft Labs </p>
           </div>
         </div>
       </div>
@@ -1654,12 +1632,6 @@
 
   <!-- Bootstrap JS Bundle (defer – non-blocking) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
-  <!-- Swiper JS (defer – non-blocking) -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-  <!-- GSAP JS (defer – non-blocking) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-
   <!-- Universal Scripts -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -1716,107 +1688,6 @@
       }
     });
   </script>
-
-  <!-- Page Specific Script Hook -->
-  
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      new Swiper('.hero-swiper', {
-      loop: true,
-      autoplay: {
-        delay: 4000
-      }
-    })
-    });
-  </script>
-  <!-- GSAP -->
-
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-
-  <script>
-    gsap.registerPlugin(ScrollTrigger);
-
-    gsap.defaults({ ease: 'power3.out', duration: 1.2 });
-
-    const heroTl = gsap.timeline();
-    heroTl
-      .from('.navbar-brand', { y: -30, opacity: 0, clearProps: 'all' })
-      .from('.nav-item', { y: -20, opacity: 0, stagger: 0.1, duration: 0.7, clearProps: 'all' }, '-=0.6')
-      .from('.hero h1', { rotationX: 90, transformOrigin: "50% 50% -50px", opacity: 0, duration: 1.5, ease: 'back.out(1.2)' }, '-=0.4')
-      .from('.hero p', { y: 40, opacity: 0 }, '-=1')
-      .from('.hero .btn', { scale: 0.8, opacity: 0, rotationY: 45, duration: 1 }, '-=0.8');
-
-    gsap.to('.swiper-slide', {
-      scale: 1.1,
-      scrollTrigger: { trigger: '.hero', scrub: 1, start: 'top top', end: 'bottom top' }
-    });
-
-    // Showroom Map 3D
-    gsap.from('.showroom-map-wrapper', {
-      scrollTrigger: { trigger: '.showroom-map-wrapper', start: 'top 85%' },
-      rotationY: -15, rotationX: 10, x: -100, opacity: 0, duration: 1.5, clearProps: 'all'
-    });
-    gsap.from('.map-badge', {
-      scrollTrigger: { trigger: '.showroom-map-wrapper', start: 'top 80%' },
-      y: 50, scale: 0.8, opacity: 0, delay: 0.5, duration: 1, clearProps: 'all'
-    });
-
-    gsap.from('.showroom-title', {
-      scrollTrigger: { trigger: '.showroom-title', start: 'top 85%' },
-      y: 60, rotationX: 45, opacity: 0, duration: 1.2, clearProps: 'all'
-    });
-    gsap.from('.showroom-item', {
-      scrollTrigger: { trigger: '.showroom-list', start: 'top 85%' },
-      x: 80, rotationY: 15, opacity: 0, stagger: 0.15, duration: 1, clearProps: 'all'
-    });
-
-    // Contact Form 3D
-    gsap.from('.contact-title', {
-      scrollTrigger: { trigger: '.contact-title', start: 'top 85%' },
-      y: 60, rotationX: 45, opacity: 0, duration: 1.2, clearProps: 'all'
-    });
-    gsap.from('.contact-item', {
-      scrollTrigger: { trigger: '.contact-item', start: 'top 85%' },
-      x: -40, opacity: 0, stagger: 0.15, duration: 0.8, clearProps: 'all'
-    });
-    gsap.from('.contact-form-wrapper', {
-      scrollTrigger: { trigger: '.contact-form-wrapper', start: 'top 85%' },
-      y: 100, rotationX: -15, opacity: 0, duration: 1.4, clearProps: 'all'
-    });
-
-    // FAQ
-    gsap.from('.section-title', {
-      scrollTrigger: { trigger: '.section-title', start: 'top 85%' },
-      y: 60, rotationX: 45, opacity: 0, duration: 1.1, clearProps: 'all'
-    });
-    gsap.from('.accordion-item', {
-      scrollTrigger: { trigger: '.faq-accordion', start: 'top 85%' },
-      y: 50, scale: 0.95, opacity: 0, stagger: 0.1, duration: 0.9, clearProps: 'all'
-    });
-
-    // Final Map 3D
-    gsap.from('.map-title', {
-      scrollTrigger: { trigger: '.map-title', start: 'top 85%' },
-      y: 70, rotationX: 45, opacity: 0, duration: 1.2, clearProps: 'all'
-    });
-    gsap.from('.map-item', {
-      scrollTrigger: { trigger: '.map-info', start: 'top 85%' },
-      x: -50, opacity: 0, stagger: 0.15, duration: 0.9, clearProps: 'all'
-    });
-    gsap.from('.map-wrapper', {
-      scrollTrigger: { trigger: '.map-wrapper', start: 'top 85%' },
-      x: 100, rotationY: 15, rotationX: 10, opacity: 0, duration: 1.5, clearProps: 'all'
-    });
-
-    gsap.from('.footer-col', {
-      scrollTrigger: { trigger: 'footer', start: 'top 95%' },
-      y: 40, opacity: 0, stagger: 0.15, duration: 0.8, clearProps: 'all'
-    });
-  </script>
-
 
   <script src="static/js/contact-whatsapp.js" defer></script>
 </body>

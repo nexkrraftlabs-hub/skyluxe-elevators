@@ -491,6 +491,18 @@ textarea.luxury-input {
   color: var(--white);
 }
 
+.faq-section .text-center > .section-title,
+.faq-section .text-center > p {
+  filter: none;
+  opacity: 1;
+  text-shadow: none;
+  transform: none;
+}
+
+.faq-section .text-center > p {
+  color: #111 !important;
+}
+
 .faq-accordion .accordion-item {
   background: var(--dark-2);
   border: 1px solid rgba(184, 137, 42, 0.2);
@@ -532,6 +544,12 @@ textarea.luxury-input {
   font-size: 15px;
   line-height: 1.7;
   border-top: 1px solid rgba(184, 137, 42, 0.15);
+}
+
+@media (max-width: 767.98px) {
+  body > section.faq-section:not(.hero):not(.clients-hero):not(.proj-hero) {
+    padding-top: 112px !important;
+  }
 }
 
 /* FOOTER */
@@ -821,4 +839,19 @@ textarea.luxury-input {
     height: 50px;
     font-size: 20px;
   }
+}
+
+html {
+  scroll-behavior: auto !important;
+}
+
+body.no-motion *,
+body.no-motion *::before,
+body.no-motion *::after {
+  animation: none !important;
+  transition: none !important;
+}
+
+body.no-motion *:hover {
+  transform: none !important;
 }
